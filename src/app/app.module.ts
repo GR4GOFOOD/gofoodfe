@@ -10,6 +10,7 @@ import { PaymentsComponent } from './payments/payments.component';
 import { MenuComponent } from './menu/menu.component';
 import { SignupComponent } from './signup/signup.component';
 import { BlogComponent } from './blog/blog.component';
+import { FAQSComponent } from './faqs/faqs.component';
 
 
 
@@ -27,7 +28,8 @@ import { BlogComponent } from './blog/blog.component';
     PaymentsComponent,
     MenuComponent,
     SignupComponent,
-    BlogComponent
+    BlogComponent,
+    FAQSComponent
   ],
   imports: [
     BrowserModule,
