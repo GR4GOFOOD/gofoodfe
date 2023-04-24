@@ -1,0 +1,88 @@
+body{
+  padding: 0;
+  margin:0
+}
+
+/* BODY */
+.main{
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.ThongBao{
+margin:0;
+padding: 0;
+width: 100%;
+height: 60px;
+background: #E3FFE3;
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 30px;
+color: #000000;
+}
+.ThongBao img{
+  width:35px;
+  height:37px;
+ margin: 10px 0 0 20px
+}
+.ThongBao p{
+  position: absolute;
+  /*  */
+  left: 80px;
+  top: 15px;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+}
+
+.notifications .row{
+
+width: 90%;
+height: 65px;
+margin:30px auto;
+border: 1px solid #000000;
+border-radius: 15px;
+display: flex;
+
+}
+.notifications img{
+  width: 43px;
+  height: 40px;
+  margin:10px 20px
+  }
+#struck {
+  width: 48px;
+  height: 60px;
+
+}
+.notifications p{
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  color: #496649;
+  margin-left: 20px;
+  flex:9
+      }
+
+.row button {
+  width: 125px;
+height: 40px;
+background: #143814;
+border-radius: 25px;
+flex:1.5;
+margin: auto 20px;
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 12px;
+color: #FFFFFF;
+margin-left: 30px;
+cursor: pointer;
+
+}
+.row button:active {
+  background-color:  #194019;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}

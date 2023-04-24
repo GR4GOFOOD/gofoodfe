@@ -1,0 +1,39 @@
+.main{
+  /* background-image: url(assets/img/background_FAQS); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.body{width: 1200px;margin: auto;}
+.main H1{
+  color: #143814;
+  border-bottom: 5px solid  red;
+  width: 100px;
+}
+.header1 ul{display: block;width: 100%;}
+.header1 ul{display: block;width: 100%;}
+.gr{
+  background-color: #143814;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+
+}
+ul{margin: 10px;}
+.body li{margin: 10px;list-style-type: none;}
+.body input{
+  background-color: inherit;
+  font-size: 20px;
+  margin: 5px;
+  border-color: black;
+}
+.border{
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+  font-size: 20px;
+  text-align: justify;
+}
