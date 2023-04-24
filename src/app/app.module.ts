@@ -7,8 +7,10 @@ import { AboutComponent } from './about/about.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { ContactComponent } from './contact/contact.component';
 import { PaymentsComponent } from './payments/payments.component';
+import { MenuComponent } from './menu/menu.component';
 import { SignupComponent } from './signup/signup.component';
 import { BlogComponent } from './blog/blog.component';
+
 
 
 
@@ -23,6 +25,7 @@ import { BlogComponent } from './blog/blog.component';
     SignInComponent,
     ContactComponent,
     PaymentsComponent,
+    MenuComponent,
     SignupComponent,
     BlogComponent
   ],
