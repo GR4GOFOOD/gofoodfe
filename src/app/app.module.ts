@@ -1,25 +1,33 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NotificationsComponent } from './notifications/notifications.component';
+import { AboutComponent } from './about/about.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { ContactComponent } from './contact/contact.component';
 import { PaymentsComponent } from './payments/payments.component';
-<<<<<<< HEAD
 import { MenuComponent } from './menu/menu.component';
-=======
 import { SignupComponent } from './signup/signup.component';
+import { BlogComponent } from './blog/blog.component';
 
->>>>>>> 13eed8f3ea93b6209c306eb4f7788236ff9443fa
+
+
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    NotificationsComponent,
+    AboutComponent,
+    SignInComponent,
+    ContactComponent,
     PaymentsComponent,
-<<<<<<< HEAD
-    MenuComponent
-=======
-    SignupComponent
->>>>>>> 13eed8f3ea93b6209c306eb4f7788236ff9443fa
+    MenuComponent,
+    SignupComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
