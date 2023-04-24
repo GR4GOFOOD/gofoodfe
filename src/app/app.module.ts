@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NotificationsComponent } from './notifications/notifications.component';
 import { AboutComponent } from './about/about.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { ContactComponent } from './contact/contact.component';
@@ -14,11 +15,13 @@ import { BlogComponent } from './blog/blog.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent
-    SignInComponent
+    NotificationsComponent,
+    AboutComponent,
+    SignInComponent,
     ContactComponent,
     PaymentsComponent,
     SignupComponent,
