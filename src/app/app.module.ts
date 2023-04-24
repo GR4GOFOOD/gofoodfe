@@ -15,7 +15,7 @@ import { BlogComponent } from './blog/blog.component';
 @NgModule({
   declarations: [
     AppComponent,
-    SignInComponent
+    SignInComponent,
     ContactComponent,
     PaymentsComponent,
     SignupComponent,
