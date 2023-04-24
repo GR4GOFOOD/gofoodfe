@@ -1,80 +1,125 @@
-<section class="relative py-20 lg:py-10 overflow-hidden">
-  <div class="container px-4 mx-auto">
-    <div class="max-w-7xl mx-auto">
-      <div class="flex flex-wrap -mx-4 xl:items-center">
-        <div class="w-full lg:w-1/2 xl:w-3/5 px-4 order-last lg:order-first">
-          <div class="relative max-w-xl mx-auto lg:mx-0 lg:max-w-3xl h-full">
-            <img class="block w-full h-166 lg:h-full object-cover rounded-3xl" src="../signin_img/image 16 (1).png" alt="Loading...">
-            <div class="absolute bottom-0 w-full left-0 p-4 sm:p-6">
-              <div class="p-6 sm:p-10 backdrop-blur-md backdrop-filter bg-black bg-opacity-30 rounded-5xl">
-                <h5 class="text-3xl text-white font-semibold mb-2">Selina Destin</h5>
-                <span class="block text-sm text-white font-semibold mb-6">Web Development Agency</span>
-                <p class="max-w-xl text-2xl text-white font-semibold mb-15">&quot;Untitled has become essential in starting every new project, we can&apos;t imagine working without it.&quot;</p>
-                <div>
-                  <button class="inline-block mr-2 h-1 w-5 rounded-full bg-white hover:bg-blue-100"></button>
-                  <button class="inline-block mr-2 h-1 w-5 rounded-full bg-white hover:bg-blue-100"></button>
-                  <button class="inline-block h-1 w-5 rounded-full bg-blue-900"></button>
-                </div>
-              </div>
+
+<!-- <div class="max-w-7xl mx-auto">
+  <img src="../assets/signup_img/image16.png" alt="">
+  <div class="flex flex-wrap -mx-4 xl:items-center " style="justify-content: flex-end;">
+    <div class="w-full lg:w-1/2 xl:w-2/5 px-4 mb-16 lg:mb-0">
+      <div class="max-w-md lg:py-20 mx-auto lg:mr-0">
+        <h3 class="font-heading text-4xl text-gray-900 font-semibold mb-4">Đăng ký</h3>
+        <span class="text-xs font-semibold text-gray-900">
+          <span>Don&rsquo;t have an account?</span>
+          <a class="ml-1 inline-block text-red-600 hover:text-red-900" href="#">Sign up</a>
+        </span>
+        <form action="">
+          <div class="mb-6">
+            <input class="w-full py-3 px-4 text-sm text-gray-900 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg" type="text" placeholder="Họ và tên">
+          </div>
+          <div class="mb-6">
+            <input class="w-full py-3 px-4 text-sm text-gray-900 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg" type="email" placeholder="pat@saturn.dev">
+          </div>
+          <div class="mb-6">
+            <input class="w-full py-3 px-4 text-sm text-gray-900 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg" type="text" placeholder="Số điện thoại">
+          </div>
+          <div class="mb-6">
+            <input class="w-full py-3 px-4 text-sm text-gray-900 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg" type="password" placeholder="Mật khẩu">
+          </div>
+          <div class="mb-7">
+            <div class="relative">
+              <input class="w-full py-3 px-4 text-sm text-gray-900 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg" type="password" placeholder="Nhập lại mật khẩu">
+              <button class="absolute top-1/2 right-0 mr-3 transform -translate-y-1/2 inline-block hover:scale-110 transition duration-100">
+                <img src="saturn-assets/images/sign-up/icon-eye.svg" alt="">
+              </button>
             </div>
           </div>
-        </div>
-        <div class="w-full lg:w-1/2 xl:w-2/5 px-4 mb-16 lg:mb-0">
-          <div class="max-w-md lg:py-20 mx-auto lg:mr-0">
-            <h3 class="font-heading text-4xl text-gray-900 font-semibold mb-4">Sign in to your account</h3>
-            <p class="text-lg text-gray-500 mb-10">Greetings on your return! We kindly request you to enter your details.</p>
-            <div class="flex flex-wrap mb-6 items-center -mx-2">
-              <div class="w-full md:w-1/2 px-2 mb-3 md:mb-0">
-                <a class="inline-flex w-full py-3 px-4 items-center justify-center rounded-full border border-gray-200 hover:border-gray-400 transition duration-100" href="#">
-                  <img src="saturn-assets/images/sign-up/icon-facebook.svg" alt="">
-                  <span class="ml-4 text-sm font-semibold text-gray-500">Login with Facebook</span>
-                </a>
-              </div>
-              <div class="w-full md:w-1/2 px-2">
-                <a class="inline-flex w-full py-3 px-4 items-center justify-center rounded-full border border-gray-200 hover:border-gray-400 transition duration-100" href="#">
-                  <img src="saturn-assets/images/sign-up/icon-apple.svg" alt="">
-                  <span class="ml-4 text-sm font-semibold text-gray-500">Login with Apple</span>
-                </a>
-              </div>
-            </div>
-            <div class="flex mb-6 items-center">
-              <div class="w-full h-px bg-gray-300"></div>
-              <span class="mx-4 text-sm font-semibold text-gray-500">Or</span>
-              <div class="w-full h-px bg-gray-300"></div>
-            </div>
-            <form action="">
-              <div class="mb-6">
-                <label class="block mb-1.5 text-sm text-gray-900 font-semibold" for="">Email</label>
-                <input class="w-full py-3 px-4 text-sm text-gray-900 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg" type="email" placeholder="pat@saturn.dev">
-              </div>
-              <div class="mb-7">
-                <div class="flex mb-1.5 items-center justify-between">
-                  <label class="block text-sm text-gray-900 font-semibold" for="">Password</label>
-                  <a class="inline-block text-xs font-semibold text-orange-900 hover:text-gray-900" href="#">Forget password?</a>
-                </div>
-                <div class="relative">
-                  <input class="w-full py-3 px-4 text-sm text-gray-900 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg" type="password" placeholder="Enter your password">
-                  <button class="absolute top-1/2 right-0 mr-3 transform -translate-y-1/2 inline-block hover:scale-110 transition duration-100">
-                    <img src="saturn-assets/images/sign-up/icon-eye.svg" alt="">
-                  </button>
-                </div>
-              </div>
-              <div class="flex mb-6 items-center">
-                <input type="checkbox" value="" id="">
-                <label class="ml-2 text-xs text-gray-800" for="">Remember for 30 days</label>
-              </div>
-              <button class="relative group block w-full mb-6 py-3 px-5 text-center text-sm font-semibold text-orange-50 bg-orange-900 rounded-full overflow-hidden" type="submit">
-                <div class="absolute top-0 right-full w-full h-full bg-gray-900 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"></div>
-                <span class="relative">Login</span>
-              </button>
-              <span class="text-xs font-semibold text-gray-900">
-                <span>Don&rsquo;t have an account?</span>
-                <a class="ml-1 inline-block text-orange-900 hover:text-orange-700" href="#">Sign up</a>
-              </span>
-            </form>
+          <div class="flex mb-6 items-center">
+            <input type="checkbox" value="" id="">
+            <label class="ml-2 text-xs text-gray-800" for="">Lưu mật khẩu</label>
+          </div>
+          <button class="relative group block w-full mb-6 py-3 px-5 text-center text-sm font-semibold text-orange-50 bg-red-600 rounded-full overflow-hidden" type="submit">
+            <div class="absolute top-0 right-full w-full h-full bg-gray-900 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"></div>
+            <span class="relative">Đăng Ký</span>
+          </button>
+        </form>
+        <div class="flex flex-wrap mb-6 items-center -mx-2">
+          <div class="w-full md:w-1/2 px-2 mb-3 md:mb-0">
+            <a class="inline-flex w-full py-3 px-4 items-center justify-center rounded-full border border-gray-200 hover:border-gray-400 transition duration-100" href="#">
+              <img src="../assets/signup_img/facebook2.png" alt="" height="20px" width="20px">
+              <span class="ml-4 text-sm font-semibold text-gray-500">Đăng ký với Facebook</span>
+            </a>
+          </div>
+          <div class="w-full md:w-1/2 px-2">
+            <a class="inline-flex w-full py-3 px-4 items-center justify-center rounded-full border border-gray-200 hover:border-gray-400 transition duration-100" href="#">
+              <img src="../assets/signup_img/search2.png" alt="" height="20px" width="20px">
+              <span class="ml-4 text-sm font-semibold text-gray-500">Đăng ký với Google</span>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</div> -->
+
+
+
+<div class="flex items-center min-h-screen bg-gray-50">
+  <div class="flex-1 h-full max-w-4xl mx-auto bg-white rounded-lg shadow-xl">
+    <div class="flex flex-col md:flex-row">
+      <div class="h-32 md:h-auto md:w-1/2">
+        <img class="object-cover w-full h-full" src="https://source.unsplash.com/user/erondu/1600x900"
+          alt="img" />
+      </div>
+      <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
+        <div class="w-full">
+          <div class="flex justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 text-blue-600" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path
+                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+            </svg>
+          </div>
+          <h1 class="mb-4 text-2xl font-bold text-center text-gray-700">
+            Sign up
+          </h1>
+          <div>
+            <label class="block text-sm">
+              Name
+            </label>
+            <input type="text"
+              class="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
+              placeholder="Name" />
+          </div>
+          <div class="mt-4">
+            <label class="block text-sm">
+              Email
+            </label>
+            <input type="email"
+              class="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
+              placeholder="Email Address" />
+          </div>
+          <div>
+            <label class="block mt-4 text-sm">
+              Password
+            </label>
+            <input
+              class="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
+              placeholder="Password" type="password" />
+          </div>
+          <button
+            class="block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg active:bg-blue-600 hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue"
+            href="#">
+            Sign up
+          </button>
+
+          <div class="mt-4 text-center">
+            <p class="text-sm">Don't have an account yet? <a href="#"
+                class="text-blue-600 hover:underline"> Sign up.</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
