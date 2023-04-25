@@ -11,6 +11,9 @@ import { MenuComponent } from './menu/menu.component';
 import { SignupComponent } from './signup/signup.component';
 import { BlogComponent } from './blog/blog.component';
 import { FAQSComponent } from './faqs/faqs.component';
+import { CartComponent } from './cart/cart.component';
+import { Cart2Component } from './cart2/cart2.component';
+
 
 
 
@@ -29,7 +32,10 @@ import { FAQSComponent } from './faqs/faqs.component';
     MenuComponent,
     SignupComponent,
     BlogComponent,
-    FAQSComponent
+    FAQSComponent,
+    CartComponent,
+    Cart2Component,
+
   ],
   imports: [
     BrowserModule,
