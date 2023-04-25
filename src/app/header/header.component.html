@@ -1,1 +1,83 @@
-<p>header works!</p>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+<script>
+  $(document).ready(function() {
+      $('#toggle').click(function() {
+          $('nav').slideToggle();
+      });
+  })
+</script>
+<body>
+<div class="headermain">
+  <div class="main_header">
+    <div class="container">
+        <header>
+            <h2><a href=""><img src="./img/logohead.JPG"  width="180px" style="padding-top: 0; margin-bottom: 0;"></a></h2>
+            <nav>
+            <ul >
+                <li class="search_icon">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="Search..." />
+                </li>
+                <li><a class="btn" href="../Sign/SIgnIN/signin.html" title="Register / Log In">Đăng nhập</a></li>
+                <li><a class="btn" href="../Sign/SignUP/signup.html" title="Register / Log In">Đăng ký</a></li>
+                <li><a href="../Blog/Cart.html" class="cart"><img src="../img/cart.png" width="15px"></a></li>
+            </ul>
+            </nav>
+        </header>
+        <div id="wrapper">
+            <div class="header">
+                <div id="toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav>
+                    <ul id="main-menu">
+                        <li><a href="./home1.html">TRANG CHỦ</a></li>
+                        <li><a href="#">MENU</a></li>
+                        <li><a href="../Trang_PREMIUM/Pre.test.html">PREMINUM</a></li>
+                        <li><a href="../Blog/Page1.html">BLOG</a></li>
+                        <li><a href="../About/about1.html">ABOUT</a></li>
+                        <li><a href="../FAQS/FAQS.HTML">FAQS</a></li>
+                        <li><a href="../Sign/LIENHE/lienhe.html">LIÊN HỆ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="hid">
+                <div id="toggle1">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav>
+                    <ul id="main-menu1">
+                        <li><a href="./home1.html">TRANG CHỦ</a></li>
+                        <li><a href="#">MENU</a></li>
+                        <li><a href="../Trang_PREMIUM/Pre.test.html">PREMINUM</a></li>
+                        <li><a href="../Blog/Page1.html">BLOG</a></li>
+                        <li><a href="../About/about1.html">ABOUT</a></li>
+                        <li><a href="../FAQS/FAQS.HTML">FAQS</a></li>
+                        <li><a href="../Sign/LIENHE/lienhe.html">LIÊN HỆ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="hid">
+              <div id="toggle1">
+                  <i class="fas fa-bars"></i>
+              </div>
+              <nav>
+                  <ul id="main-menu1">
+                      <li><a href="./home1.html">TRANG CHỦ</a></li>
+                      <li><a href="#">MENU</a></li>
+                      <li><a href="../Trang_PREMIUM/Pre.test.html">PREMINUM</a></li>
+                      <li><a href="../Blog/Page1.html">BLOG</a></li>
+                      <li><a href="../About/about1.html">ABOUT</a></li>
+                      <li><a href="../FAQS/FAQS.HTML">FAQS</a></li>
+                      <li><a href="../Sign/LIENHE/lienhe.html">LIÊN HỆ</a></li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+        </div>
+    </div>
+</div>
