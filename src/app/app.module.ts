@@ -13,7 +13,9 @@ import { MenuComponent } from './menu/menu.component';
 import { SignupComponent } from './signup/signup.component';
 import { BlogComponent } from './blog/blog.component';
 import { FAQSComponent } from './faqs/faqs.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { CartComponent } from './cart/cart.component';
+
 
 
 
@@ -37,7 +39,9 @@ import { CartComponent } from './cart/cart.component';
     SignupComponent,
     BlogComponent,
     FAQSComponent,
+    ProductDetailComponent,
     CartComponent,
+
 
 
   ],
