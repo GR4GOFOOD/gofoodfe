@@ -14,6 +14,10 @@ import { SignupComponent } from './signup/signup.component';
 import { BlogComponent } from './blog/blog.component';
 import { FAQSComponent } from './faqs/faqs.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { CartComponent } from './cart/cart.component';
+
+
+
 
 
 
@@ -35,7 +39,11 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     SignupComponent,
     BlogComponent,
     FAQSComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    CartComponent,
+
+
+
   ],
   imports: [
     BrowserModule,
