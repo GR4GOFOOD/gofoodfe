@@ -12,7 +12,7 @@ import { SignupComponent } from './signup/signup.component';
 import { BlogComponent } from './blog/blog.component';
 import { FAQSComponent } from './faqs/faqs.component';
 import { CartComponent } from './cart/cart.component';
-import { Cart2Component } from './cart2/cart2.component';
+
 
 
 
@@ -34,7 +34,7 @@ import { Cart2Component } from './cart2/cart2.component';
     BlogComponent,
     FAQSComponent,
     CartComponent,
-    Cart2Component,
+
 
   ],
   imports: [
