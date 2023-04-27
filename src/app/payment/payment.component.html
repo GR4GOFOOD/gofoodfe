@@ -1,0 +1,88 @@
+<h1>Trang thanh toán</h1>
+    <div class="tab_container">
+      <h2 class="payment-title">Chọn phương thức thanh toán</h2>
+      <form method="post" action="#">
+        <div class="pymt-radio">
+          <div class="row-payment-method payment-row-1">
+            <div class="select-icon">
+              <input type="radio" id="radio1" name="radios" value="pp"/>
+              <label for="radio1"></label>
+            </div>
+            <div class="select-txt">
+              <p class="pymt-type-name">Thanh toán khi nhận hàng</p>
+            </div>
+            <div class="select-logo">
+              <img
+                src="/my-app/src/assets/payments_image/Rectangle 79.png"
+                alt="PayPal"
+                width="50px"
+                height="45px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="pymt-radio">
+          <div class="row-payment-method payment-row-2">
+            <div class="select-icon hr">
+              <input
+                type="radio"
+                id="radio2"
+                name="radios"
+                value="pp"
+                checked
+              />
+              <label for="radio2"></label>
+            </div>
+            <div class="select-txt hr">
+              <p class="pymt-type-name">Thẻ ATM nội địa / Internet Banking</p>
+            </div>
+            <div class="select-logo">
+              <img
+                src="/my-app/src/assets/payments_image/Rectangle 80.png"
+                alt="credit-card"
+                width="50px"
+                height="45px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-cc">
+          <div class="row-cc">
+            <div class="cc-field">
+              <div class="cc-title">Họ và tên</div>
+              <input
+                type="text"
+                class="input cc-txt text-validated"
+                #name="ngModel" name="ho_va_ten" id="ho_va_ten" [(ngModel)]="payment.Ho_va_ten"/>
+            </div>
+          </div>
+          <div class="row-cc">
+            <div class="cc-field">
+              <div class="cc-title">Số điện thoại</div>
+              <input
+                type="text"
+                class="input cc-txt text-validated"
+                #name="ngModel" name="Sdt" id="Sdt" [(ngModel)]="payment.Sdt"/>
+            </div>
+          </div>
+          <div class="row-cc">
+            <div class="cc-field">
+              <div class="cc-title">Địa chỉ</div>
+              <input
+                type="text"
+                class="input cc-txt text-validated"
+                #name="ngModel" name="Diachi" id="Diachi" [(ngModel)]="payment.Diachi"/>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <div class="button-container">
+            <a href="./Cart.html">Tiếp tục mua sắm</a>
+          </div>
+          <div class="button-container">
+            <button (click)="postPayment()">
+            <a href="#"> Thanh toán </a></button>
+          </div>
+        </div>
+      </form>
+    </div>
