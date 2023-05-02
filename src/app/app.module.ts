@@ -12,12 +12,8 @@ import { SignupComponent } from './signup/signup.component';
 import { BlogComponent } from './blog/blog.component';
 import { FAQSComponent } from './faqs/faqs.component';
 import { PremmiumComponent } from './premmium/premmium.component';
-
-
-
-
-
-
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,7 +31,10 @@ import { PremmiumComponent } from './premmium/premmium.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
