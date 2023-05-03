@@ -1,0 +1,22 @@
+nav{
+    background-color: #143814;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.head{background-color: white;}
+.one a{
+    color: black;
+}
+nav {padding: 5px 10px;}
+nav a {margin-right: 50px;padding: 7px;}
+nav a :hover{color: #143814;}
+
+.one button{
+    color: black;
+    border: 1px solid rgba(213, 201, 201, 0.5);
+    padding: 10px;
+    margin-right: 10px;
+    justify-content: space-between;
+}
