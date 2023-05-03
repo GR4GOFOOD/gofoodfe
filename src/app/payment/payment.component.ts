@@ -23,5 +23,7 @@ export class PaymentComponent {
   error:(err)=>{this.errMessage=err}
   })
   }
+
+  
 }
 

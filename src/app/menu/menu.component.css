@@ -77,9 +77,16 @@ html, body{
 .tieuDe{
   color: white;
   margin-left: 15px;
+  font-size: 20px;
 }
 .sel img{
   border-radius: 1500px;
+  width: 80%;
+  height: 150px;
+  margin-left:auto;
+  margin-right:auto;
+  display: block;
+
 }
 .sel p{
   text-align: left;
@@ -468,3 +475,54 @@ header h2{
   .container{display: inline;}
   .container-footer{display: flex;flex-direction: column;}
 }
+
+
+/* ****
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 24px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+mat-card {
+  width: 300px;
+  margin: 16px;
+}
+
+.product-details {
+  padding: 16px;
+}
+
+.product-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.product-description {
+  font-size: 16px;
+  color: grey;
+  margin-top: 8px;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+} */
