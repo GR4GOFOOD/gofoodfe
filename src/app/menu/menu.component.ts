@@ -15,13 +15,14 @@ export class MenuComponent {
   saladproducts:any;
   drinkproducts:any;
   setsproducts:any;
-  bestseller:any;
-
+  bestproducts:any;
   errMessage: string=''
 
   constructor(private _service: ProductAPIService) {
     this._service.getProducts().subscribe({
-      next:(data)=>{this.products=data;
+      next:(data)=>{
+
+      this.products=data;
 
       this.riceproducts=data.filter((product: any) => {
         return product.ID >= 31 && product.ID <= 36;
@@ -43,17 +44,11 @@ export class MenuComponent {
         return product.ID >= 70 && product.ID <= 75;
       });
 
-      this.bestseller = data.filter((product: any) => {
-        return product.ID === 2
-          || product.ID === 25
-          || product.ID === 45
-          || product.ID === 70;
+      this.bestproducts = data.filter((product: any) => {
+        return product.ID >= 39 && product.ID <= 42
       });},
 
       error:(err)=>{this.errMessage=err}
       })
   }
 }
-
-
-
