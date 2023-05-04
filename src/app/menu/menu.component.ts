@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Product } from '../Product';
+import { Component } from '@angular/core';
 import { ProductAPIService } from '../product-api.service';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -18,7 +18,7 @@ export class MenuComponent {
   bestproducts:any;
   errMessage: string=''
 
-  constructor(private _service: ProductAPIService) {
+  constructor(private _service: ProductAPIService, private router: Router) {
     this._service.getProducts().subscribe({
       next:(data)=>{
 
@@ -50,5 +50,9 @@ export class MenuComponent {
 
       error:(err)=>{this.errMessage=err}
       })
+  }
+
+  onProductDetails(id: string){
+    this.router.navigate(['/product-detail', id]);
   }
 }

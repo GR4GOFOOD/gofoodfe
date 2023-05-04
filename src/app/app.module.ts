@@ -8,6 +8,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { RouterModule }  from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NotificationsComponent } from './notifications/notifications.component';
@@ -19,6 +20,7 @@ import { SignupComponent } from './signup/signup.component';
 import { BlogComponent } from './blog/blog.component';
 import { PaymentComponent } from './payment/payment.component';
 import { PaymentAtmComponent } from './payment-atm/payment-atm.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ import { PaymentAtmComponent } from './payment-atm/payment-atm.component';
     BlogComponent,
     PaymentComponent,
     PaymentAtmComponent,
+    ProductDetailComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { PaymentAtmComponent } from './payment-atm/payment-atm.component';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
