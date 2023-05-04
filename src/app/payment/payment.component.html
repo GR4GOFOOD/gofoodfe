@@ -13,7 +13,7 @@
             </div>
             <div class="select-logo">
               <img
-                src="/my-app/src/assets/payments_image/Rectangle 79.png"
+                src="assets/PaymentImage/Rectangle 79.png"
                 alt="PayPal"
                 width="50px"
                 height="45px"
@@ -27,9 +27,9 @@
               <input
                 type="radio"
                 id="radio2"
-                name="radios"
+                name="radio2"
                 value="pp"
-                checked
+                (click)="goToPaymentAtmPage()" [routerLink]="['/payment-atm']"
               />
               <label for="radio2"></label>
             </div>
@@ -38,7 +38,7 @@
             </div>
             <div class="select-logo">
               <img
-                src="/my-app/src/assets/payments_image/Rectangle 80.png"
+                src="assets/PaymentImage/Rectangle 80.png"
                 alt="credit-card"
                 width="50px"
                 height="45px"
@@ -53,7 +53,7 @@
               <input
                 type="text"
                 class="input cc-txt text-validated"
-                #name="ngModel" name="ho_va_ten" id="ho_va_ten" [(ngModel)]="payment.Ho_va_ten"/>
+                #name="ngModel" name="ho_va_ten" id="ho_va_ten" [(ngModel)]="payment.ho_va_ten"/>
             </div>
           </div>
           <div class="row-cc">
@@ -62,7 +62,7 @@
               <input
                 type="text"
                 class="input cc-txt text-validated"
-                #name="ngModel" name="Sdt" id="Sdt" [(ngModel)]="payment.Sdt"/>
+                #name="ngModel" name="Sdt" id="Sdt" [(ngModel)]="payment.sdt"/>
             </div>
           </div>
           <div class="row-cc">
@@ -71,13 +71,13 @@
               <input
                 type="text"
                 class="input cc-txt text-validated"
-                #name="ngModel" name="Diachi" id="Diachi" [(ngModel)]="payment.Diachi"/>
+                #name="ngModel" name="Diachi" id="Diachi" [(ngModel)]="payment.dia_chi"/>
             </div>
           </div>
         </div>
         <div class="button">
           <div class="button-container">
-            <a href="./Cart.html">Tiếp tục mua sắm</a>
+            <a href="#">Tiếp tục mua sắm</a>
           </div>
           <div class="button-container">
             <button (click)="postPayment()">

@@ -30,14 +30,14 @@ export class PaymentAtmComponent {
     this.router.navigate(['/payment']);
   }
 
-  isValidForm = true;
+  // isValidForm = true;
 
-  checkFormValidity() {
-    if (!this.paymentATM.Sothe || !this.paymentATM.Hieuluc_Thang || !this.paymentATM.Hieuluc_Ngay || !this.paymentATM.CVV_Code || !this.paymentATM.Tenchuthe) {
-      this.isValidForm = false;
-    } else {
-      this.isValidForm = true;
-    }
-  }
+  // checkFormValidity() {
+  //   if (!this.paymentATM.Sothe || !this.paymentATM.Hieuluc_Thang || !this.paymentATM.Hieuluc_Ngay || !this.paymentATM.CVV_Code || !this.paymentATM.Tenchuthe) {
+  //     this.isValidForm = false;
+  //   } else {
+  //     this.isValidForm = true;
+  //   }
+  // }
 
 }

@@ -5,7 +5,7 @@
         <div class="pymt-radio">
           <div class="row-payment-method payment-row-1">
             <div class="select-icon">
-              <a href ='../payment/payment.component.html'><input type="radio" id="radio1" name="radios" value="pp" (click)="goToPaymentPage()"/></a>
+              <input type="radio" id="radio1" name="radio1" value="pp" (click)="goToPaymentPage()" [routerLink]="['/payment']"/>
               <label for="radio1"></label>
             </div>
             <div class="select-txt">
@@ -13,7 +13,7 @@
             </div>
             <div class="select-logo">
               <img
-                src="/my-app/src/payments_image/Rectangle 79.png"
+                src="assets/PaymentImage/Rectangle 79.png"
                 alt="PayPal"
                 width="50px"
                 height="45px"
@@ -38,7 +38,7 @@
             </div>
             <div class="select-logo">
               <img
-                src="/my-app/src/payments_image/Rectangle 80.png"
+                src="assets/PaymentImage/Rectangle 80.png"
                 alt="creditcard"
                 width="50px"
                 height="45px"
@@ -49,17 +49,26 @@
         <div class="form-cc">
           <div class="row-cc">
             <div class="cc-field">
+              <div class="cc-title">Tên ngân hàng</div>
+              <input
+                type="text"
+                class="input cc-txt text-validated" required
+                #name="ngModel" name="ten_ngan_hang" id="ten_ngan_hang" [(ngModel)] = "paymentATM.ten_ngan_hang"/>
+            </div>
+          </div>
+          <div class="row-cc">
+            <div class="cc-field">
               <div class="cc-title">Số thẻ</div>
               <input
                 type="text"
                 class="input cc-txt text-validated" required
-                #name="ngModel" name="Sothe" id="Sothe" [(ngModel)] = "paymentATM.Sothe"/>
+                #name="ngModel" name="so_the" id="so_the" [(ngModel)] = "paymentATM.so_the"/>
             </div>
           </div>
           <div class="row-cc">
             <div class="cc-field">
               <div class="cc-title ">Hiệu lực thẻ</div>
-              <select class="input cc-ddl.text-validated" required #name="ngModel" name="Hieuluc_Thang" id="Hieuluc_Thang" [(ngModel)] = "paymentATM.Hieuluc_Thang">
+              <select class="input cc-ddl.text-validated text-validated" required #name="ngModel" name="hieu_luc_Thang" id="hieu_luc_Thang" [(ngModel)] = "paymentATM.hieu_luc_thang">
                 <option selected>01</option>
                 <option>02</option>
                 <option>03</option>
@@ -73,7 +82,7 @@
                 <option>11</option>
                 <option>12</option>
               </select>
-              <select class="input cc-ddl.text-validated" required #name="ngModel" name="Hieuluc_Ngay" id="Hieuluc_Ngay" [(ngModel)] = "paymentATM.Hieuluc_Ngay">
+              <select class="input cc-ddl.text-validated text-validated" required #name="ngModel" name="hieu_luc_Ngay" id="hieu_luc_Ngay" [(ngModel)] = "paymentATM.hieu_luc_ngay">
                 <option>01</option>
                 <option>02</option>
                 <option>03</option>
@@ -117,13 +126,13 @@
           <div class="row-cc">
             <div class="cc-field">
               <div class="cc-title">Tên chủ thẻ</div>
-              <input type="text" class="input cc-txt text-validated" required #name="ngModel" name="Hieuluc_Thang" id="Hieuluc_Thang" [(ngModel)] = "paymentATM.Tenchuthe" />
+              <input type="text" class="input cc-txt text-validated" required #name="ngModel" name="ten_chu_the" id="ten_chu_the" [(ngModel)] = "paymentATM.ten_chu_the" />
             </div>
           </div>
         </div>
         <div class="button">
           <div class="button-container">
-            <a href="./Cart.html">Tiếp tục mua sắm</a>
+            <a href="#">Tiếp tục mua sắm</a>
           </div>
           <div class="button-container">
             <button (click)="postPaymentATM()">

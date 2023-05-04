@@ -3,6 +3,7 @@ import { NgForm } from '@angular/forms';
 import { Payment } from '../Payment';
 import { PaymentAPIService } from '../payment-api.service';
 import { DomSanitizer } from '@angular/platform-browser';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-payment',
@@ -14,7 +15,7 @@ export class PaymentComponent {
   payment: Payment = new Payment();
   errMessage: string=''
 
-  constructor(private _service: PaymentAPIService) {}
+  constructor(private _service: PaymentAPIService, private router: Router ) {}
 
   postPayment()
   {
@@ -24,6 +25,9 @@ export class PaymentComponent {
   })
   }
 
-  
+  goToPaymentAtmPage() {
+    this.router.navigate(['/payment-atm']);
+  }
+
 }
 
