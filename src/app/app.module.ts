@@ -13,10 +13,14 @@ import { MenuComponent } from './menu/menu.component';
 import { SignupComponent } from './signup/signup.component';
 import { BlogComponent } from './blog/blog.component';
 import { FAQSComponent } from './faqs/faqs.component';
+import { PremmiumComponent } from './premmium/premmium.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { CartComponent } from './cart/cart.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -40,8 +44,10 @@ import { FormsModule } from '@angular/forms';
     SignupComponent,
     BlogComponent,
     FAQSComponent,
+    PremmiumComponent,
     ProductDetailComponent,
     CartComponent,
+
 
 
 
@@ -49,6 +55,9 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     ReactiveFormsModule,
     FormsModule
   ],
