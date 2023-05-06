@@ -1,95 +1,61 @@
-
-<div id="site-header">
+ <p>{{errMessage}}</p>
+<body>
+  <div id="site-header">
+    <div class="container">
+      <h1>GIỎ HÀNG</h1>
+    </div>
+  </div>
   <div class="container">
-    <h1>GIỎ HÀNG</h1>
+    <div id="cart">
+      <div class="cart-items" >
+
+        <div class="product" *ngFor=" let item of cartItems">
+          <div class="cart-item cart-column">
+            <header>
+              <a class="remove"  >
+                <img src="{{item.fashion_image}}" alt="" />
+                <h3>Remove product </h3>
+              </a>
+            </header>
+            <div class="content">
+              <h1>{{item.fashion_subject}}</h1>
+            </div>
+            <footer class="content">
+              <input class="cart-quantity-input" type="number" value="{{item.quantity}}" />
+              <h2 class="full-price">{{item.price}}</h2>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-<div class="list">
-  <div class="productLine">
-    <div class="check">
-      <input type="checkbox">
+  <!-- <div id="site-footer">
+    <div class="left">
+      <h2 class="subtotal">
+        Tạm tính: <span class="tamTinh"> đ</span>
+      </h2>
+      <h3 class="tax">Thuế (5%): <span class="thue"> đ</span></h3>
     </div>
-    <header>
-      <div class="remove">
-        <img src="assets/img/salad.png" >
-
-         <h3 >Remove product</h3>
-
-      </div>
-    </header>
-
-    <div class="content">
-      <div class="name">
-        <h1>Salad bơ và cá hồi</h1>
-      </div>
-      <div class="bottom">
-        <input class="cart-quantity-input" type="number" value="1" />
-                <h2 class="full-price">60000</h2>
-      </div>
+    <div class="right">
+      <h1>Tổng cộng: <span class="total-price"> đ</span></h1>
+      <a class="btn" href="./Payment.html">Thanh toán</a>
     </div>
-
-  </div>
-  <div class="productLine">
-    <div class="check">
-      <input type="checkbox">
-    </div>
-    <header>
-      <div class="remove">
-        <img src="assets/img/salad.png" >
-
-         <h3 >Remove product</h3>
-
-      </div>
-    </header>
-
-    <div class="content">
-      <div class="name">
-        <h1>Salad bơ và cá hồi</h1>
-      </div>
-      <div class="bottom">
-        <input class="cart-quantity-input" type="number" value="1" />
-                <h2 class="full-price">60000</h2>
-      </div>
-    </div>
-
-  </div>
-  <div class="productLine">
-    <div class="check">
-      <input type="checkbox">
-    </div>
-    <header>
-      <div class="remove">
-        <img src="assets/img/salad.png" >
-
-         <h3 >Remove product</h3>
-
-      </div>
-    </header>
-
-    <div class="content">
-      <div class="name">
-        <h1>Salad bơ và cá hồi</h1>
-      </div>
-      <div class="bottom">
-        <input class="cart-quantity-input" type="number" value="1" />
-                <h2 class="full-price">60000</h2>
-      </div>
-    </div>
-
-  </div>
-</div>
+  </div> -->
+  <!-- Hiển thị giá tiền -->
 <div id="site-footer">
   <div class="left">
-    <h2 class="subtotal">
-      Tạm tính: <span class="tamTinh">180 000</span> đ
-    </h2>
-    <h2 class="tax">Thuế (5%): <span class="thue">9 000</span> đ</h2>
+
+    <!-- <h2 class="subtotal">Tạm tính: <span class="tamTinh">{{tamTinh}} đ</span></h2> -->
+
+    <!-- <h3 class="tax">Thuế (5%): <span class="thue">{{thue}} đ</span></h3> -->
 
   </div>
   <div class="right">
-    <h1>Tổng cộng: <span class="total-price">209 000</span>đ</h1>
+    <!-- <h1>Tổng cộng: <span class="total-price">{{calculateTongCong() | currency:'VND':'symbol-narrow'}}</span></h1> -->
+    <!-- <h1>Tổng cộng: <span class="total-price">{{tongCong}} đ</span></h1> -->
+
     <a class="btn" href="./Payment.html">Thanh toán</a>
   </div>
 </div>
-
+</body>
 
