@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { CartService } from '../cart.service';
-import { Fashion } from '../Fashion';
+import { CartService } from '../service/cart.service';
+import { Fashion } from '../types/Fashion';
 
 @Component({
   selector: 'app-detail',
