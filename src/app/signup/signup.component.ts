@@ -1,30 +1,33 @@
-import { Component } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
-import { FormGroup } from '@angular/forms';
-
+import { Component, OnInit } from '@angular/core';
+import {FormGroup, FormControl, Validators} from '@angular/forms'
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.css']
 })
-export class SignupComponent {
-  signUpForm: FormGroup;
+export class SignupComponent implements OnInit{
 
-  constructor(private formBuilder: FormBuilder) {
-    this.signUpForm = this.formBuilder.group({
-      username: ['', Validators.pattern('[a-zA-Z0-9]+')],
-      email: ['', Validators.email],
-      phoneNumber: ['', Validators.required],
-      password: ['', Validators.minLength(6)],
-      confirmPassword: ['', Validators.required]
-    });
+  registerForm: FormGroup = new FormGroup({
+    name: new FormControl(null,[Validators.required]),
+    email: new FormControl(null,[Validators.email,Validators.required]),
+    password: new FormControl(null,[Validators.required]),
+    cpass: new FormControl(null,[Validators.required])
+  })
+  constructor(private _router: Router,private _userService: UserService) { }
+
+  ngOnInit(): void {
   }
+  register(){
+    if(!this.registerForm.valid || this.registerForm.controls.password.value != this.registerForm.controls.cpass.value){
+      console.log('Invalid Details');
+      return;
+    }
+    this._userService.register(JSON.stringify(this.registerForm.value))
+    .subscribe(data=> {console.log(data); this._router.navigate(['/login'])},
+    error=> {console.log(error);})
+    console.log(JSON.stringify(this.registerForm.value));
 
-  onSubmit() {
-    console.log('Submitted');
-    console.log('Form Data:', this.signUpForm.value);
   }
-
-
 }
