@@ -21,3 +21,51 @@ nav a :hover{color: #143814;}
     justify-content: space-between;
 }
 nav ul li a:hover{color: rgb(255, 255, 255); background-color: #348b34; width: 100%; padding: 5px;}
+
+.one button:nth-child(1){
+    border: 0px;
+}
+
+
+.search_icon{
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+.search_icon input#search{
+    width: 30px;
+    /* margin-right: px; */
+    margin-top: -15px;
+    padding:  5px;
+    padding-right: 0px;
+    background: inherit;
+    border: 1px solid rgb(235, 231, 231);
+    color: #fcfcfc;
+    padding-left: 35px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    -webkit-transition: width .55s ease;
+    -moz-transition: width .55s ease;
+    -ms-transition: width .55s ease;
+    -o-transition: width .55s ease;
+    transition: width .55s ease;
+}
+.search_icon input#search::-webkit-input-placeholder {color: #b9c0c5;}
+.search_icon input#search:-moz-placeholder {color: #b9c0c5;}
+.search_icon input#search::-moz-placeholder {color: #b9c0c5; }
+.search_icon input#search:-ms-input-placeholder {color: #b9c0c5;}
+.search_icon .icon{
+    position: absolute;
+    padding: 10px;
+    z-index: 1;
+    color: #000000;
+    margin-top: -10px;
+}
+  
+    /* ANIMATION EFFECTS */
+.search_icon input#search:focus, .container-2 input#search:active{outline:none;}
+.search_icon:hover input#search{outline:none; width: 300px;}
+.search_icon:hover .icon{color: #000000;}
+
