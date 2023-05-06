@@ -5,7 +5,7 @@ import { throwError } from 'rxjs/internal/observable/throwError';
 import { catchError } from 'rxjs/internal/operators/catchError';
 import { map } from 'rxjs/internal/operators/map';
 import { retry } from 'rxjs/internal/operators/retry';
-import { IContact } from 'src/contact';
+import { IContact } from 'src/app/types/contact';
 
 @Injectable({
   providedIn: 'root'

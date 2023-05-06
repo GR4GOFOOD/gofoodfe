@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Payment } from '../Payment';
-import { PaymentAPIService } from '../payment-api.service';
+import { Payment } from '../types/Payment';
+import { PaymentAPIService } from '../service/payment-api.service';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router} from '@angular/router';
 
