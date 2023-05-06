@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { PaymentATM } from '../Payment';
-import { PaymentAPIATMService } from '../payment-api-atm.service';
+import { PaymentATM } from '../types/Payment';
+import { PaymentAPIATMService } from '../service/payment-api-atm.service';
 import { Router, ActivatedRoute } from '@angular/router';
 // Import thư viện Router
 
