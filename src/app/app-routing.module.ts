@@ -4,12 +4,15 @@ import { Router } from '@angular/router';
 import { PaymentComponent } from './payment/payment.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { PaymentAtmComponent } from './payment-atm/payment-atm.component';
+import { MenuComponent } from './menu/menu.component';
 
 const routes: Routes = [
   { path: 'payment', component: PaymentComponent },
     // { path: 'cart', component: CartComponent },
-  { path: 'paymentATM', component: PaymentAtmComponent },
-  { path: 'product-detail/:id', component: ProductDetailComponent }
+  { path: 'payment-atm', component: PaymentAtmComponent },
+  { path: 'product-detail/:id', component: ProductDetailComponent },
+  // { path: '', component: PaymentComponent},
+  { path: '', component: MenuComponent},
 ];
 
 @NgModule({

@@ -26,6 +26,7 @@ export class PaymentComponent {
   }
 
   goToPaymentAtmPage() {
+    console.log('payment-atm');
     this.router.navigate(['/payment-atm']);
   }
 
