@@ -13,12 +13,18 @@ const routes: Routes = [
   { path: 'product-detail/:id', component: ProductDetailComponent },
   // { path: '', component: PaymentComponent},
   { path: '', component: MenuComponent},
+import { AboutComponent } from './about/about.component';
+
+
+const routes: Routes = [
+  {path: "about", component: AboutComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule {
 
   // Inject Router vào constructor
@@ -32,4 +38,10 @@ export class AppRoutingModule {
     this.router.navigate(['/payment-atm']);
   }
 }
+
+
+export class AppRoutingModule {}
+export const RoutingComponent=[
+  AboutComponent
+]
 

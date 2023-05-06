@@ -11,6 +11,8 @@ import { MatCardModule } from '@angular/material/card';
 import { RouterModule }  from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { AboutComponent } from './about/about.component';
 import { SignInComponent } from './sign-in/sign-in.component';
@@ -21,10 +23,30 @@ import { BlogComponent } from './blog/blog.component';
 import { PaymentComponent } from './payment/payment.component';
 import { PaymentAtmComponent } from './payment-atm/payment-atm.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { FAQSComponent } from './faqs/faqs.component';
+import { PremmiumComponent } from './premmium/premmium.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { CartComponent } from './cart/cart.component';
+
+
+
+
+
+
+
+
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
+    FooterComponent,
     NotificationsComponent,
     AboutComponent,
     SignInComponent,
@@ -35,6 +57,15 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     PaymentComponent,
     PaymentAtmComponent,
     ProductDetailComponent,
+    HomepageComponent,
+    FAQSComponent,
+    PremmiumComponent,
+    ProductDetailComponent,
+    CartComponent,
+
+
+
+
   ],
   imports: [
     BrowserModule,
@@ -46,7 +77,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     MatIconModule,
     MatButtonModule,
     MatCardModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

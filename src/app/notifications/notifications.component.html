@@ -1,1 +1,31 @@
-<p>notifications works!</p>
+
+<script>
+    $(document).ready(function() {
+        $('#toggle').click(function() {
+            $('nav').slideToggle();
+        });
+    })
+</script>
+
+
+<!-- MAIN-CONTENT -->
+<div class="main">
+        <div class="ThongBao">
+        <img src="assets/img/detail.png" alt="">
+            <p>Thông báo</p>
+        </div>
+        <div class="notifications">
+            <div class="row"><img src="assets/img/9025885_shopping_cart_icon.png" alt="">
+                <p>Bạn vừa thêm món xxx vào giỏ hàng</p> <button>Xem chi tiết</button></div>
+
+            <div class="row"><img src="assets/img/1737371_notcorrect_sign_wrong_x_icon.png" alt="">
+                <p>Bạn vừa hủy món xxx vào giỏ hàng</p>  <button>Xem chi tiết</button></div>
+            <div class="row"> <img src="assets/img/5016689.png" id="struck">
+                <p>Đơn hàng của bạn đã được giao đến</p>  <button>Xem chi tiết</button></div>
+            <div class="row"><img src="assets/img/3702393_discount_flash_sale_shopping_icon.png" alt="">
+                <p>Sự kiện "XXX" tháng 3</p>  <button>Xem chi tiết</button></div>
+            <div class="row">  <img src="assets/img/216512_warning_icon.png" alt="">
+                    <p>Thông báo lỗi "XXX" hệ thống</p><button>Xem chi tiết</button></div>
+        </div>
+</div>
+

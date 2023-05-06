@@ -1,0 +1,277 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.hm1{
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hm1 img{
+  display: block;
+  width: 100vw;
+  height: auto;
+}
+
+.hm1 p{
+  position: absolute;
+  font-weight: bold;
+  font-size: 45px;
+  color: white;
+  height: 74px;
+}
+
+.hm1 span{
+  position: absolute;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 54px;
+  color: white;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.hm1 button{
+  position: absolute;
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  margin-top: 150px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+  width: fit-content;
+  background-color: #E52C2C;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hm2 {
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.image-container img {
+  display: block;
+  width: 100vw;
+  height: auto;
+}
+
+.title{
+  position: absolute;
+  top: 250px;
+  font-weight: bold;
+  font-size: 45px;
+  color: white;
+  height: 74px;
+  letter-spacing: 20px;
+}
+
+.box {
+  position: absolute;
+  top: 150px;
+  width: 100px;
+  border-radius: 10px;
+  margin: 250px ;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.box .item{
+  flex: 0 0 100%;
+  padding: 20px;
+  width: 500px;
+  height: 400px;
+  border-radius: 45px;
+  background-color: white;
+  margin: 10px;
+  white-space: nowrap;
+  transform: scale(0.75);
+}
+/*
+.box .circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  transform: translateY(-25px);
+  background-image: url(/src/assets/homepg_img/save1.png);
+  background-size: 100%;
+} */
+
+.box .text-sp{
+  position: relative;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+.box span{
+  position: relative;
+  color: #E52C2C;
+}
+
+.hm3{
+  position: relative;
+  margin-top: 50px;
+  align-items: center;
+  text-align: center;
+  /* box-sizing: border-box; */
+}
+
+.hm3 span{
+  position: relative;
+  font-weight: bold;
+  font-size: 45px;
+  color: black;
+  height: 74px;
+  text-align: center;
+}
+
+.border{
+  opacity: 0.5;
+  margin-top: 20px;
+  border-bottom: 8px solid red;
+  position: relative;
+  height: 5px;
+  width: 150px;
+  text-align: center;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hm3 .mini{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.mini-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.mini-content img{
+  width: 30%;
+  margin: 50px;
+}
+
+.mini-content p {
+  font-size: 20px;
+  font-style: normal;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  /* width: 100%; */
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.mini-content .line {
+  position: relative;
+  height: 5px;
+  width: 150px;
+  margin-left: 10px;
+  background-color: black;
+  opacity: 0.7;
+}
+
+
+.hm4{
+  position: relative;
+  margin-top: 50px;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+
+  padding: 50px;
+  background-color: #F3FFF3;
+  border: 1px solid black;
+
+}
+.hm4 .head {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Căn trái */
+  justify-content: center;
+  height: 74px;
+  margin-left: 50px;
+
+}
+
+.head h1 {
+  position: relative;
+  font-weight: 100;
+  font-size: 45px;
+  color: black;
+  text-align: left;
+}
+
+.head h2 {
+  position: relative;
+  font-weight: 700;
+  font-size: 45px;
+  color: black;
+  text-align: left;
+  /* margin-left: 10px; Khoảng cách giữa h1 và h2 */
+  align-self: flex-start; /* Căn trái */
+}
+
+.bor{
+  margin-top: 30px;
+  border-bottom: 8px solid #126223;
+  position: relative;
+  height: 5px;
+  width: 150px;
+  text-align: center;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hm4 .save{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.item{
+  margin: 20px;
+}
+
+.item img{
+  width: 50%;
+  margin: 50px;
+}
+
+.item p{
+  /* position: relative; */
+  font-size: 25px;
+  color: black;
+  text-align: center;
+}
