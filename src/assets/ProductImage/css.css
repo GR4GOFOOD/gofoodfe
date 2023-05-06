@@ -1,0 +1,104 @@
+/* HEADER */
+.header{
+    display: inline-flex;
+    width: 100%;
+    font-size: 27px;
+}
+.header:nth-child(1){
+    flex:8;
+}
+.header:nth-child(2){
+flex: 1;
+margin-right: 30px;
+}
+.cart{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+input{
+    background-color: white;
+    border: 2px solid white;
+}
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    background-color: #143814;
+}
+.menu li{
+    margin: auto;
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.menu{
+    background-color: #143814;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: auto;
+    font-weight: bold;
+}
+
+/* BODY */
+.main{
+    background-image: url(./FAQS/img/an\ sach\ 1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.body
+{
+    width: 1200px;
+    margin: auto;
+}
+.main H1{
+    color: #143814;
+    border-bottom: 5px solid red;
+    width: 100px;
+}
+.gr{
+    background-color: #143814;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+}
+ul{
+    margin: 10px;
+}
+.body li{
+    margin: 10px;
+    list-style-type: none;
+}
+.body input{
+    background-color: inherit;
+    font-size: 20px;
+    margin: 5px;
+    border-color: black;
+}
+.border{
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify; 
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #143814;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+.footer p{
+    margin: 0;
+}
+
+
