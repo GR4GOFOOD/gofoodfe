@@ -12,9 +12,11 @@ import { PaymentsComponent } from './payments/payments.component';
 import { MenuComponent } from './menu/menu.component';
 import { SignupComponent } from './signup/signup.component';
 import { BlogComponent } from './blog/blog.component';
+import { HomepageComponent } from './homepage/homepage.component';
 import { FAQSComponent } from './faqs/faqs.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { CartComponent } from './cart/cart.component';
+
 
 
 
@@ -38,9 +40,11 @@ import { CartComponent } from './cart/cart.component';
     MenuComponent,
     SignupComponent,
     BlogComponent,
+    HomepageComponent,
     FAQSComponent,
     ProductDetailComponent,
     CartComponent,
+
 
 
 
