@@ -14,6 +14,9 @@ import { SignupComponent } from './signup/signup.component';
 import { BlogComponent } from './blog/blog.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { FAQSComponent } from './faqs/faqs.component';
+import { PremmiumComponent } from './premmium/premmium.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { CartComponent } from './cart/cart.component';
 
@@ -42,6 +45,7 @@ import { CartComponent } from './cart/cart.component';
     BlogComponent,
     HomepageComponent,
     FAQSComponent,
+    PremmiumComponent,
     ProductDetailComponent,
     CartComponent,
 
@@ -51,7 +55,10 @@ import { CartComponent } from './cart/cart.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
