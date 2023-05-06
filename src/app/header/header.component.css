@@ -20,3 +20,4 @@ nav a :hover{color: #143814;}
     margin-right: 10px;
     justify-content: space-between;
 }
+nav ul li a:hover{color: rgb(255, 255, 255); background-color: #348b34; width: 100%; padding: 5px;}
