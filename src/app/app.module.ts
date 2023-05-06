@@ -25,6 +25,7 @@ import { PaymentAtmComponent } from './payment-atm/payment-atm.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { FAQSComponent } from './faqs/faqs.component';
+<<<<<<< HEAD
 import { PremmiumComponent } from './premmium/premmium.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -42,6 +43,13 @@ import { CartComponent } from './cart/cart.component';
 
 
 
+=======
+
+import { CartComponent } from './cart/cart.component';
+import { ListComponent } from './list/list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DetailComponent } from './detail/detail.component';
+>>>>>>> bafa6078f040833fb5215756db8dedd4380339a4
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,6 +67,7 @@ import { CartComponent } from './cart/cart.component';
     ProductDetailComponent,
     HomepageComponent,
     FAQSComponent,
+<<<<<<< HEAD
     PremmiumComponent,
     ProductDetailComponent,
     CartComponent,
@@ -66,10 +75,17 @@ import { CartComponent } from './cart/cart.component';
 
 
 
+=======
+
+    CartComponent,
+    ListComponent,
+    DetailComponent,
+>>>>>>> bafa6078f040833fb5215756db8dedd4380339a4
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+<<<<<<< HEAD
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
@@ -79,6 +95,9 @@ import { CartComponent } from './cart/cart.component';
     MatCardModule,
     RouterModule,
     ReactiveFormsModule,
+=======
+    HttpClientModule
+>>>>>>> bafa6078f040833fb5215756db8dedd4380339a4
   ],
   providers: [],
   bootstrap: [AppComponent]
