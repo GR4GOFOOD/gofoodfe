@@ -12,6 +12,7 @@ import { PaymentsComponent } from './payments/payments.component';
 import { MenuComponent } from './menu/menu.component';
 import { SignupComponent } from './signup/signup.component';
 import { BlogComponent } from './blog/blog.component';
+import { HomepageComponent } from './homepage/homepage.component';
 import { FAQSComponent } from './faqs/faqs.component';
 import { PremmiumComponent } from './premmium/premmium.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -42,6 +43,7 @@ import { CartComponent } from './cart/cart.component';
     MenuComponent,
     SignupComponent,
     BlogComponent,
+    HomepageComponent,
     FAQSComponent,
     PremmiumComponent,
     ProductDetailComponent,
