@@ -15,19 +15,9 @@ export class SignupComponent implements OnInit{
     password: new FormControl(null,[Validators.required]),
     cpass: new FormControl(null,[Validators.required])
   })
-  constructor(private _router: Router,private _userService: UserService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
-  register(){
-    if(!this.registerForm.valid || this.registerForm.controls.password.value != this.registerForm.controls.cpass.value){
-      console.log('Invalid Details');
-      return;
-    }
-    this._userService.register(JSON.stringify(this.registerForm.value))
-    .subscribe(data=> {console.log(data); this._router.navigate(['/login'])},
-    error=> {console.log(error);})
-    console.log(JSON.stringify(this.registerForm.value));
 
-  }
 }

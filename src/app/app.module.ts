@@ -22,17 +22,24 @@ import { PaymentComponent } from './payment/payment.component';
 import { PaymentAtmComponent } from './payment-atm/payment-atm.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { FAQSComponent } from './faqs/faqs.component';
-
 import { PremmiumComponent } from './premmium/premmium.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
-import { LogoutComponent } from './logout/logout.component';
-
-
-
 import { CartComponent } from './cart/cart.component';
-import { ListComponent } from './list/list.component';
 import { DetailComponent } from './detail/detail.component';
+import { ListComponent } from './list/list.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+
+
+
+
+
+
+
+
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,23 +50,21 @@ import { DetailComponent } from './detail/detail.component';
     SignInComponent,
     ContactComponent,
     MenuComponent,
+    SignupComponent,
     BlogComponent,
     PaymentComponent,
     PaymentAtmComponent,
-    ProductDetailComponent,
     HomepageComponent,
     FAQSComponent,
-    PremmiumComponent,
-    ProductDetailComponent,
-    CartComponent,
-    LogoutComponent,
-
     CartComponent,
     ListComponent,
     DetailComponent,
+    PremmiumComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
@@ -69,9 +74,9 @@ import { DetailComponent } from './detail/detail.component';
     // MatCardModule,
     RouterModule,
     ReactiveFormsModule,
-    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
