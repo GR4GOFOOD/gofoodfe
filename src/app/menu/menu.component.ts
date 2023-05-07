@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProductAPIService } from '../product-api.service';
+import { ProductAPIService } from '../service/product-api.service';
 import { Router} from '@angular/router';
 
 @Component({

@@ -1,17 +1,17 @@
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError, map, Observable, retry, throwError } from 'rxjs';
-import { PaymentATM } from './Payment';
+import { Payment } from '../types/Payment';
 
 @Injectable({
   providedIn: 'root'
 })
 
-export class PaymentAPIATMService {
+export class PaymentAPIService {
 
   constructor(private _http: HttpClient) { }
 
-  getPaymentATMs():Observable<any>
+  getPayments():Observable<any>
   {
   const headers=new HttpHeaders().set("Content-Type","text/plain;charset=utf-8")
 
@@ -20,8 +20,8 @@ export class PaymentAPIATMService {
   responseType:"text"
   }
 
-  return this._http.get<any>("/paymentATMs",requestOptions).pipe(
-  map(res=>JSON.parse(res) as Array<PaymentATM>),
+  return this._http.get<any>("/payments",requestOptions).pipe(
+  map(res=>JSON.parse(res) as Array<Payment>),
   retry(3),
   catchError(this.handleError))
   }
@@ -29,7 +29,7 @@ export class PaymentAPIATMService {
   return throwError(()=>new Error(error.message))
   }
 
-  postPaymentATM(aPaymentATM:any):Observable<any>{
+  postPayment(aPayment:any):Observable<any>{
 
     const headers=new HttpHeaders().set("Content-Type","application/json;charset=utf-8")
 
@@ -37,8 +37,8 @@ export class PaymentAPIATMService {
     headers:headers,
     responseType:"text"
     }
-    return this._http.post<any>("/paymentATMs",JSON.stringify(aPaymentATM),requestOptions).pipe(
-    map(res=>JSON.parse(res) as PaymentATM),
+    return this._http.post<any>("/payments",JSON.stringify(aPayment),requestOptions).pipe(
+    map(res=>JSON.parse(res) as Payment),
     retry(3),
     catchError(this.handleError))
     }
