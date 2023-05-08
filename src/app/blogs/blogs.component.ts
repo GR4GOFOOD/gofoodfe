@@ -4,8 +4,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-blogs',
-  templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.css']
+  templateUrl: './blogs.component.html',
+  styleUrls: ['./blogs.component.css']
 })
 export class BlogsComponent implements OnInit {
   data: any = [];
@@ -83,4 +83,3 @@ export class BlogsComponent implements OnInit {
     this.getData();
   }
 }
-
