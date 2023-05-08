@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CartService } from '../service/cart.service';
 import { Fashion } from '../types/Fashion';
+import { Product } from '../types/Product';
 
 @Component({
   selector: 'app-detail',
@@ -9,7 +10,7 @@ import { Fashion } from '../types/Fashion';
   styleUrls: ['./detail.component.css']
 })
 export class DetailComponent {
-  fashion: Fashion | null = null;
+  product: Product | null = null;
 
   constructor(
     private _service: CartService,
@@ -19,17 +20,17 @@ export class DetailComponent {
 
   ngOnInit(): void {
     const id = this.activatedRoute.snapshot.paramMap.get('id');
-    this._service.getFashionid(id).subscribe(data => {
-      this.fashion = data;
+    this._service.getProductid(id).subscribe(data => {
+      this.product = data;
     });
   }
 
   addToCart() {
-    if (this.fashion) {
-      this._service.addToCart(this.fashion).subscribe(
+    if (this.product) {
+      this._service.addToCart(this.product).subscribe(
         (response) => {
           console.log('Sản phẩm đã được thêm vào giỏ hàng');
-          console.log('Dữ liệu sản phẩm:', this.fashion);
+          console.log('Dữ liệu sản phẩm:', this.product);
           console.log('Đường dẫn đã được gửi đi:', response.url);
         },
         (err) => {

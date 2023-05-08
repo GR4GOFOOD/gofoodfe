@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CartService } from '../service/cart.service';
 import { Fashion } from '../types/Fashion';
+import { Product } from '../types/Product';
 
 @Component({
   selector: 'app-list',
@@ -8,17 +9,18 @@ import { Fashion } from '../types/Fashion';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent {
-  fashion: Fashion[]=[];
-  fashions: any;
+  product: Product[]=[];
+  products: any;
   errMessage: string='';
+
   constructor(public _service:CartService) {
-    this._service.getFashions().subscribe({
-      next:(data:Fashion)=>{this.fashions=data},
+    this._service.getProducts().subscribe({
+      next:(data:Product)=>{this.products=data},
       error:(err)=>{this.errMessage=err.message},
     })
   }
-  addToCart(fashion: Fashion) {
-    this._service.addToCart(fashion).subscribe(
+  addToCart(product: Product) {
+    this._service.addToCart(product).subscribe(
       () => {
         console.log('Sản phẩm đã được thêm vào giỏ hàng');
       },
