@@ -16,7 +16,6 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { MenuComponent } from './menu/menu.component';
 import { SignupComponent } from './signup/signup.component';
-import { BlogComponent } from './blog/blog.component';
 import { PaymentComponent } from './payment/payment.component';
 import { PaymentAtmComponent } from './payment-atm/payment-atm.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -31,6 +30,7 @@ import { AccountDetailComponent } from './account-detail/account-detail.componen
 import { AccountEditComponent } from './account-edit/account-edit.component';
 import { AccountOrderComponent } from './account-order/account-order.component';
 import { BlogsDetailComponent } from './blogs-detail/blogs-detail.component';
+import { BlogsComponent } from './blogs/blogs.component';
 
 
 
@@ -53,7 +53,6 @@ import { BlogsDetailComponent } from './blogs-detail/blogs-detail.component';
     ContactComponent,
     MenuComponent,
     SignupComponent,
-    BlogComponent,
     PaymentComponent,
     PaymentAtmComponent,
     HomepageComponent,
@@ -66,7 +65,8 @@ import { BlogsDetailComponent } from './blogs-detail/blogs-detail.component';
     AccountDetailComponent,
     AccountEditComponent,
     AccountOrderComponent,
-    BlogsDetailComponent
+    BlogsDetailComponent,
+    BlogsComponent
   ],
   imports: [
     BrowserModule,
