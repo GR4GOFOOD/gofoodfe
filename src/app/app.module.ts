@@ -30,6 +30,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { AccountDetailComponent } from './account-detail/account-detail.component';
 import { AccountEditComponent } from './account-edit/account-edit.component';
 import { AccountOrderComponent } from './account-order/account-order.component';
+import { BlogsDetailComponent } from './blogs-detail/blogs-detail.component';
 
 
 
@@ -64,7 +65,8 @@ import { AccountOrderComponent } from './account-order/account-order.component';
     ProductDetailComponent,
     AccountDetailComponent,
     AccountEditComponent,
-    AccountOrderComponent
+    AccountOrderComponent,
+    BlogsDetailComponent
   ],
   imports: [
     BrowserModule,
