@@ -14,3 +14,10 @@ export class Account{
   )
   {}
 }
+export class IUser{
+  constructor(
+    public Email: string="",
+    public password: string="",
+  )
+  {}
+}
