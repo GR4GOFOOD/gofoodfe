@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../api.service';
+import { ApiService } from '../service/api.service';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-blogs',
-  templateUrl: './blogs.component.html',
-  styleUrls: ['./blogs.component.css']
+  templateUrl: './blog.component.html',
+  styleUrls: ['./blog.component.css']
 })
 export class BlogsComponent implements OnInit {
   data: any = [];

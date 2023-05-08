@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ApiService } from '../api.service';
+import { ApiService } from '../service/api.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -26,7 +26,7 @@ export class BlogsDetailComponent {
       }
     );
   }
-  
+
   ngOnInit() {
     this.getData();
   }
