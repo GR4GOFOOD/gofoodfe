@@ -33,6 +33,28 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 
+
+// const routes: Routes = [
+//   { path: 'payment', component: PaymentComponent },
+//     // { path: 'cart', component: CartComponent },
+//   { path: 'payment-atm', component: PaymentAtmComponent },
+//   { path: 'product-detail/:id', component: ProductDetailComponent },
+//   // { path: '', component: PaymentComponent},
+//   { path: '', component: MenuComponent},
+// import { AboutComponent } from './about/about.component';
+// import { ListComponent } from './list/list.component';
+// import { CartComponent } from './cart/cart.component';
+// // import { CartService } from './cart.service';
+
+// import { DetailComponent } from './detail/detail.component';
+// const routes: Routes = [
+//   {path: "about", component: AboutComponent},
+//   {path:"list",component:ListComponent},
+//   {path:"cart",component:CartComponent},
+//  {path:"detail/:id", component:DetailComponent}
+// ];
+
+
 export class AppRoutingModule {
    // Inject Router vào constructor
    constructor(private router: Router) {}
@@ -45,6 +67,7 @@ export class AppRoutingModule {
     //    this.router.navigate(['/payment-atm']);
     //  }
 }
+
 export const RoutingComponent=[
   AboutComponent,
   PremmiumComponent,

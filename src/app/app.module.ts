@@ -27,7 +27,9 @@ import { CartComponent } from './cart/cart.component';
 import { DetailComponent } from './detail/detail.component';
 import { ListComponent } from './list/list.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
-import { LoginComponent } from './login/login.component';
+import { AccountDetailComponent } from './account-detail/account-detail.component';
+import { AccountEditComponent } from './account-edit/account-edit.component';
+import { AccountOrderComponent } from './account-order/account-order.component';
 
 
 
@@ -60,7 +62,9 @@ import { LoginComponent } from './login/login.component';
     DetailComponent,
     PremmiumComponent,
     ProductDetailComponent,
-    LoginComponent
+    AccountDetailComponent,
+    AccountEditComponent,
+    AccountOrderComponent
   ],
   imports: [
     BrowserModule,
@@ -79,3 +83,4 @@ import { LoginComponent } from './login/login.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
