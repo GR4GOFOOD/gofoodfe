@@ -53,7 +53,7 @@ import { BlogsDetailComponent } from './blogs-detail/blogs-detail.component';
     ContactComponent,
     MenuComponent,
     SignupComponent,
-    BlogComponent,
+    // BlogComponent,
     PaymentComponent,
     PaymentAtmComponent,
     HomepageComponent,

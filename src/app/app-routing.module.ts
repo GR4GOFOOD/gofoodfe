@@ -10,11 +10,13 @@ import { CartComponent } from './cart/cart.component';
 import { DetailComponent } from './detail/detail.component';
 import { PremmiumComponent } from './premmium/premmium.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+
 const routes: Routes = [
   { path: 'payment', component: PaymentComponent },
     // { path: 'cart', component: CartComponent },
   { path: 'payment-atm', component: PaymentAtmComponent },
-  // { path: 'product-detail/:id', component: ProductDetailComponent },
+  { path: 'product-detail/:id', component: ProductDetailComponent },
   // { path: '', component: PaymentComponent},
   // { path: '', component: MenuComponent},
   {path: "about", component: AboutComponent},

@@ -3,7 +3,7 @@ import { ApiService } from '../api.service';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-blogs',
+  selector: 'app-blog',
   templateUrl: './blogs.component.html',
   styleUrls: ['./blogs.component.css']
 })
