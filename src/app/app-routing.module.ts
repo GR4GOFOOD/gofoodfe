@@ -8,6 +8,8 @@ import { AboutComponent } from './about/about.component';
 import { ListComponent } from './list/list.component';
 import { CartComponent } from './cart/cart.component';
 import { DetailComponent } from './detail/detail.component';
+import { PremmiumComponent } from './premmium/premmium.component';
+import { ContactComponent } from './contact/contact.component';
 const routes: Routes = [
   { path: 'payment', component: PaymentComponent },
     // { path: 'cart', component: CartComponent },
@@ -18,7 +20,9 @@ const routes: Routes = [
   {path: "about", component: AboutComponent},
   {path:"list",component:ListComponent},
   {path:"cart",component:CartComponent},
-  {path:"detail/:id", component:DetailComponent}
+  {path:"detail/:id", component:DetailComponent},
+  {path:'premmium', component: PremmiumComponent},
+  {path: 'contact', component: ContactComponent}
 // import { CartService } from './cart.service';
 ]
 
@@ -29,19 +33,44 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 
+
+// const routes: Routes = [
+//   { path: 'payment', component: PaymentComponent },
+//     // { path: 'cart', component: CartComponent },
+//   { path: 'payment-atm', component: PaymentAtmComponent },
+//   { path: 'product-detail/:id', component: ProductDetailComponent },
+//   // { path: '', component: PaymentComponent},
+//   { path: '', component: MenuComponent},
+// import { AboutComponent } from './about/about.component';
+// import { ListComponent } from './list/list.component';
+// import { CartComponent } from './cart/cart.component';
+// // import { CartService } from './cart.service';
+
+// import { DetailComponent } from './detail/detail.component';
+// const routes: Routes = [
+//   {path: "about", component: AboutComponent},
+//   {path:"list",component:ListComponent},
+//   {path:"cart",component:CartComponent},
+//  {path:"detail/:id", component:DetailComponent}
+// ];
+
+
 export class AppRoutingModule {
    // Inject Router vào constructor
    constructor(private router: Router) {}
 
    // Xử lý khi nhấn vào radio
-     goToPaymentPage() {
-       this.router.navigate(['/payment']);
-     }
-     goToPaymentAtmPage() {
-       this.router.navigate(['/payment-atm']);
-     }
+    //  goToPaymentPage() {
+    //    this.router.navigate(['/payment']);
+    //  }
+    //  goToPaymentAtmPage() {
+    //    this.router.navigate(['/payment-atm']);
+    //  }
 }
+
 export const RoutingComponent=[
-  AboutComponent
+  AboutComponent,
+  PremmiumComponent,
+  ContactComponent
 ]
 
