@@ -10,55 +10,48 @@ import { CartComponent } from './cart/cart.component';
 import { DetailComponent } from './detail/detail.component';
 import { PremmiumComponent } from './premmium/premmium.component';
 import { ContactComponent } from './contact/contact.component';
+import { AccountDetailComponent } from './account-detail/account-detail.component';
+import { AccountEditComponent } from './account-edit/account-edit.component';
+import { AccountOrderComponent } from './account-order/account-order.component';
+import { BlogsComponent } from './blogs/blogs.component';
+import { BlogsDetailComponent } from './blogs-detail/blogs-detail.component';
+import { FAQSComponent } from './faqs/faqs.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
+import { NotificationsComponent } from './notifications/notifications.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { SignupComponent } from './signup/signup.component';
 const routes: Routes = [
-  { path: 'payment', component: PaymentComponent },
-    // { path: 'cart', component: CartComponent },
-  { path: 'payment-atm', component: PaymentAtmComponent },
-  // { path: 'product-detail/:id', component: ProductDetailComponent },
-  // { path: '', component: PaymentComponent},
-  // { path: '', component: MenuComponent},
   {path: "about", component: AboutComponent},
-  {path:"list",component:ListComponent},
-  {path:"cart",component:CartComponent},
-  {path:"detail/:id", component:DetailComponent},
+  {path: 'account-detail', component: AccountDetailComponent},
+  {path: 'account-edit', component: AccountEditComponent},
+  {path: 'account-order', component: AccountOrderComponent},
+  {path: 'blogs', component: BlogsComponent},
+  {path: 'blogs-detail', component: BlogsDetailComponent},
+  {path: 'cart', component: CartComponent },
+  {path: 'contact', component: ContactComponent},
+  {path:"detail/:id", component: DetailComponent},
+  {path: 'faqs', component: FAQSComponent},
+  {path: 'homepage', component: HomepageComponent},
+  {path: 'list', component: ListComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'logout', component: LogoutComponent},
+  {path: 'menu', component: MenuComponent},
+  {path: 'notifications', component: NotificationsComponent},
+  {path: 'payment', component: PaymentComponent },
+  {path: 'payment-atm', component: PaymentAtmComponent },
   {path:'premmium', component: PremmiumComponent},
-  {path: 'contact', component: ContactComponent}
-// import { CartService } from './cart.service';
+  {path: 'product-detail', component: ProductDetailComponent},
+  {path: 'sign-up', component: SignupComponent},
 ]
-
-
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 
-
-// const routes: Routes = [
-//   { path: 'payment', component: PaymentComponent },
-//     // { path: 'cart', component: CartComponent },
-//   { path: 'payment-atm', component: PaymentAtmComponent },
-//   { path: 'product-detail/:id', component: ProductDetailComponent },
-//   // { path: '', component: PaymentComponent},
-//   { path: '', component: MenuComponent},
-// import { AboutComponent } from './about/about.component';
-// import { ListComponent } from './list/list.component';
-// import { CartComponent } from './cart/cart.component';
-// // import { CartService } from './cart.service';
-
-// import { DetailComponent } from './detail/detail.component';
-// const routes: Routes = [
-//   {path: "about", component: AboutComponent},
-//   {path:"list",component:ListComponent},
-//   {path:"cart",component:CartComponent},
-//  {path:"detail/:id", component:DetailComponent}
-// ];
-
-
 export class AppRoutingModule {
-   // Inject Router vào constructor
    constructor(private router: Router) {}
-
    // Xử lý khi nhấn vào radio
     //  goToPaymentPage() {
     //    this.router.navigate(['/payment']);
@@ -70,7 +63,26 @@ export class AppRoutingModule {
 
 export const RoutingComponent=[
   AboutComponent,
+  AccountDetailComponent,
+  AccountEditComponent,
+  AccountOrderComponent,
+  BlogsComponent,
+  BlogsDetailComponent,
+  CartComponent,
+  ContactComponent,
+  DetailComponent,
+  FAQSComponent,
+  HomepageComponent,
+  ListComponent,
+  LoginComponent,
+  LogoutComponent,
+  MenuComponent,
+  NotificationsComponent,
+  PaymentComponent,
+  PaymentAtmComponent,
   PremmiumComponent,
-  ContactComponent
+  ProductDetailComponent,
+  SignupComponent
+
 ]
 
