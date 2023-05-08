@@ -13,7 +13,6 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { AboutComponent } from './about/about.component';
-import { SignInComponent } from './sign-in/sign-in.component';
 import { ContactComponent } from './contact/contact.component';
 import { MenuComponent } from './menu/menu.component';
 import { SignupComponent } from './signup/signup.component';
@@ -28,6 +27,9 @@ import { CartComponent } from './cart/cart.component';
 import { DetailComponent } from './detail/detail.component';
 import { ListComponent } from './list/list.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { AccountDetailComponent } from './account-detail/account-detail.component';
+import { AccountEditComponent } from './account-edit/account-edit.component';
+import { AccountOrderComponent } from './account-order/account-order.component';
 
 
 
@@ -47,7 +49,6 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     FooterComponent,
     NotificationsComponent,
     AboutComponent,
-    SignInComponent,
     ContactComponent,
     MenuComponent,
     SignupComponent,
@@ -60,7 +61,10 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     ListComponent,
     DetailComponent,
     PremmiumComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    AccountDetailComponent,
+    AccountEditComponent,
+    AccountOrderComponent
   ],
   imports: [
     BrowserModule,
