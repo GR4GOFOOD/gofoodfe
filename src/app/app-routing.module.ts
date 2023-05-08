@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'payment-atm', component: PaymentAtmComponent },
   // { path: 'product-detail/:id', component: ProductDetailComponent },
   // { path: '', component: PaymentComponent},
-  { path: '', component: MenuComponent},
+  // { path: '', component: MenuComponent},
   {path: "about", component: AboutComponent},
   {path:"list",component:ListComponent},
   {path:"cart",component:CartComponent},
