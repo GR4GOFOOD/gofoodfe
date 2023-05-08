@@ -10,12 +10,9 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let f of fashions">
-      <td>{{f._id}}</td>
-      <td>{{f.fashion_subject}}</td>
-      <td>{{f.fashion_detail}}</td>
-        <td><img src="{{f.fashion_image}}" width="100px" height="100px"></td>
-        <button routerLink="/detail/{{f._id}}">Detail</button>
-    </tr>
+    <tr *ngFor="let p of products">
+      <td>{{p._id}}</td> </tr>
+
+
   </tbody>
 </table>
