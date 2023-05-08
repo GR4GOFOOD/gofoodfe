@@ -83,4 +83,3 @@ export class BlogsComponent implements OnInit {
     this.getData();
   }
 }
-
