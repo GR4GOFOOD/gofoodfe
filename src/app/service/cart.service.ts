@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import {HttpClient,  HttpErrorResponse, HttpHeaders} from '@angular/common/http';
 import { catchError, map,Observable, retry, throwError } from 'rxjs';
 import { Fashion } from '../types/Fashion';
+import { tap } from 'rxjs/operators';
+
 
 @Injectable({
   providedIn: 'root'
@@ -51,8 +53,13 @@ getFashionid(id:string | null):Observable<any>{
     return this.cartUrl;
   }
   getCart(): Observable<any> {
+    console.log('Cart URL:', this.cartUrl); // Hiển thị giá trị của this.cartUrl
     return this._http.get<any>(this.cartUrl).pipe(
-      catchError(this.handleError)
+      tap(() => console.log('GET request successful')), // Hiển thị thông báo khi yêu cầu GET thành công
+      catchError((error) => {
+        console.log('Error:', error); // Hiển thị thông tin chi tiết về lỗi
+        return this.handleError(error);
+      })
     );
   }
 
