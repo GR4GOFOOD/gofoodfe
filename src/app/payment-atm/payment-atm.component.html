@@ -1,0 +1,146 @@
+<h1>Trang thanh toán</h1>
+    <div class="tab_container">
+      <h2 class="payment-title">Chọn phương thức thanh toán</h2>
+      <form action="#" method="post">
+        <div class="pymt-radio">
+          <div class="row-payment-method payment-row-1">
+            <div class="select-icon">
+              <input type="radio" id="radio1" name="radio1" value="pp" (click)="goToPaymentPage()" [routerLink]="['/payment']"/>
+              <label for="radio1"></label>
+            </div>
+            <div class="select-txt">
+              <p class="pymt-type-name">Thanh toán khi nhận hàng</p>
+            </div>
+            <div class="select-logo">
+              <img
+                src="assets/PaymentImage/Rectangle 79.png"
+                alt="PayPal"
+                width="50px"
+                height="45px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="pymt-radio">
+          <div class="row-payment-method payment-row-2">
+            <div class="select-icon hr">
+              <input
+                type="radio"
+                id="radio2"
+                name="radios"
+                value="pp"
+                checked
+              />
+              <label for="radio2"></label>
+            </div>
+            <div class="select-txt hr">
+              <p class="pymt-type-name">Thẻ ATM nội địa / Internet Banking</p>
+            </div>
+            <div class="select-logo">
+              <img
+                src="assets/PaymentImage/Rectangle 80.png"
+                alt="creditcard"
+                width="50px"
+                height="45px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-cc">
+          <div class="row-cc">
+            <div class="cc-field">
+              <div class="cc-title">Tên ngân hàng</div>
+              <input
+                type="text"
+                class="input cc-txt text-validated" required
+                #name="ngModel" name="ten_ngan_hang" id="ten_ngan_hang" [(ngModel)] = "paymentATM.ten_ngan_hang"/>
+            </div>
+          </div>
+          <div class="row-cc">
+            <div class="cc-field">
+              <div class="cc-title">Số thẻ</div>
+              <input
+                type="text"
+                class="input cc-txt text-validated" required
+                #name="ngModel" name="so_the" id="so_the" [(ngModel)] = "paymentATM.so_the"/>
+            </div>
+          </div>
+          <div class="row-cc">
+            <div class="cc-field">
+              <div class="cc-title ">Hiệu lực thẻ</div>
+              <select class="input cc-ddl.text-validated text-validated" required #name="ngModel" name="hieu_luc_Thang" id="hieu_luc_Thang" [(ngModel)] = "paymentATM.hieu_luc_thang">
+                <option selected>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+              </select>
+              <select class="input cc-ddl.text-validated text-validated" required #name="ngModel" name="hieu_luc_Ngay" id="hieu_luc_Ngay" [(ngModel)] = "paymentATM.hieu_luc_ngay">
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option selected>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+              </select>
+            </div>
+            <div class="cc-field">
+              <div class="cc-title">
+                CVV Code<span class="numberCircle">?</span>
+              </div>
+              <input type="text" class="input cc-txt text-validated" required #name="ngModel" name="CVV_Code" id="CVV_Code" [(ngModel)] = "paymentATM.CVV_Code"/>
+            </div>
+          </div>
+          <div class="row-cc">
+            <div class="cc-field">
+              <div class="cc-title">Tên chủ thẻ</div>
+              <input type="text" class="input cc-txt text-validated" required #name="ngModel" name="ten_chu_the" id="ten_chu_the" [(ngModel)] = "paymentATM.ten_chu_the" />
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <div class="button-container">
+            <a href="#">Tiếp tục mua sắm</a>
+          </div>
+          <div class="button-container">
+            <button (click)="postPaymentATM()">
+              <a href="#"> Thanh toán </a>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
