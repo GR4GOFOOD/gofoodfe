@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IContact } from 'src/contact';
+import { IContact } from 'src/app/types/contact';
 import { ContactService } from '../service/contact.service';
 
 @Component({

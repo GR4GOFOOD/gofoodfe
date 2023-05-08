@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ISupport } from 'src/supports';
+import { ISupport } from 'src/app/types/supports';
 import { SupportsService } from '../service/supports.service';
 
 @Component({

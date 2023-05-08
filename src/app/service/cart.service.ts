@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient,  HttpErrorResponse, HttpHeaders} from '@angular/common/http';
 import { catchError, map,Observable, retry, throwError } from 'rxjs';
-import { Fashion } from './Fashion';
+import { Fashion } from '../types/Fashion';
 import { tap } from 'rxjs/operators';
 
 
