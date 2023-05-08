@@ -4,13 +4,14 @@ nav{
     align-items: center;
     justify-content: center;
     padding: 10px;
+    height: 55px;
 }
 .head{background-color: white;}
 .one a{
     color: black;
 }
 nav {padding: 5px 10px;}
-nav a {margin-right: 50px;padding: 7px;}
+nav a {margin-right: 50px;padding: 7px; text-decoration: none;}
 nav a :hover{color: #143814;}
 
 .one button{
@@ -63,9 +64,6 @@ nav ul li a:hover{color: rgb(255, 255, 255); background-color: #348b34; width: 1
     color: #000000;
     margin-top: -10px;
 }
-  
-    /* ANIMATION EFFECTS */
 .search_icon input#search:focus, .container-2 input#search:active{outline:none;}
 .search_icon:hover input#search{outline:none; width: 300px;}
 .search_icon:hover .icon{color: #000000;}
-
