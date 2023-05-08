@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient,  HttpErrorResponse, HttpHeaders} from '@angular/common/http';
 import { catchError, map,Observable, retry, throwError } from 'rxjs';
 import { Fashion } from '../types/Fashion';
+import { Product } from '../types/Product';
 import { tap } from 'rxjs/operators';
 
 
@@ -12,28 +13,28 @@ import { tap } from 'rxjs/operators';
 export class CartService {
   //cách 1
   constructor(private _http: HttpClient) { }
-  getFashions(): Observable<any> {
+  getProducts(): Observable<any> {
     const headers = new HttpHeaders().set('Content-Type', 'text/plain;charset=utf-8');
     const requestOptions: Object = {
       headers: headers,
       responseType: 'text'
     };
-    return this._http.get<any>('/fashions', requestOptions).pipe(
-      map(res => JSON.parse(res) as Array<Fashion>),
+    return this._http.get<any>('/products', requestOptions).pipe(
+      map(res => JSON.parse(res) as Array<Product>),
       retry(3),
       catchError(this.handleError)
     );
   }
 
 
-getFashionid(id:string | null):Observable<any>{
+getProductid(id:string | null):Observable<any>{
   const headers=new HttpHeaders().set("Content-Type","text/plain;charset=utf-8")
   const requestOptions:Object={
     headers:headers,
     responseType:"text"
   }
-  return this._http.get<any>("/fashions/"+id,requestOptions).pipe(
-    map(res=>JSON.parse(res) as Array<Fashion>),
+  return this._http.get<any>("/products/"+id,requestOptions).pipe(
+    map(res=>JSON.parse(res) as Array<Product>),
     retry(3),
     catchError(this.handleError)
   )
@@ -42,9 +43,9 @@ getFashionid(id:string | null):Observable<any>{
   handleError(error:HttpErrorResponse){
     return throwError(()=>new Error(error.message))
   }
-  addToCart(fashion: Fashion): Observable<any> {
+  addToCart(product: Product): Observable<any> {
     const headers = new HttpHeaders().set('Content-Type', 'application/json');
-    return this._http.post<any>('http://localhost:3000/cart', fashion, { headers: headers, observe: 'response' }).pipe(
+    return this._http.post<any>('http://localhost:3000/cart', product, { headers: headers, observe: 'response' }).pipe(
       catchError(this.handleError)
     );
   }
