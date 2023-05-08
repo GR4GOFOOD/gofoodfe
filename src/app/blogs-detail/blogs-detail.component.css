@@ -2,7 +2,6 @@ body {
     padding: 0;
     margin: 0;
   }
-  
   .body {
     display: flex;
     flex-direction: column;
@@ -123,6 +122,12 @@ body {
     margin-right: 10px;
     justify-content: space-between;
   }
+  a.account {
+    border: 1px solid rgba(213, 201, 201, 0.5);
+    padding: 10px;
+    margin-right: 10px;
+    justify-content: space-between;
+  }
   a.btn {
     color: rgb(0, 0, 0);
     padding: 10px;
@@ -168,12 +173,6 @@ body {
     display: flex;
   }
   a.cart {
-    border: 1px solid rgba(213, 201, 201, 0.5);
-    padding: 10px;
-    margin-right: 10px;
-    justify-content: space-between;
-  }
-  a.account {
     border: 1px solid rgba(213, 201, 201, 0.5);
     padding: 10px;
     margin-right: 10px;
@@ -315,12 +314,11 @@ body {
       display: none;
     }
   }
-  
-  .padding {
+  /* .padding {
     width: 100%;
     height: 2px;
-  }
-  .blogList {
+  } */
+  .blog {
     margin-top: 10px;
     background-color: #143814;
     color: white;
@@ -330,126 +328,68 @@ body {
     flex: 1;
   }
   #title {
-    margin-top: 0;
-    padding-top: 10px;
-    font-size: 60px;
+    padding: 20px;
+    font-size: 35px;
     letter-spacing: 0.02em;
   }
   span {
     font-size: 25px;
     letter-spacing: 0.02em;
   }
-  .blog {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .blog_collum {
-    display: flex;
-    flex-direction: row;
-  }
-  .Hình {
-    padding-top: 30px;
-    padding-left: 5px;
-    position: relative;
-  }
-  #Eatclean {
-    position: absolute;
-    left: 225px;
-    top: 22px;
-    background: #102d10;
-    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.08);
-    color: white;
-    align-items: center;
-    padding: 10px 35px;
-  }
-  .describe {
-    padding-top: 55px;
-    margin-left: 50px;
-    font-size: 22px;
-  }
-  #author {
+  .content p {
+    padding: 0 60px;
     font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.02em;
-    color: #5e6600;
+    line-height: 28px;
+  
+    color: #4d4d4d;
   }
-  #bloger {
-    float: left;
-    width: 50px;
-    border-radius: 50%;
-  }
-  #Name {
-    font-size: 28px;
-    letter-spacing: 0.02em;
+  .content h2 {
+    padding: 0 60px;
+    line-height: 28px;
+    color: #4a5104;
   }
   
-  #readMore {
-    font-size: 24px;
-    letter-spacing: 0.02em;
-    cursor: pointer;
-  }
-  #readMore:hover {
-    font-size: 26px;
-    letter-spacing: 0.02em;
-  }
-  #readMore:active {
-    transform: translateY(4px);
-    font-size: 26px;
-    letter-spacing: 0.02em;
-  }
-  .page {
+  .image {
     display: flex;
     flex-direction: row;
-    padding: 35px;
-    justify-content: flex-start;
+    justify-content: space-around;
+    margin: 0 400px;
   }
-  
-  #bigbox {
+  hr {
+    margin-top: 5px;
+  }
+  #realatedPost {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 28px;
+    color: #143814;
     text-align: center;
-    width: 85px;
-    height: 30px;
-    border: 2px solid #000000;
-    margin-left: 5px;
-    padding-top: 8px;
   }
-  #bigbox:hover {
-    cursor: pointer;
-    color: white;
-    background-color: #194a19;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  #bigbox:active {
+  table:hover {
+    box-shadow: 0 3px 5px 0 rgb(60 64 67 / 10%), 0 2px 6px 2px rgb(60 64 67 / 15%);
     transform: translateY(4px);
-    color: white;
-    background-color: #194a19;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+  table:active {
+    box-shadow: 0 3px 5px 0 rgb(60 64 67 / 10%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    transform: translateY(7px);
+  }
+  td {
+    color: white;
+    font-size: 22px;
   
-  #smallbox {
     text-align: center;
-    width: 45px;
-    height: 30px;
-    border: 2px solid #000000;
-    margin-left: 5px;
-    padding-top: 8px;
   }
-  #smallbox:hover {
-    cursor: pointer;
-    color: white;
-    background-color: #194a19;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  #relatedPost {
+    font-size: 30px;
+    letter-spacing: 0.09em;
+    margin: 20px;
   }
-  #smallbox:active {
-    transform: translateY(4px);
-    color: white;
-    background-color: #194a19;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  #nextPost {
+    font-size: 15px;
+    padding: 45px 0 10px;
   }
-  a {
-    color: black;
-    text-decoration: none;
+  #name {
+    padding: 5px 20px;
   }
   
   .container-footer {
