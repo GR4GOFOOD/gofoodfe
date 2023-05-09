@@ -13,8 +13,7 @@
         <div class="input-form">
           <p style="text-align:center ;">Bạn đã có tài khoản chưa? <a href="">Đăng ký</a></p>
       </div>
-
-      <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm)">
+      <form (ngSubmit)="onSubmit()">
         <div class="input-form">
           <input type="email" placeholder="Email" formControlName="email"/>
           <div class="error-list" *ngIf="loginForm.get('email')?.errors && isSubmitted">
