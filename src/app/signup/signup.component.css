@@ -1,0 +1,53 @@
+p {
+  font-family: Lato;
+}
+
+/* #root {
+  padding: 30px;
+} */
+
+.register-form {
+  max-width: 350px;
+  margin: auto;
+}
+/* . */
+.register-form {
+  max-width: 50%;
+  margin: right;
+  position: right;
+  padding: 100px;
+  background-color: white;
+  float: right;
+}
+.form-group{width: 400px;}
+.signup-container{background-image: url("/assets/signup_img/bg.jpg");background-repeat: no-repeat; float: left;}
+.form-group button{
+  width: 200px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  width: 200px;
+}
+form {display: flex;flex-direction: column;align-items: center;}
+h2 {font-weight: bold;margin-bottom: 3rem;}
+label {font-size: 1.2rem;margin-bottom: 0.5rem;}
+.form-group input {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+.form-group button:hover{background-color: #0069d9;}
+.form-group input:focus{background-color: #faf8f8;border: 1px solid rgb(226, 226, 226);}
+.invalid-feedback{ margin-top: -17px;}

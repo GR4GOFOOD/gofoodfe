@@ -1,31 +1,38 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { JsonPipe } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { MatToolbarModule } from '@angular/material/toolbar';
+// import { MatIconModule } from '@angular/material/icon';
+// import { MatButtonModule } from '@angular/material/button';
+// import { MatCardModule } from '@angular/material/card';
+import { RouterModule }  from '@angular/router'
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { AboutComponent } from './about/about.component';
-import { SignInComponent } from './sign-in/sign-in.component';
 import { ContactComponent } from './contact/contact.component';
-import { PaymentsComponent } from './payments/payments.component';
 import { MenuComponent } from './menu/menu.component';
 import { SignupComponent } from './signup/signup.component';
-import { BlogComponent } from './blog/blog.component';
+import { PaymentComponent } from './payment/payment.component';
+import { PaymentAtmComponent } from './payment-atm/payment-atm.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { FAQSComponent } from './faqs/faqs.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { PremmiumComponent } from './premmium/premmium.component';
 import { CartComponent } from './cart/cart.component';
-
-
-
-
-
-
-
-
-
-
+import { DetailComponent } from './detail/detail.component';
+import { ListComponent } from './list/list.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { LogoutComponent } from './logout/logout.component';
+import { AccountDetailComponent } from './account-detail/account-detail.component';
+import { AccountEditComponent } from './account-edit/account-edit.component';
+import { AccountOrderComponent } from './account-order/account-order.component';
+import { BlogsDetailComponent } from './blogs-detail/blogs-detail.component'
+import { BlogsComponent } from './blogs/blogs.component';
 
 @NgModule({
   declarations: [
@@ -34,26 +41,38 @@ import { CartComponent } from './cart/cart.component';
     FooterComponent,
     NotificationsComponent,
     AboutComponent,
-    SignInComponent,
     ContactComponent,
-    PaymentsComponent,
     MenuComponent,
     SignupComponent,
-    BlogComponent,
+    PaymentComponent,
+    PaymentAtmComponent,
     HomepageComponent,
     FAQSComponent,
-    ProductDetailComponent,
     CartComponent,
-
-
-
+    ListComponent,
+    DetailComponent,
+    PremmiumComponent,
+    ProductDetailComponent,
+    LogoutComponent
+    AccountDetailComponent,
+    AccountEditComponent,
+    AccountOrderComponent,
+    BlogsDetailComponent,
+    BlogsComponent
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    RouterModule,
+    JsonPipe,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
