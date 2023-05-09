@@ -16,6 +16,7 @@ export class LoginComponent{
   errMessage: string='';
   user: IUser = new IUser()
   users: any
+loginForm: any;
   constructor(
     private _service: AccountAPIService,
     private router: Router ) {}
@@ -30,6 +31,9 @@ export class LoginComponent{
 
     goTo(){
       this.router.navigate(['contact'])
+    }
+    goSignup(){
+      this.router.navigate(['signup'])
     }
 
   onSubmit() {
