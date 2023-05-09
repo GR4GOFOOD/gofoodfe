@@ -34,6 +34,7 @@ import { AccountOrderComponent } from './account-order/account-order.component';
 import { BlogsDetailComponent } from './blogs-detail/blogs-detail.component'
 import { BlogsComponent } from './blogs/blogs.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,12 +54,12 @@ import { BlogsComponent } from './blogs/blogs.component';
     DetailComponent,
     PremmiumComponent,
     ProductDetailComponent,
-    LogoutComponent
+    LogoutComponent,
     AccountDetailComponent,
     AccountEditComponent,
     AccountOrderComponent,
     BlogsDetailComponent,
-    BlogsComponent
+    BlogsComponent,
 
   ],
   imports: [
