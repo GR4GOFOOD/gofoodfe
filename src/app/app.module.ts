@@ -27,12 +27,12 @@ import { CartComponent } from './cart/cart.component';
 import { DetailComponent } from './detail/detail.component';
 import { ListComponent } from './list/list.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { LogoutComponent } from './logout/logout.component';
 import { AccountDetailComponent } from './account-detail/account-detail.component';
 import { AccountEditComponent } from './account-edit/account-edit.component';
 import { AccountOrderComponent } from './account-order/account-order.component';
 import { BlogsDetailComponent } from './blogs-detail/blogs-detail.component'
 import { BlogsComponent } from './blogs/blogs.component';
-
 
 
 @NgModule({
@@ -54,11 +54,13 @@ import { BlogsComponent } from './blogs/blogs.component';
     DetailComponent,
     PremmiumComponent,
     ProductDetailComponent,
+    LogoutComponent,
     AccountDetailComponent,
     AccountEditComponent,
     AccountOrderComponent,
     BlogsDetailComponent,
-    BlogsComponent
+    BlogsComponent,
+
   ],
   imports: [
     BrowserModule,
