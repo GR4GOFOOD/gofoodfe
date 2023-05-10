@@ -45,7 +45,7 @@ import { BlogsComponent } from './blogs/blogs.component';
     ContactComponent,
     MenuComponent,
     SignupComponent,
-    // BlogComponent,
+    BlogsComponent,
     PaymentComponent,
     PaymentAtmComponent,
     HomepageComponent,

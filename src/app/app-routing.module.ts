@@ -28,7 +28,7 @@ const routes: Routes = [
   {path: 'account-edit', component: AccountEditComponent},
   {path: 'account-order', component: AccountOrderComponent},
   {path: 'blogs', component: BlogsComponent},
-  {path: 'blogs-detail', component: BlogsDetailComponent},
+  {path: 'blogs-detail/:id', component: BlogsDetailComponent},
   {path: 'cart', component: CartComponent },
   {path: 'contact', component: ContactComponent},
   {path:"detail/:id", component: DetailComponent},

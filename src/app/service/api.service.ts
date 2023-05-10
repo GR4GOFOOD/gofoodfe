@@ -7,7 +7,7 @@ import axios from 'axios';
 })
 export class ApiService {
   constructor() { }
-  private apiUrl = 'http://localhost:56788/api';
+  private apiUrl = 'http://localhost:3000/api';
 
   get(url: String): Observable<any> {
     return from(axios.get(this.apiUrl + url));
