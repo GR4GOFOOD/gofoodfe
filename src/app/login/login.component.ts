@@ -4,35 +4,41 @@ import { FormBuilder, FormGroup, Validators, FormControl, ReactiveFormsModule } 
 import { AccountAPIService } from '../service/account-api.service';
 import { Router } from '@angular/router';
 import { response } from 'express';
-
+import { IUser } from '../types/Account';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent{
-  form!: FormGroup;
-  loginForm!: FormGroup;
+  // loginForm: NgForm;
   isSubmitted = true;
-  errMessage: string=''
+  errMessage: string='';
+  user: IUser = new IUser()
+  users: any
+loginForm: any;
   constructor(
     private _service: AccountAPIService,
     private router: Router ) {}
 
-    ngOnInit(): void {
-      this.loginForm = new FormGroup({
-        email: new FormControl('', [Validators.required, Validators.email]),
-        password: new FormControl('', Validators.required)
-      });
-    }
+    // ngOnInit(): void {
+    //   this.loginForm = new FormGroup({
+    //     email: new FormControl('', [Validators.required, Validators.email]),
+    //     password: new FormControl('', Validators.required)
+    //   });
+    // }
 
 
     goTo(){
       this.router.navigate(['contact'])
     }
-  onSubmit(loginForm: FormGroup) {
-    console.log(loginForm)
-    this._service.postLogin(loginForm.value).subscribe(
+    goSignup(){
+      this.router.navigate(['signup'])
+    }
+
+  onSubmit() {
+    // console.log(loginForm)
+    {this._service.postLogin(this.user).subscribe(
       response =>{
         console.log(response);
         const user = response;
@@ -41,6 +47,8 @@ export class LoginComponent{
         // this.router.navigate(['/accounts'])
       }
     )
+
+
     // const account = this._service.
     // const email =  new FormControl('', [Validators.required, Validators.email])
     // const password = new FormControl('', Validators.required)
@@ -60,4 +68,4 @@ export class LoginComponent{
     // )
   }
 }
-
+}

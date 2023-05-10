@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { JsonPipe } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { MatToolbarModule } from '@angular/material/toolbar';
 // import { MatIconModule } from '@angular/material/icon';
@@ -16,31 +18,21 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { MenuComponent } from './menu/menu.component';
 import { SignupComponent } from './signup/signup.component';
-import { BlogComponent } from './blog/blog.component';
 import { PaymentComponent } from './payment/payment.component';
 import { PaymentAtmComponent } from './payment-atm/payment-atm.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { FAQSComponent } from './faqs/faqs.component';
 import { PremmiumComponent } from './premmium/premmium.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CartComponent } from './cart/cart.component';
 import { DetailComponent } from './detail/detail.component';
 import { ListComponent } from './list/list.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { LogoutComponent } from './logout/logout.component';
 import { AccountDetailComponent } from './account-detail/account-detail.component';
 import { AccountEditComponent } from './account-edit/account-edit.component';
 import { AccountOrderComponent } from './account-order/account-order.component';
-import { BlogsDetailComponent } from './blogs-detail/blogs-detail.component';
-
-
-
-
-
-
-
-
-
-
+import { BlogsDetailComponent } from './blogs-detail/blogs-detail.component'
+import { BlogsComponent } from './blogs/blogs.component';
 
 
 @NgModule({
@@ -63,23 +55,23 @@ import { BlogsDetailComponent } from './blogs-detail/blogs-detail.component';
     DetailComponent,
     PremmiumComponent,
     ProductDetailComponent,
+    LogoutComponent,
     AccountDetailComponent,
     AccountEditComponent,
     AccountOrderComponent,
-    BlogsDetailComponent
+    BlogsDetailComponent,
+    BlogsComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
     BrowserAnimationsModule,
-    // MatToolbarModule,
-    // MatIconModule,
-    // MatButtonModule,
-    // MatCardModule,
     RouterModule,
-    ReactiveFormsModule,
+    JsonPipe,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

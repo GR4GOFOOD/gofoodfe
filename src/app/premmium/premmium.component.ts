@@ -3,7 +3,7 @@ import { ISupport } from 'src/app/types/supports';
 import { SupportsService } from '../service/supports.service';
 
 @Component({
-  selector: '[app-premmium]',
+  selector: 'app-premmium',
   templateUrl: './premmium.component.html',
   styleUrls: ['./premmium.component.css']
 })

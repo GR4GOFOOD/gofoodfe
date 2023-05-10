@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "6459285d9e2bb8f8be37c2e0"
+  },
+  "commentDate": "08/05/2023",
+  "rating": "4",
+  "commentText": "Đẹp tuyệt vời",
+  "imgComments": [
+    {
+      "imgId": "1",
+      "img": "imggg"
+    },
+    {
+      "imgId": "2",
+      "img": "imggg2"
+    }
+  ],
+  "userid": "ac0001"
+}]

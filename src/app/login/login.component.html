@@ -1,5 +1,4 @@
 <header>
-  <div class="left"><a href="#"><img src="assets/image_login/logo.png" width="190px"></a></div>
   <div class="right" style="float: right;"><a (click)= goTo() class="btn">Bạn cần trợ giúp ?</a></div>
 </header>
 <section>
@@ -11,10 +10,9 @@
       <h2 >ĐĂNG NHẬP </h2>
       <form  class="login_form" method="post">
         <div class="input-form">
-          <p style="text-align:center ;">Bạn đã có tài khoản chưa? <a href="">Đăng ký</a></p>
+          <p style="text-align:center ;">Bạn đã có tài khoản chưa? <a  (click)= goSignup() class="btn">Đăng ký</a></p>
       </div>
-
-      <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm)">
+      <form (ngSubmit)="onSubmit()">
         <div class="input-form">
           <input type="email" placeholder="Email" formControlName="email"/>
           <div class="error-list" *ngIf="loginForm.get('email')?.errors && isSubmitted">
