@@ -15,7 +15,7 @@ export class UsersService {
     responseType:"text"
     }
     return this._http.post<any>("/users",JSON.stringify(aUser),requestOptions).pipe(
-      map(res=>JSON.parse(res) as Array<Users>),
+      map(res=>JSON.parse(res) as Users),
       retry(3),
       catchError(this.handleError))
       }

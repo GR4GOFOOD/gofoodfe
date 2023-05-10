@@ -5,22 +5,18 @@ import { AccountAPIService } from '../service/account-api.service';
 import { Router } from '@angular/router';
 import { response } from 'express';
 import { IUser } from '../types/Account';
-
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent{
-  // form!: FormGroup;
-
-  //cũ
   // loginForm: NgForm;
   isSubmitted = true;
   errMessage: string='';
   user: IUser = new IUser()
   users: any
+loginForm: any;
   constructor(
     private _service: AccountAPIService,
     private router: Router ) {}
@@ -36,8 +32,13 @@ export class LoginComponent{
     goTo(){
       this.router.navigate(['contact'])
     }
-    onSubmit() {
-    this._service.postLogin(this.user).subscribe(
+    goSignup(){
+      this.router.navigate(['signup'])
+    }
+
+  onSubmit() {
+    // console.log(loginForm)
+    {this._service.postLogin(this.user).subscribe(
       response =>{
         console.log(response);
         const user = response;
@@ -67,4 +68,4 @@ export class LoginComponent{
     // )
   }
 }
-
+}
