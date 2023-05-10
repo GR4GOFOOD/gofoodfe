@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "645928019e2bb8f8be37c2db"
+  },
+  "password": "hjhashfsafhsjkjjf/sạkdfhgsjk",
+  "salt": "jtgdjgjkljskldjgdsjgsdlk",
+  "email": "quanghuycsgl@gmail.com",
+  "phonenumber": "0395867432",
+  "gender": "M",
+  "birthday": "26/03/2003",
+  "avatar": "image",
+  "userid": "ac0001"
+}]
