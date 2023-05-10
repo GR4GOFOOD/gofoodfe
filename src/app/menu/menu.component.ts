@@ -7,6 +7,7 @@ import { Router} from '@angular/router';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
+
 export class MenuComponent {
 
   products:any;
@@ -52,7 +53,7 @@ export class MenuComponent {
       })
   }
 
-  onProductDetails(id: string){
+  onProductDetails(id: number){
     this.router.navigate(['/product-detail', id]);
   }
 }
