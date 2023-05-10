@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { UsersService } from '../service/users.service';
-import { Users } from '../types/users';
+import { IUsers } from '../types/users';
 import Validation from '../types/validation';
 
 @Component({
@@ -10,7 +10,7 @@ import Validation from '../types/validation';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-   form: FormGroup = new FormGroup({
+   IUsers: FormGroup = new FormGroup({
     username: new FormControl(''),
     email: new FormControl(''),
     password: new FormControl(''),
@@ -18,13 +18,12 @@ export class SignupComponent implements OnInit {
     acceptTerms: new FormControl(false),
   });
   submitted = false;
-  users = new Users();
   errMessage: string = '';
 
   constructor(private formBuilder: FormBuilder, private userService: UsersService) {}
 
   ngOnInit(): void {
-    this.form = this.formBuilder.group({
+    this.IUsers = this.formBuilder.group({
       username: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(20)]],
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(40)]],
@@ -36,23 +35,28 @@ export class SignupComponent implements OnInit {
   }
 
   get f() {
-    return this.form.controls;
+    return this.IUsers.controls;
   }
 
   onSubmit() {
     this.submitted = true;
 
-    if (this.form.invalid) {
-      return;
-    }
+  if (this.IUsers.invalid) {
+    return;
+  }
 
-    this.userService.postSignup(this.users).subscribe(
-      (data) => {
-        this.users = data;
-      },
-      (error) => {
-        this.errMessage = error;
-      }
-    );
+  this.userService.postSignup(this.IUsers).subscribe(
+    (data) => {
+      // Handle the successful response from the backend
+      // Save the data to the database or perform any other necessary actions
+      console.log('Data saved:', data);
+    },
+    (error) => {
+      // Handle the error response from the backend, if needed
+      this.errMessage = error.message;
+    }
+  );
+
+
   }
 }

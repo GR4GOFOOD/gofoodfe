@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { catchError, map, Observable, retry, throwError } from 'rxjs';
-import { Users } from '../types/users';
+import { IUsers } from '../types/users';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -15,7 +16,7 @@ export class UsersService {
     responseType:"text"
     }
     return this._http.post<any>("/users",JSON.stringify(aUser),requestOptions).pipe(
-      map(res=>JSON.parse(res) as Users),
+      map(res=>JSON.parse(res) as IUsers),
       retry(3),
       catchError(this.handleError))
       }
