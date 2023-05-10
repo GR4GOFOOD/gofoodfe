@@ -16,11 +16,11 @@
                 <span class="icon"><i class="fa fa-search"></i></span>
                 <input type="search" id="search" placeholder="Search..." />
             </button>
-              <button routerLink="/cart" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"  ><img src="assets/head foot/cart.png"  width="15px" alt="Cart"></button>
-              <button routerLink="/signin" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800" >Đăng nhập</button>
-              <button routerLink="/signup" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800" >Đăng kí</button>
-              <button routerLink="/cart" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800" ><img src="assets/head foot/cart.png" width="13px" alt="Cart"></button>
-              <button routerLink="/account-detail" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800" ><img src="assets/head foot/account.png" width="13px" alt="Account"></button>
+              <button routerLink="/cart"  (click)="hide()"  class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"  ><img src="assets/head foot/cart.png"  width="15px" alt="Cart"></button>
+              <button routerLink="/signin" (click)="hide()" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800" >Đăng nhập</button>
+              <button routerLink="/signup"  (click)="hide()" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800" >Đăng kí</button>
+              <button routerLink="/cart"  (click)="hide()" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800" ><img src="assets/head foot/cart.png" width="13px" alt="Cart"></button>
+              <button routerLink="/account-detail"  (click)="hide()" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800" ><img src="assets/head foot/account.png" width="13px" alt="Account"></button>
 
           </div>
       </div>
@@ -32,25 +32,36 @@
           <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
               <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                   <li>
+<<<<<<< HEAD
                       <a routerLink="/homepage" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white" aria-current="page">Trang chủ</a>
+=======
+                      <a routerLink="/homepage"  (click)="openHome()" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white" aria-current="page">Trang chủ</a>
+>>>>>>> 69e19edaa2928e1382bcb28fbdc628ea2a9980a4
                   </li>
                   <li>
-                      <a routerLink="/menu" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white: ">Menu</a>
+                      <a routerLink="/menu" (click)="hide()" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white: ">Menu</a>
                   </li>
                   <li>
+<<<<<<< HEAD
                       <a routerLink="/premmium" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">Preminum</a>
                   </li>
                   <li>
                       <a routerLink="/blogs" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">Blog</a>
+=======
+                      <a routerLink="/preminum"  (click)="hide()" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">Preminum</a>
                   </li>
                   <li>
-                      <a routerLink="/about" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">About</a>
+                      <a routerLink="/blog"  (click)="hide()" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">Blog</a>
+>>>>>>> 69e19edaa2928e1382bcb28fbdc628ea2a9980a4
                   </li>
                   <li>
-                      <a routerLink="/faqs" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">FAQS</a>
+                      <a routerLink="/about"  (click)="hide()" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">About</a>
                   </li>
                   <li>
-                      <a routerLink="/contact" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">Liên hệ</a>
+                      <a routerLink="/faqs"  (click)="hide()" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">FAQS</a>
+                  </li>
+                  <li>
+                      <a routerLink="/contact"  (click)="hide()" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">Liên hệ</a>
                   </li>
               </ul>
           </div>
@@ -62,3 +73,4 @@
       </button>
   </nav>
 </header>
+<app-homepage *ngIf="showHomepage"></app-homepage>
