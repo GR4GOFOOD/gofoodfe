@@ -4,13 +4,13 @@
     <div class="col-md-8 d-flex align-items-center">
       <div>
         <h2>{{ product?._id }}</h2>
-        <p><strong>Date:</strong> {{ product?.NAME }}</p>
+        <p><strong>Date:</strong> {{ product?.productName }}</p>
 
         <button (click)="addToCart()">Add to Cart</button>
       </div>
     </div>
     <div class="col-md-4">
-      <img src="{{ product?.IMAGE }}" alt="Fashion image" class="img-fluid">
+      <img src="{{ product?.productImage }}" alt="Fashion image" class="img-fluid">
     </div>
   </div>
 </div>
