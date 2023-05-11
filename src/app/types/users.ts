@@ -5,7 +5,7 @@
 //   password:string,
 
 // }
-export class IUsers {
+export class Users {
   constructor (
     public _id: any = null,
     public email: string = "",
