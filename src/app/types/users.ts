@@ -1,15 +1,13 @@
-export interface IUsers{
+// export interface IUsers{
 
-  _id:any,
-  username:string,
-  email:string,
-  password:string,
+//   _id:any,
+//   email:string,
+//   password:string,
 
-}
+// }
 export class Users {
   constructor (
     public _id: any = null,
-    public username: string = "",
     public email: string = "",
     public password: string = "",
   ) {}
