@@ -10,7 +10,7 @@
               <br>
               <a class="dat" href="#">ĐẶT HÀNG NGAY</a>
           </div>
-              <div style="background-image: url(assets/ProductImage/dinhduong.jpeg);">
+          <div style="background-image: url(assets/ProductImage/dinhduong.jpeg);">
               <h2>TRẢI NGHIỆM BỮA ĂN DINH DƯỠNG VÀ NGON MIỆNG</h2>
               <br>
               <a class="dat" href="#">ĐẶT HÀNG NGAY</a>
@@ -20,7 +20,7 @@
               <br>
               <a class="dat" href="#">ĐẶT HÀNG NGAY</a>
           </div>
-              <div style="background-image: url(assets/ProductImage/dinhduong.jpeg);">
+          <div style="background-image: url(assets/ProductImage/dinhduong.jpeg);">
               <h2>TRẢI NGHIỆM BỮA ĂN DINH DƯỠNG VÀ NGON MIỆNG</h2>
               <br>
               <a class="dat" href="#">ĐẶT HÀNG NGAY</a>
@@ -101,14 +101,14 @@
   <br>
   <p class="tieuDe">Best sell</p>
   <div class="chonMon">
-      <div *ngFor="let product of bestproducts" class='sel' (click)="onProductDetails(product.ID)">
+      <div *ngFor="let product of bestproducts" class='sel' (click)="onProductDetails(product.productId)" >
         <div>
-          <img [src]="product.IMAGE" alt="product image" class="product-image">
+          <img [src]="product.productImage" alt="product image" class="product-image" >
         </div>
         <div>
-          <h3>{{ product.NAME }}</h3>
+          <h3>{{ product.productName }}</h3>
           <div>
-            <span>{{ product.PRICE*1000}}</span>
+            <span>{{ product.price*1000}}</span>
             <button routerLink="/cart"><img src="assets/ProductImage/add.png" alt="No image" style="float: right; width: 25px; height:25px"></button>
           </div>
         </div>
@@ -117,14 +117,14 @@
   <br>
   <p class="tieuDe">Cơm</p>
   <div class="chonMon">
-    <div *ngFor="let product of riceproducts" class='sel' (click)="onProductDetails(product.ID)">
+    <div *ngFor="let product of riceproducts" class='sel' (click)="onProductDetails(product.productId)">
       <div>
-        <img [src]="product.IMAGE" alt="product image" class="product-image">
+        <img [src]="product.productImage" alt="product image" class="product-image">
       </div>
       <div>
-        <h3>{{ product.NAME }}</h3>
+        <h3>{{ product.productName }}</h3>
         <div>
-          <span>{{ product.PRICE*1000}}</span>
+          <span>{{ product.price*1000}}</span>
           <button routerLink="/cart"><img src="assets/ProductImage/add.png" alt="No image" style="float: right; width: 25px; height:25px"></button>
         </div>
       </div>
@@ -133,14 +133,14 @@
   <br>
   <p class="tieuDe">Cake</p>
   <div class="chonMon">
-    <div *ngFor="let product of cakeproducts" class='sel' (click)="onProductDetails(product.ID)">
+    <div *ngFor="let product of cakeproducts" class='sel' (click)="onProductDetails(product.productId)">
       <div>
-        <img [src]="product.IMAGE" alt="product image" class="product-image">
+        <img [src]="product.productImage" alt="product image" class="product-image">
       </div>
       <div>
-        <h3>{{ product.NAME }}</h3>
+        <h3>{{ product.productName }}</h3>
         <div>
-          <span>{{ product.PRICE*1000}}</span>
+          <span>{{ product.price*1000}}</span>
           <button routerLink="/cart"><img src="assets/ProductImage/add.png" alt="No image" style="float: right; width: 25px; height:25px"></button>
         </div>
       </div>
@@ -149,14 +149,14 @@
   <br>
   <p class="tieuDe">Salad</p>
   <div class="chonMon">
-    <div *ngFor="let product of saladproducts" class='sel' (click)="onProductDetails(product.ID)">
+    <div *ngFor="let product of saladproducts" class='sel' (click)="onProductDetails(product.productId)">
       <div>
-        <img [src]="product.IMAGE" alt="product image" class="product-image">
+        <img [src]="product.productImage" alt="product image" class="product-image">
       </div>
       <div>
-        <h3>{{ product.NAME }}</h3>
+        <h3>{{ product.productName }}</h3>
         <div>
-          <span>{{ product.PRICE*1000}}</span>
+          <span>{{ product.price*1000}}</span>
           <button routerLink="/cart"><img src="assets/ProductImage/add.png" alt="No image" style="float: right; width: 25px; height:25px"></button>
         </div>
       </div>
@@ -165,14 +165,14 @@
   <br>
   <p class="tieuDe">Drink</p>
   <div class="chonMon">
-    <div *ngFor="let product of drinkproducts" class='sel' (click)="onProductDetails(product.ID)">
+    <div *ngFor="let product of drinkproducts" class='sel' (click)="onProductDetails(product.productId)">
       <div class="image-container">
-        <img [src]="product.IMAGE" alt="product image" class="product-image">
+        <img [src]="product.productImage" alt="product image" class="product-image">
       </div>
       <div>
-        <h3>{{ product.NAME }}</h3>
+        <h3>{{ product.productName }}</h3>
         <div>
-          <span>{{ product.PRICE*1000}}</span>
+          <span>{{ product.price*1000}}</span>
           <button routerLink="/cart"><img src="assets/ProductImage/add.png" alt="No image" style="float: right; width: 25px; height:25px"></button>
         </div>
       </div>
@@ -181,18 +181,19 @@
   <br>
   <p class="tieuDe">Sets</p>
   <div class="chonMon">
-    <div *ngFor="let product of setsproducts" class='sel' (click)="onProductDetails(product.ID)">
+    <div *ngFor="let product of setsproducts" class='sel' (click)="onProductDetails(product.productId)">
       <div>
-        <img [src]="product.IMAGE" alt="product image" class="product-image">
+        <img [src]="product.productImage" alt="product image" class="product-image">
       </div>
       <div>
-        <h3>{{ product.NAME }}</h3>
+        <h3>{{ product.productName }}</h3>
         <div>
-          <span>{{ product.PRICE*1000}}</span>
+          <span>{{ product.price*1000}}</span>
           <button routerLink="/cart"><img src="assets/ProductImage/add.png" alt="No image" style="float: right; width: 25px; height:25px"></button>
         </div>
       </div>
     </div>
   </div>
 </div>
+
 
