@@ -6,16 +6,6 @@
     <div class="form-group">
       <h2>SIGN UP</h2>
     </div>
-    <!-- <div class="form-group">
-      <label>Username</label>
-      <input type="text" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['username'].errors }" />
-      <div *ngIf="submitted && f['username'].errors" class="invalid-feedback">
-        <div *ngIf="f['username'].errors['required']">Username is required</div>
-        <div *ngIf="f['username'].errors['minlength']">Username must be at least 6 characters</div>
-        <div *ngIf="f['username'].errors['maxlength']">Username must not exceed 20 characters</div>
-      </div>
-    </div> -->
-
     <div class="form-group">
       <label>Email</label>
       <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"/>
@@ -55,5 +45,11 @@
     </div>
   </form>
 </div>
-
-
+<!-- Modal for success -->
+<!-- <div class="modal" *ngIf="successModalVisible">
+  <div class="modal-content">
+    <h3>Registration Successful!</h3>
+    <p>Your registration has been successful.</p>
+    <button class="btn btn-primary" (click)="closeModal()">Close</button>
+  </div>
+</div> -->

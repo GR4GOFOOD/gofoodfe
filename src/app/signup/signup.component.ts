@@ -19,7 +19,7 @@ export class SignupComponent {
     acceptTerms: new FormControl(false),
   });
   submitted = false;
-  errMessage:string=''
+  errMessage:string='';
 
   constructor(private formBuilder: FormBuilder, private _service: UsersService) {}
 
@@ -55,9 +55,12 @@ export class SignupComponent {
   get f(): { [key: string]: AbstractControl } {
     return this.form.controls;
   }
-
+  // closeModal(): void {
+  //   this.successModalVisible = false;
+  // }
   onSubmit(): void {
     this.submitted = true;
+    // this.successModalVisible = true;
     console.log("submit",this.form.invalid)
     if (this.form.invalid) {
       return;
@@ -68,7 +71,9 @@ export class SignupComponent {
     console.log(JSON.stringify(this.form.value, null, 2));
     {
       this._service.postSignup(this.form.value).subscribe({
-        next:(data)=>{this.form=data},
+        next:(data)=>{this.form=data;
+         },
+
         error:(err)=>{this.errMessage=err}
       })
     }
