@@ -1,32 +1,65 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../service/cart.service';
-import { Fashion } from '../types/Fashion';
-
 
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
 })
-export class CartComponent   {
+export class CartComponent implements OnInit {
+  errMessage: string = "";
   cartItems: any[] = [];
-  errMessage: string='';
+  tamTinh: number = 0;
+  thue: number = 0;
+  tongCong: number = 0;
+
   constructor(private _service: CartService) {}
+
   ngOnInit(): void {
-    this.getCartItems();
+    this.loadCartItems();
   }
-  getCartItems(): void {
-    this._service.getCart().subscribe(
-      (data) => {
-        this.cartItems = data;
-        console.log('Sản phẩm đã được thêm vào giỏ hàng');
-        console.log(this.cartItems);
-        console.log('Đường dẫn hiện tại của giỏ hàng:', this._service.cartUrl);
-      },
-      (err) => {
-        console.error('Lỗi khi lấy danh sách sản phẩm trong giỏ hàng:', err);
-      }
-    );
+
+  loadCartItems(): void {
+    this.cartItems = this._service.getCartItems();
+    console.log('Cart Items:', this.cartItems);
+    this.calculateTamTinh();
+    console.log('Tam Tinh:', this.tamTinh);
+    this.calculateThue();
+    console.log('Thue:', this.thue);
+    this.calculateTongCong();
+    console.log('Tong Cong:', this.tongCong);
+  }
+
+  calculateTamTinh(): void {
+    this.tamTinh = 0;
+
+    for (let item of this.cartItems) {
+      this.tamTinh += item.PRICE * item.QUANTITY;
+    }
+
+    console.log('Tam Tinh:', this.tamTinh);
+  }
+
+  calculateThue(): void {
+    this.thue = this.tamTinh * 0.05;
+    console.log('Thue:', this.thue);
+  }
+
+  calculateTongCong(): void {
+    this.tongCong = this.tamTinh + this.thue;
+    console.log('Tong Cong:', this.tongCong);
+  }
+  removeProduct(item: any): void {
+    this._service.removeCartItem(item);
+    this.loadCartItems();
+  }
+  updateCartItem(item: any): void {
+    this._service.updateCartItem(item);
+    this.calculateTamTinh();
+    this.calculateThue();
+    this.calculateTongCong();
   }
 
 }
+
+
