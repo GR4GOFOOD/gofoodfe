@@ -7,6 +7,7 @@
     "logLevel":"debug"
   },
   {
+<<<<<<< HEAD
     "context": ["/payment"],
     "target": "http://localhost:3000",
     "secure": true,
@@ -22,6 +23,9 @@
   },
   {
     "context": ["/products"],
+=======
+    "context": ["/login"],
+>>>>>>> origin/main
     "target": "http://localhost:3000",
     "secure": true,
     "changeOrigin":true,

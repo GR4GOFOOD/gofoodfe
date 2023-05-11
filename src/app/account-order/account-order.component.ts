@@ -21,4 +21,7 @@ export class AccountOrderComponent {
   onImage(){
 
   }
+  logOut(){
+    this.router.navigate(['logout'])
+  }
 }

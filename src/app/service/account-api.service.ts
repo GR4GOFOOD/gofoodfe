@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class AccountAPIService {
-
+  // private apiUrl = 'http://localhost:3000/users'
 
   constructor(private _http: HttpClient) { }
   // authUser(user: any){
@@ -34,6 +34,15 @@ export class AccountAPIService {
   catchError(this.handleError))
   }
 
+  // login(email: string, password: string) {
+  //   const url = `${this.apiUrl}/login`;
+  //   const body = { email, password };
+  //   return this._http.post(url, body);
+  // }
+  // getUser(userId: string) {
+  //   const url = `${this.apiUrl}/users/${userId}`;
+  //   return this._http.get(url);
+  // }
 
   getAccount(id:string |null): Observable<any>
   {
