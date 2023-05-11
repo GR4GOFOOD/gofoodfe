@@ -4,47 +4,42 @@ import { FormBuilder, FormGroup, Validators, FormControl, ReactiveFormsModule } 
 import { AccountAPIService } from '../service/account-api.service';
 import { Router } from '@angular/router';
 import { response } from 'express';
-import { IUser } from '../types/Account';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent{
-  // loginForm: NgForm;
+  form!: FormGroup;
+  loginForm!: FormGroup;
   isSubmitted = true;
-  errMessage: string='';
-  user: IUser = new IUser()
-  users: any
+  errMessage: string=''
   constructor(
     private _service: AccountAPIService,
     private router: Router ) {}
 
-    // ngOnInit(): void {
-    //   this.loginForm = new FormGroup({
-    //     email: new FormControl('', [Validators.required, Validators.email]),
-    //     password: new FormControl('', Validators.required)
-    //   });
-    // }
-
-
-    goTo(){
-      this.router.navigate(['contact'])
+    ngOnInit(): void {
+      this.loginForm = new FormGroup({
+        email: new FormControl('', [Validators.required, Validators.email]),
+        password: new FormControl('', Validators.required)
+      });
     }
 
-  onSubmit() {
-    // console.log(loginForm)
-    {this._service.postLogin(this.user).subscribe(
+
+
+  onSubmit(loginForm: FormGroup) {
+    console.log(loginForm)
+    this._service.postLogin(loginForm.value).subscribe(
       response =>{
-        console.log(response);
+        // console.log(response);
         const user = response;
+        console.log(response);
         localStorage.setItem('password', user.password);
-        localStorage.setItem('Email', user.Email);
-        // this.router.navigate(['/accounts'])
+        localStorage.setItem('Email', user.email);
+        this.router.navigate(['/homepage'])
       }
     )
-
-
     // const account = this._service.
     // const email =  new FormControl('', [Validators.required, Validators.email])
     // const password = new FormControl('', Validators.required)
@@ -63,5 +58,10 @@ export class LoginComponent{
     //   }
     // )
   }
-}
+  goTo() {
+    this.router.navigate(['contact']);
+  }
+  goSignup() {
+    this.router.navigate(['signup']);
+  }
 }

@@ -28,7 +28,7 @@ const routes: Routes = [
   {path: 'account-edit', component: AccountEditComponent},
   {path: 'account-order', component: AccountOrderComponent},
   {path: 'blogs', component: BlogsComponent},
-  {path: 'blogs-detail', component: BlogsDetailComponent},
+  {path: 'blogs-detail/:id', component: BlogsDetailComponent},
   {path: 'cart', component: CartComponent },
   {path: 'contact', component: ContactComponent},
   {path:"detail/:id", component: DetailComponent},
@@ -43,6 +43,7 @@ const routes: Routes = [
   {path: 'payment-atm', component: PaymentAtmComponent },
   {path:'premmium', component: PremmiumComponent},
   {path: 'product-detail', component: ProductDetailComponent},
+  { path: 'product-detail/:id', component: ProductDetailComponent }
   // {path: 'sign-up', component: SignupComponent},
 ]
 @NgModule({

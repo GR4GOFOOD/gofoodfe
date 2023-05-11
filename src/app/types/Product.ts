@@ -1,13 +1,13 @@
 export class Product{
   constructor(
     public _id:any=null,
-    public ID: string="",
-    public NAME: string="",
-    public DESCRIPTION: string="",
-    public PRICE: number,
-    public CATEGORY: string="",
-    public QUANTITY: number,
-    public IMAGE: string=""
+    public productId: number,
+    public productName: string="",
+    public description: string="",
+    public price: number,
+    public category: string="",
+    public productQty: number,
+    public productImage: string=""
   ) {}
 }
 

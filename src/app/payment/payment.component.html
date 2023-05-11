@@ -1,7 +1,7 @@
 <h1>Trang thanh toán</h1>
     <div class="tab_container">
       <h2 class="payment-title">Chọn phương thức thanh toán</h2>
-      <form method="post" action="#">
+      <form method="post" action="#" #myForm="ngForm">
         <div class="pymt-radio">
           <div class="row-payment-method payment-row-1">
             <div class="select-icon">
@@ -53,7 +53,7 @@
               <input
                 type="text"
                 class="input cc-txt text-validated"
-                #name="ngModel" name="ho_va_ten" id="ho_va_ten" [(ngModel)]="payment.ho_va_ten"/>
+                #name="ngModel" name="ho_va_ten" id="ho_va_ten" [(ngModel)]="payment.ho_va_ten" required #ho_va_ten="ngModel"[ngClass]="{ 'is-invalid': ho_va_ten.invalid && (ho_va_ten.dirty || ho_va_ten.touched)}"/>
             </div>
           </div>
           <div class="row-cc">
@@ -62,7 +62,7 @@
               <input
                 type="text"
                 class="input cc-txt text-validated"
-                #name="ngModel" name="Sdt" id="Sdt" [(ngModel)]="payment.sdt"/>
+                #name="ngModel" name="Sdt" id="Sdt" [(ngModel)]="payment.sdt" required #sdt="ngModel" [ngClass]="{ 'is-invalid': sdt.invalid && (sdt.dirty || sdt.touched)}"/>
             </div>
           </div>
           <div class="row-cc">
@@ -71,13 +71,13 @@
               <input
                 type="text"
                 class="input cc-txt text-validated"
-                #name="ngModel" name="Diachi" id="Diachi" [(ngModel)]="payment.dia_chi"/>
+                #name="ngModel" name="Diachi" id="Diachi" [(ngModel)]="payment.dia_chi" required #dia_chi="ngModel"[ngClass]="{ 'is-invalid': dia_chi.invalid && (dia_chi.dirty || dia_chi.touched)}"/>
             </div>
           </div>
         </div>
         <div class="button">
           <div class="button-container">
-            <a href="#">Tiếp tục mua sắm</a>
+            <button routerLink="/menu"><a>Tiếp tục mua sắm</a></button>
           </div>
           <div class="button-container">
             <button (click)="postPayment()">
