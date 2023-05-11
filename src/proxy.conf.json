@@ -7,7 +7,11 @@
     "logLevel":"debug"
   },
   {
+<<<<<<< HEAD
     "context": ["/products"],
+=======
+    "context": ["/login"],
+>>>>>>> 514e959f83eddd420df49f681d1be78e9844ec7b
     "target": "http://localhost:3000",
     "secure": true,
     "changeOrigin":true,

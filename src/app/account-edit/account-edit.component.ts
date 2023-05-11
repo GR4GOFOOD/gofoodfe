@@ -38,5 +38,8 @@ export class AccountEditComponent {
   onSubmit(){
 
   }
+  logOut(){
+    this.router.navigate(['logout'])
+  }
 }
 

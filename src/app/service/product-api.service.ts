@@ -27,18 +27,18 @@ export class ProductAPIService {
   return throwError(()=>new Error(error.message))
   }
 
-  // getProduct(productId:string):Observable<any>
-  // {
-  // const headers=new HttpHeaders().set("Content-Type","text/plain;charset=utf-8")
-  // const requestOptions:Object={
-  // headers:headers,
-  // responseType:"text"
-  // }
-  // return this._http.get<any>("/products/"+productId,requestOptions).pipe(
-  // map(res=>JSON.parse(res) as Product),
-  // retry(3),
-  // catchError(this.handleError))
-  // }
+  getProduct(productId:string):Observable<any>
+  {
+  const headers=new HttpHeaders().set("Content-Type","text/plain;charset=utf-8")
+  const requestOptions:Object={
+  headers:headers,
+  responseType:"text"
+  }
+  return this._http.get<any>("/products/"+productId,requestOptions).pipe(
+  map(res=>JSON.parse(res) as Product),
+  retry(3),
+  catchError(this.handleError))
+  }
 
   // postProduct(aProduct:any):Observable<any>{
   //   const headers=new HttpHeaders().set("Content-Type","application/json;charset=utf-8")
