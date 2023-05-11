@@ -46,7 +46,7 @@ import { LoginComponent } from './login/login.component';
     ContactComponent,
     MenuComponent,
     SignupComponent,
-    // BlogComponent,
+    BlogsComponent,
     PaymentComponent,
     PaymentAtmComponent,
     HomepageComponent,
