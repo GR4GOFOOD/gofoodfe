@@ -16,4 +16,176 @@
     }
   ],
   "userid": "ac0001"
-}]
+},
+{
+  "_id": {
+    "$oid": "6459285d9e2bb8f8be37c2e1"
+  },
+  "commentDate": "07/05/2023",
+  "rating": "5",
+  "commentText": "  Qúa xuất sắc",
+  "imgComments": [
+    {
+      "imgId": "3",
+      "img": "imggg"
+    },
+    {
+      "imgId": "2",
+      "img": "imggg2"
+    }
+  ],
+  "userid": "ac0002"
+},
+{
+  "_id": {
+    "$oid": "6459285d9e2bb8f8be37c2e2"
+  },
+  "commentDate": "06/05/2023",
+  "rating": "4",
+  "commentText": "Tạm ổn, hơi nhạt.",
+  "imgComments": [
+    {
+      "imgId": "5",
+      "img": "imggg"
+    },
+    {
+      "imgId": "2",
+      "img": "imggg2"
+    }
+  ],
+  "userid": "ac0003"
+},
+{
+  "_id": {
+    "$oid": "6459285d9e2bb8f8be37c2e3"
+  },
+  "commentDate": "05/05/2023",
+  "rating": "5",
+  "commentText": "Vừa miệng, đẹp da",
+  "imgComments": [
+    {
+      "imgId": "7",
+      "img": "imggg"
+    },
+    {
+      "imgId": "2",
+      "img": "imggg2"
+    }
+  ],
+  "userid": "ac0004"
+},
+{
+  "_id": {
+    "$oid": "6459285d9e2bb8f8be37c2e4"
+  },
+  "commentDate": "04/05/2023",
+  "rating": "4",
+  "commentText": "Đẹp tuyệt vời",
+  "imgComments": [
+    {
+      "imgId": "8",
+      "img": "imggg"
+    },
+    {
+      "imgId": "6",
+      "img": "imggg2"
+    }
+  ],
+  "userid": "ac0005"
+},
+{
+  "_id": {
+    "$oid": "6459285d9e2bb8f8be37c2e5"
+  },
+  "commentDate": "03/05/2023",
+  "rating": "5",
+  "commentText": "Chấm 10 điểm",
+  "imgComments": [
+    {
+      "imgId": "4",
+      "img": "imggg"
+    },
+    {
+      "imgId": "3",
+      "img": "imggg2"
+    }
+  ],
+  "userid": "ac0006"
+},
+{
+  "_id": {
+    "$oid": "6459285d9e2bb8f8be37c2e6"
+  },
+  "commentDate": "08/05/2023",
+  "rating": "3",
+  "commentText": "Không hợp vị mình lắm",
+  "imgComments": [
+    {
+      "imgId": "2",
+      "img": "imggg"
+    },
+    {
+      "imgId": "1",
+      "img": "imggg2"
+    }
+  ],
+  "userid": "ac0007"
+},
+{
+  "_id": {
+    "$oid": "6459285d9e2bb8f8be37c2e7"
+  },
+  "commentDate": "10/05/2023",
+  "rating": "5",
+  "commentText": "Ngon lắm nha moi người",
+  "imgComments": [
+    {
+      "imgId": "1",
+      "img": "imggg"
+    },
+    {
+      "imgId": "2",
+      "img": "imggg2"
+    }
+  ],
+  "userid": "ac0008"
+},
+{
+  "_id": {
+    "$oid": "6459285d9e2bb8f8be37c2e8"
+  },
+  "commentDate": "09/05/2023",
+  "rating": "4",
+  "commentText": "Đẹp tuyệt vời",
+  "imgComments": [
+    {
+      "imgId": "3",
+      "img": "imggg"
+    },
+    {
+      "imgId": "6",
+      "img": "imggg2"
+    }
+  ],
+  "userid": "ac0009"
+},
+{
+  "_id": {
+    "$oid": "6459285d9e2bb8f8be37c2e9"
+  },
+  "commentDate": "06/05/2023",
+  "rating": "5",
+  "commentText": "Sẽ mua lại lần 2",
+  "imgComments": [
+    {
+      "imgId": "3",
+      "img": "imggg"
+    },
+    {
+      "imgId": "4",
+      "img": "imggg2"
+    }
+  ],
+  "userid": "ac00010"
+}
+]
