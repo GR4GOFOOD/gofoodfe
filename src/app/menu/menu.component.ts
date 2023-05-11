@@ -26,34 +26,34 @@ export class MenuComponent {
       this.products=data;
 
       this.riceproducts=data.filter((product: any) => {
-        return product.ID >= 31 && product.ID <= 36;
+        return product.productId >= 31 && product.productId <= 36;
       });
 
       this.cakeproducts=data.filter((product: any) => {
-        return product.ID >= 1 && product.ID <= 6;
+        return product.productId >= 1 && product.productId <= 6;
       });
 
       this.saladproducts=data.filter((product: any) => {
-        return product.ID >= 41 && product.ID <= 46;
+        return product.productId >= 41 && product.productId <= 46;
       });
 
       this.drinkproducts=data.filter((product: any) => {
-        return product.ID >= 22 && product.ID <= 27;
+        return product.productId >= 22 && product.productId <= 27;
       });
 
       this.setsproducts=data.filter((product: any) => {
-        return product.ID >= 70 && product.ID <= 75;
+        return product.productId >= 70 && product.productId <= 75;
       });
 
       this.bestproducts = data.filter((product: any) => {
-        return product.ID >= 39 && product.ID <= 42
+        return product.productId >= 39 && product.productId <= 42
       });},
 
       error:(err)=>{this.errMessage=err}
       })
   }
 
-  onProductDetails(id: number){
+  onProductDetails(id: string){
     this.router.navigate(['/product-detail', id]);
   }
 }
