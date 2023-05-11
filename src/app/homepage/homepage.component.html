@@ -25,6 +25,21 @@
     <img src="../assets/homepg_img/hm1.1.png" alt="">
     <div class="title">BEST SELLER</div>
   </div>
+
+  <div class="box">
+    <div *ngFor="let product of bestproducts" class='sel' (click)="onProductDetails(product.productId)" >
+      <div>
+        <img [src]="product.productImage" alt="product image" class="product-image" >
+      </div>
+      <div>
+        <h3>{{ product.productName }}</h3>
+        <div>
+          <span>{{ product.price*1000}}</span>
+          <button routerLink="/cart"><img src="assets/ProductImage/add.png" alt="No image" style="float: right; width: 25px; height:25px"></button>
+        </div>
+      </div>
+    </div>
+<!--
   <div class="box">
     <div class="item">
       <a href="#menu">
@@ -58,7 +73,7 @@
     <span>250.000<sup>đ</sup></span>
   </a>
   </div>
-</div>
+</div> -->
 </div>
 
 <div class="hm3">
@@ -116,4 +131,6 @@
   </div>
 </div>
 
-</tbody>
+<tfoot>
+
+</tfoot>
