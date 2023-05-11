@@ -16,11 +16,11 @@ export class ProductDetailComponent implements OnInit {
     product:any;
     errMessage:string=''
 
-    getProductId(productId:string)
-    {
-    this._service.getProduct(productId).subscribe({
-    next:(data)=>{this.product=data},
-    error:(err)=>{this.errMessage=err}
-    })
-    }
+    // getProductId(productId:string)
+    // {
+    // this._service.getProduct(productId).subscribe({
+    // next:(data)=>{this.product=data},
+    // error:(err)=>{this.errMessage=err}
+    // })
+    // }
 }
