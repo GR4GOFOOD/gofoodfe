@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductAPIService } from '../service/product-api.service';
 
 @Component({
   selector: 'app-header',
@@ -7,12 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent  {
   showHomepage = true
+  showSearch = false
   hide(){
-    this.showHomepage = false
+    this.showHomepage = false,
+    this.showSearch=false
   }
-  openHome(){
-    this.showHomepage = true
-  }
-  }
+
+  constructor(public _service: ProductAPIService){}
+  foods:any
+  searchFood(name:string){
+    this._service.getSearch(name).subscribe({
+      next:(data)=>{this.foods=data}
+  })
+  this.showSearch=true
+}
+toggleModal() {
+  this.showSearch = !this.showSearch
+}
+hideModal(){
+  this.showSearch = !this.showSearch
+}
+}
 
 

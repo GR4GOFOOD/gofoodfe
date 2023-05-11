@@ -22,6 +22,7 @@ import { LogoutComponent } from './logout/logout.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { SignupComponent } from './signup/signup.component';
+
 const routes: Routes = [
   {path: "about", component: AboutComponent},
   {path: 'account-detail', component: AccountDetailComponent},
@@ -43,6 +44,8 @@ const routes: Routes = [
   {path: 'payment-atm', component: PaymentAtmComponent },
   {path:'premmium', component: PremmiumComponent},
   {path: 'product-detail', component: ProductDetailComponent},
+  {path: 'signup', component: SignupComponent},
+
   // {path: 'sign-up', component: SignupComponent},
 ]
 @NgModule({
@@ -82,6 +85,8 @@ export const RoutingComponent=[
   PaymentAtmComponent,
   PremmiumComponent,
   ProductDetailComponent,
+  SignupComponent
+
   // SignupComponent
 
 ]

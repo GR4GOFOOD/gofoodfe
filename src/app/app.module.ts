@@ -60,7 +60,7 @@ import { BlogsComponent } from './blogs/blogs.component';
     AccountEditComponent,
     AccountOrderComponent,
     BlogsDetailComponent,
-    BlogsComponent,
+    BlogsComponent
 
   ],
   imports: [

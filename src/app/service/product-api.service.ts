@@ -51,4 +51,17 @@ export class ProductAPIService {
   //   retry(3),
   //   catchError(this.handleError))
   //   }
+
+  getSearch(name:string | null):Observable<any>{
+    const headers=new HttpHeaders().set("Content-Type","text/plain;charset=utf-8")
+    const requestOptions:Object={
+      headers:headers,
+      responseType:"text"
+    }
+    return this._http.get<any>("/products/productName/"+name,requestOptions).pipe(
+      map(res=>JSON.parse(res) as Array<Product>),
+      retry(3),
+      catchError(this.handleError)
+    )
+  }
 }

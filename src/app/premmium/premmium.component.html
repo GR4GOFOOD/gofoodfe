@@ -144,32 +144,32 @@
   <div class="modal-body">
     <div class="container-fluid">
       <h2>Bạn muốn tư vấn thêm?</h2>
-      <p>Hãy gửi thắc mắc của bạn vào hộp thư này, chúng tôi sẽ giải quyết thắc mắc của bạn một cách nhanh chóng nhất.</p>
+      <p style="margin: 0;">Hãy gửi thắc mắc của bạn vào hộp thư này, chúng tôi sẽ giải quyết thắc mắc của bạn một cách nhanh chóng nhất.</p>
       <form (ngSubmit)="onSubmit()" #myForm="ngForm">
-        <div class="mb-2">
+        <div class="mb-3">
           <label for="name" class="col-md-14 col-form-label">Tên của bạn là gì ?</label>
-          <input type="text" class="form-control" #name="ngModel"  name="name" id="name" [(ngModel)]="support.name" placeholder="Nhập họ và tên" required  [ngClass]="{ 'is-invalid': name.invalid && (name.dirty || name.touched)}">
+          <input type="text" class="form-control mb-0" #name="ngModel"  name="name" id="name" [(ngModel)]="support.name" placeholder="Nhập họ và tên" required  [ngClass]="{ 'is-invalid': name.invalid && (name.dirty || name.touched)}">
           <small class="invalid-feedback">
             Nhập tên trước khi gửi
         </small>
         </div>
-        <div class="mb-2">
+        <div class="mb-3">
           <label for="email" class="col-md-14 col-form-label">Email của bạn: <br> (Chúng tôi sẽ gửi giải đáp thắc mắc của bạn thông qua email này)</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="Nhập email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" #email="ngModel"  [(ngModel)]="support.email" [ngClass]="{ 'is-invalid': email.invalid && (email.dirty || email.touched)}">
+          <input type="email" class="form-control mb-0" id="email" name="email" placeholder="Nhập email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" #email="ngModel"  [(ngModel)]="support.email" [ngClass]="{ 'is-invalid': email.invalid && (email.dirty || email.touched)}">
           <small class="invalid-feedback">
             Địa chỉ email không hợp lệ.
           </small>
         </div>
-        <div class="mb-2">
+        <div class="mb-3">
           <label for="phone" class="col-md-14 col-form-label">Nếu bạn muốn chúng tôi giải đáp trực tiếp qua điện thoại, hãy cho chúng tôi biết số điện thoại của bạn.</label>
-          <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại" name="phone" [(ngModel)]="support.phone" required pattern="[0-9]{10,11}" #phone="ngModel" [ngClass]="{ 'is-invalid': phone.invalid && (phone.dirty || phone.touched) }">
+          <input type="tel" class="form-control mb-0" id="phone" placeholder="Nhập số điện thoại" name="phone" [(ngModel)]="support.phone" required pattern="[0-9]{10,11}" #phone="ngModel" [ngClass]="{ 'is-invalid': phone.invalid && (phone.dirty || phone.touched) }">
           <small class="invalid-feedback">
             Số điện thoại không hợp lệ.
           </small>
         </div>
-        <div class="mb-3">
+        <div class="mb-4">
           <label for="content" class="col-md-3 col-form-label">Câu hỏi:</label>
-          <textarea type="text" class="form-control" id="question" name ="question" placeholder="Nhập câu hỏi của bạn vào đây" style="height: 80px;" #question="ngModel"  [(ngModel)]="support.question" name="question" required [ngClass]="{ 'is-invalid':question.invalid && (question.dirty || question.touched)}"></textarea>
+          <textarea type="text" class="form-control mb-0" id="question" name ="question" placeholder="Nhập câu hỏi của bạn vào đây" style="height: 80px;" #question="ngModel"  [(ngModel)]="support.question" name="question" required [ngClass]="{ 'is-invalid':question.invalid && (question.dirty || question.touched)}"></textarea>
           <small class="invalid-feedback">
             Nhập nội dung trước khi gửi
           </small>

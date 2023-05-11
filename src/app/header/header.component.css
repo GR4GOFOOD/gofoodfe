@@ -67,3 +67,96 @@ nav ul li a:hover{color: rgb(255, 255, 255); background-color: #348b34; width: 1
 .search_icon input#search:focus, .container-2 input#search:active{outline:none;}
 .search_icon:hover input#search{outline:none; width: 300px;}
 .search_icon:hover .icon{color: #000000;}
+
+.my-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  background-color: white;
+  width: 100%;
+  max-width: 1000px;
+  max-height: 700px;
+  overflow: auto; /* Hiển thị thanh cuộn khi nội dung quá dài */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(240, 236, 236, 0.3);
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 253, 253, 0.671);
+  z-index: 2;
+}
+
+.menu {
+  width: 100%; /* Điều chỉnh kích thước của đơn */
+}
+
+.menu-list {
+  list-style-type: none; /* Xóa dấu đầu dòng của danh sách */
+  padding: 0; /* Xóa padding của danh sách */
+  margin: 0; /* Xóa margin của danh sách */
+}
+
+.menu-item {
+  display: flex; /* Hiển thị các mục trong hàng ngang */
+  margin-bottom: 20px; /* Khoảng cách giữa các mục */
+}
+
+.menu-item-image {
+  flex: 0 0 300px; /* Kích thước của hình ảnh món ăn */
+  margin-right: 10px; /* Khoảng cách giữa hình ảnh và thông tin món ăn */
+}
+
+.menu-item-image img{
+  width: 320px;
+}
+
+.menu-item-info {
+  flex: 1; /* Phần còn lại của hàng ngang sẽ được chia cho thông tin món ăn */
+}
+
+.menu-item-title {
+  margin: 0; /* Xóa margin của tiêu đề */
+  font-size: 18px; /* Kích thước chữ tiêu đề */
+  font-weight: bold; /* Đậm tiêu đề */
+}
+
+.menu-item-description {
+  margin: 5px 0;
+  text-align: justify;
+}
+
+.menu-item-price {
+  margin: 0;
+  font-size: 14px;
+  color: rgb(20, 11, 11);
+  font-weight: bold;
+}
+
+.menu-item-detail {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #bf1b1b;
+  color: #fafafa;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-left: auto;
+}
+
+.rowItem{
+  display: flex;
+}
+
+.menu-item-detail:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+
