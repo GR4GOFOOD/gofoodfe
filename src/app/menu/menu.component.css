@@ -6,8 +6,23 @@ html, body{
 }
 .danhSach, .monAn, .chonMon{
   display: flex;
-  flex-direction: row
+  flex-direction: row;
 }
+
+.chonMon{
+  flex-wrap: wrap
+}
+
+.sel{
+  flex: 1;
+  text-align: center;
+  border: black solid 1px;
+  margin: 5px;
+  border-radius: 30px;
+  padding: 15px;
+  background-color: white;
+}
+
 .main{
   background-color: #143814;
   margin: 50px;
@@ -59,7 +74,7 @@ html, body{
   position: relative;
   left: -20px
 }
-
+/*
 .sel{
   flex: 1;
   text-align: center;
@@ -68,7 +83,7 @@ html, body{
   border-radius: 30px;
   padding: 15px;
   background-color: white;
-}
+} */
 .sel:hover{
   transform: scale(1.05);
 }
@@ -477,7 +492,20 @@ header h2{
 .footer p{margin: 0;}
 /* Mobile: width < 740px */
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .container{display: inline;}
   .container-footer{display: flex;flex-direction: column;}
+} */
+
+@media only screen and (max-width: 768px) {
+  .chonMon{
+    display:flex;
+    flex-wrap: wrap;
+  }
 }
+
+/* @media screen and (max-width: 768px) {
+  .chonMon {
+    flex-direction: column;
+  }
+} */

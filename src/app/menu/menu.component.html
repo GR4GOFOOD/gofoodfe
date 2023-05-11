@@ -10,7 +10,7 @@
               <br>
               <a class="dat" href="#">ĐẶT HÀNG NGAY</a>
           </div>
-              <div style="background-image: url(assets/ProductImage/dinhduong.jpeg);">
+          <div style="background-image: url(assets/ProductImage/dinhduong.jpeg);">
               <h2>TRẢI NGHIỆM BỮA ĂN DINH DƯỠNG VÀ NGON MIỆNG</h2>
               <br>
               <a class="dat" href="#">ĐẶT HÀNG NGAY</a>
@@ -20,7 +20,7 @@
               <br>
               <a class="dat" href="#">ĐẶT HÀNG NGAY</a>
           </div>
-              <div style="background-image: url(assets/ProductImage/dinhduong.jpeg);">
+          <div style="background-image: url(assets/ProductImage/dinhduong.jpeg);">
               <h2>TRẢI NGHIỆM BỮA ĂN DINH DƯỠNG VÀ NGON MIỆNG</h2>
               <br>
               <a class="dat" href="#">ĐẶT HÀNG NGAY</a>
@@ -101,9 +101,9 @@
   <br>
   <p class="tieuDe">Best sell</p>
   <div class="chonMon">
-      <div *ngFor="let product of bestproducts" class='sel' (click)="onProductDetails(product.ID)">
+      <div *ngFor="let product of bestproducts" class='sel' (click)="onProductDetails(product.ID)" >
         <div>
-          <img [src]="product.IMAGE" alt="product image" class="product-image">
+          <img [src]="product.IMAGE" alt="product image" class="product-image" >
         </div>
         <div>
           <h3>{{ product.NAME }}</h3>
@@ -195,4 +195,5 @@
     </div>
   </div>
 </div>
+
 
