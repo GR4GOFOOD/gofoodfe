@@ -14,16 +14,16 @@
           <div class="cart-item cart-column">
             <header>
               <a class="remove" (click)="removeProduct(item)">
-                <img src="{{ item.IMAGE }}" alt="" />
+                <img src="{{ item.productImage}}" alt="" />
                 <h3>Remove product</h3>
               </a>
             </header>
             <div class="content">
-              <h1>{{ item.NAME }}</h1>
+              <a routerLink="/detail/{{item._id}}"><h1>{{ item.productName }}</h1></a>
             </div>
             <footer class="content">
-              <input class="cart-quantity-input" type="number" [(ngModel)]="item.QUANTITY" (ngModelChange)="updateCartItem(item)" />
-              <h2 class="full-price">{{ item.PRICE | currency:'VND':'symbol-narrow' }}</h2>
+              <input class="cart-quantity-input" type="number" [(ngModel)]="item.productQty" (ngModelChange)="updateCartItem(item)" />
+              <h2 class="full-price">{{ item.price | currency:'VND':'symbol-narrow' }}</h2>
             </footer>
           </div>
         </div>
