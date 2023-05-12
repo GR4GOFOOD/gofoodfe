@@ -5,9 +5,7 @@ import { PaymentComponent } from './payment/payment.component';
 import { PaymentAtmComponent } from './payment-atm/payment-atm.component';
 import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
-
 import { CartComponent } from './cart/cart.component';
-
 import { PremmiumComponent } from './premmium/premmium.component';
 import { ContactComponent } from './contact/contact.component';
 import { AccountDetailComponent } from './account-detail/account-detail.component';
@@ -32,10 +30,8 @@ const routes: Routes = [
   {path: 'blogs-detail/:id', component: BlogsDetailComponent},
   {path: 'cart', component: CartComponent },
   {path: 'contact', component: ContactComponent},
-
   {path: 'faqs', component: FAQSComponent},
   {path: 'homepage', component: HomepageComponent},
-
   {path: 'login', component: LoginComponent},
   {path: 'logout', component: LogoutComponent},
   {path: 'menu', component: MenuComponent},
@@ -47,7 +43,6 @@ const routes: Routes = [
   {path: 'product-detail/:id', component: ProductDetailComponent },
   {path: 'signup', component: SignupComponent},
   { path: 'product-detail/:id', component: ProductDetailComponent },
-
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
@@ -74,10 +69,8 @@ export const RoutingComponent=[
   BlogsDetailComponent,
   CartComponent,
   ContactComponent,
-
   FAQSComponent,
   HomepageComponent,
-
   LoginComponent,
   LogoutComponent,
   MenuComponent,
