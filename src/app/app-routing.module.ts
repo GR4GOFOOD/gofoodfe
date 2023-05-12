@@ -32,10 +32,10 @@ const routes: Routes = [
   {path: 'blogs-detail/:id', component: BlogsDetailComponent},
   {path: 'cart', component: CartComponent },
   {path: 'contact', component: ContactComponent},
-  {path:"detail/:id", component: DetailComponent},
+
   {path: 'faqs', component: FAQSComponent},
   {path: 'homepage', component: HomepageComponent},
-  {path: 'list', component: ListComponent},
+
   {path: 'login', component: LoginComponent},
   {path: 'logout', component: LogoutComponent},
   {path: 'menu', component: MenuComponent},
