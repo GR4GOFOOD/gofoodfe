@@ -32,6 +32,6 @@ openMenu2(){
   this.router.navigate(['order'])
 }
 logOut(){
-  this.router.navigate(['logout'])
+  // this.session.clear()
 }
 }
