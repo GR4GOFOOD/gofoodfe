@@ -10,7 +10,8 @@ import { ProductAPIService } from '../service/product-api.service';
 export class HomepageComponent {
   products: any;
   bestproducts: any;
-  errMessage: string=''
+  errMessage: string='';
+  showBestProducts: boolean = false;
 
   constructor(private _service: ProductAPIService, private router: Router) {
     this._service.getProducts().subscribe({
@@ -25,12 +26,12 @@ export class HomepageComponent {
          })
         }
 
-      //   onProductDetails(id: string){
-      //   this.router.navigate(['/product-detail', id]);
-      // }
+        toggleBestProducts() {
+          this.showBestProducts = !this.showBestProducts;
+        }
 
-      onProductDetails(id: string) {
-        this.router.navigate(['/product-detail', id]);
-      }
+        onProductDetails(id: string) {
+          this.router.navigate(['/product-detail', id]);
+        }
 
 }

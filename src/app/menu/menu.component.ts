@@ -53,7 +53,7 @@ export class MenuComponent {
       })
   }
 
-  onProductDetails(id: string){
-    this.router.navigate(['/product-detail', id]);
+  onProductDetails(productId: string){
+    this.router.navigate(['/product-detail', productId]);
   }
 }
