@@ -1,5 +1,21 @@
 [
   {
+<<<<<<< HEAD
+    "context":["/products"],
+    "target":"http://localhost:3000",
+    "secure":true,
+    "changeOrigin":true,
+    "logLevel": "debug"
+  },
+  {
+    "context":["/cart"],
+    "target":"http://localhost:3000",
+    "secure":true,
+    "changeOrigin":true,
+    "logLevel": "debug"
+  }
+
+=======
     "context": ["/users"],
     "target": "http://localhost:3000",
     "secure": true,
@@ -41,4 +57,5 @@
     "changeOrigin":true,
     "logLevel":"debug"
   }
+>>>>>>> 14c4b53d8cd4ae175884cbf1e77e2f622f6ac05c
 ]
