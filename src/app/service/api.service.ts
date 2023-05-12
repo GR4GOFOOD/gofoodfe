@@ -13,6 +13,7 @@ export class ApiService {
     return from(axios.get(this.apiUrl + url));
   }
 
+
   detail(url: String, id: Number): Observable<any> {
     return from(axios.get(this.apiUrl + url + '/' + id));
   }
@@ -24,4 +25,8 @@ export class ApiService {
     }));
   }
 }
+
+
+
+
 

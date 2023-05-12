@@ -9,17 +9,16 @@
   <div class="px-4 lg:px-6 py-2.5">
           <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <a href="#" class="flex items-center">
-              <img src="assets/head foot/header.JPG" class="mr-3 h-6 sm:h-9" alt="Khong tai duoc logo" />
+              <img src="assets/head foot/header.JPG" class="mr-3 h-6 sm:h-9" alt="Khong tai duoc logo"/>
           </a>
           <div class="one">
-            <button class="search_icon text-gray-800 dark:text-white focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2  focus:outline-none dark:focus:ring-gray-800">
-                <span class="icon"><i class="fa fa-search"></i></span>
-                <input type="search" id="search" placeholder="Search..." />
+            <button style="margin: 0; padding: 10px;" class="search_icon text-gray-800 dark:text-white focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-10 lg:px-5 py-2 lg:py-2.5 mr-2  focus:outline-none dark:focus:ring-gray-800">
+                <span class="icon"><i class="fa fa-search" (click)="searchFood(name.value)"></i></span>
+                <input type="search" id="search" placeholder="Search..." #name/>
             </button>
               <button routerLink="/cart"  (click)="hide()"  class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"  ><img src="assets/head foot/cart.png"  width="15px" alt="Cart"></button>
               <button routerLink="/login" (click)="hide()" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800" >Đăng nhập</button>
               <button routerLink="/signup"  (click)="hide()" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800" >Đăng kí</button>
-              <button routerLink="/cart"  (click)="hide()" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800" ><img src="assets/head foot/cart.png" width="13px" alt="Cart"></button>
               <button routerLink="/account-detail"  (click)="hide()" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800" ><img src="assets/head foot/account.png" width="13px" alt="Account"></button>
 
           </div>
@@ -32,7 +31,7 @@
           <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
               <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                   <li>
-                      <a routerLink="/homepage"  (click)="openHome()" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white" aria-current="page">Trang chủ</a>
+                      <a routerLink="/homepage" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white" aria-current="page">Trang chủ</a>
                   </li>
                   <li>
                       <a routerLink="/menu" (click)="hide()" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white: ">Menu</a>
@@ -64,3 +63,33 @@
   </nav>
 </header>
 <app-homepage *ngIf="showHomepage"></app-homepage>
+
+
+<div *ngIf="show" class="modal-overlay"></div>
+<div *ngIf="show" class="my-modal">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="toggleModal()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+  <div class="menu" >
+    <h4 style="text-align: center; margin: 15px 0;; font-weight: bold; background-color:  #143814; color: white; padding: 10px;">KẾT QUẢ TÌM KIẾM</h4>
+    <ul class="menu-list">
+      <li class="menu-item" *ngFor="let food of foods">
+        <div class="menu-item-image">
+          <img src="{{food.productImage}}" alt="Món ăn">
+        </div>
+        <div class="menu-item-info">
+          <h3 class="menu-item-title">{{food.productName}}</h3>
+          <p class="menu-item-description">{{food.description}}</p>
+          <div class="rowItem">
+          <p class="menu-item-price">Giá: {{food.price*1000}}</p>
+          <p (click)="hideModal()" routerLink="/product-detail" class="menu-item-detail">Xem chi tiết</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </div>
+

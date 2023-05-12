@@ -9,7 +9,7 @@ import { AccountAPIService } from '../service/account-api.service';
 })
 export class AccountEditComponent {
   account: any;
-
+  errMes: string=''
   constructor(
     private activatedRoute: ActivatedRoute,
     private accountService: AccountAPIService,
@@ -30,16 +30,19 @@ export class AccountEditComponent {
     this.router.navigate(['account-edit'])
   }
   openMenu2(){
-    this.router.navigate(['order'])
+    this.router.navigate(['account-order'])
   }
   openMenu3(){
     this.router.navigate(['account-detail'])
   }
   onSubmit(){
-
+    this.accountService.putAccount(this.account).subscribe({
+      next: (data)=>{this.account=data},
+      error:(err)=>{this.errMes=err}
+    })
   }
   logOut(){
-    this.router.navigate(['logout'])
+    this.router.navigate(['homepage'])
   }
 }
 

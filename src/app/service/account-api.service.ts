@@ -51,7 +51,7 @@ export class AccountAPIService {
     headers:headers,
     responseType:"text"
     }
-    return this._http.get<any>("/accounts/"+id,requestOptions).pipe(
+    return this._http.get<any>("/users/"+id,requestOptions).pipe(
     map(res=>JSON.parse(res) as Account ),
     retry(3),
     catchError(this.handleError))

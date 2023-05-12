@@ -5,9 +5,9 @@ import { PaymentComponent } from './payment/payment.component';
 import { PaymentAtmComponent } from './payment-atm/payment-atm.component';
 import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
-import { ListComponent } from './list/list.component';
+
 import { CartComponent } from './cart/cart.component';
-import { DetailComponent } from './detail/detail.component';
+
 import { PremmiumComponent } from './premmium/premmium.component';
 import { ContactComponent } from './contact/contact.component';
 import { AccountDetailComponent } from './account-detail/account-detail.component';
@@ -22,6 +22,7 @@ import { LogoutComponent } from './logout/logout.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { SignupComponent } from './signup/signup.component';
+
 const routes: Routes = [
   {path: "about", component: AboutComponent},
   {path: 'account-detail', component: AccountDetailComponent},
@@ -31,10 +32,10 @@ const routes: Routes = [
   {path: 'blogs-detail/:id', component: BlogsDetailComponent},
   {path: 'cart', component: CartComponent },
   {path: 'contact', component: ContactComponent},
-  {path:"detail/:id", component: DetailComponent},
+
   {path: 'faqs', component: FAQSComponent},
   {path: 'homepage', component: HomepageComponent},
-  {path: 'list', component: ListComponent},
+
   {path: 'login', component: LoginComponent},
   {path: 'logout', component: LogoutComponent},
   {path: 'menu', component: MenuComponent},
@@ -43,8 +44,17 @@ const routes: Routes = [
   {path: 'payment-atm', component: PaymentAtmComponent },
   {path:'premmium', component: PremmiumComponent},
   {path: 'product-detail', component: ProductDetailComponent},
+<<<<<<< HEAD
+  {path: 'product-detail/:id', component: ProductDetailComponent },
+<<<<<<< HEAD
+  {path: 'signup', component: SignupComponent},
+=======
+  {path: 'signup', component: SignupComponent}
+>>>>>>> 30145112cb43054af94e0450886a0e3e616eb1af
+=======
   { path: 'product-detail/:id', component: ProductDetailComponent },
   // {path: 'sign-up', component: SignupComponent},
+>>>>>>> origin/dev_ngoc
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
@@ -71,10 +81,10 @@ export const RoutingComponent=[
   BlogsDetailComponent,
   CartComponent,
   ContactComponent,
-  DetailComponent,
+
   FAQSComponent,
   HomepageComponent,
-  ListComponent,
+
   LoginComponent,
   LogoutComponent,
   MenuComponent,
@@ -83,7 +93,10 @@ export const RoutingComponent=[
   PaymentAtmComponent,
   PremmiumComponent,
   ProductDetailComponent,
-  // SignupComponent
+  SignupComponent
+<<<<<<< HEAD
+=======
 
+>>>>>>> 30145112cb43054af94e0450886a0e3e616eb1af
 ]
 

@@ -1,3 +1,21 @@
+<div *ngIf="showModal" class="modal-overlay"></div>
+<div *ngIf="showVerify" class="modal-overlay1"></div>
+<div *ngIf="showVerify" class="my-modal1">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="toggleModal1()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="success center-content">
+      <i class="bi bi-check-circle-fill" style="color: green; font-size: 30px"></i>
+      </div>
+    <p style="font-weight: 600">Đăng nhập thành công</p>
+    <div class="bt">
+      <button class="btn btn-primary" style="background-color: red; font-weight: bold" (click)="toggleModal1()">OK</button>
+    </div>
+  </div>
+</div>
 <header>
   <div class="left"><a href="#"><img src="assets/image_login/logo.png" width="190px"></a></div>
   <div class="right" style="float: right;"><a href="#" class="btn">Bạn cần trợ giúp ?</a></div>
