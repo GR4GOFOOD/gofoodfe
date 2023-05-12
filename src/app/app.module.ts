@@ -62,7 +62,7 @@ import { LoginComponent } from './login/login.component';
     AccountEditComponent,
     AccountOrderComponent,
     BlogsDetailComponent,
-    BlogsComponent,
+    BlogsComponent
 
   ],
   imports: [

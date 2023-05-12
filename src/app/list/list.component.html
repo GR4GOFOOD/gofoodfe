@@ -10,9 +10,15 @@
     </tr>
   </thead>
   <tbody>
+
     <tr *ngFor="let p of products">
-      <td>{{p._id}}</td> </tr>
-
-
+      <td>{{p._id}}</td>
+      <td>{{p.productId}}</td>
+      <td>{{p.productName}}</td>
+      <td><img src="{{p.productImage}}" width="100px" height="100px"></td>
+      <button routerLink="/detail/{{p._id}}">Detail</button>
+    </tr>
   </tbody>
 </table>
+
+
