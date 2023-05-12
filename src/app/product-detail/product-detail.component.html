@@ -4,7 +4,7 @@
 
       <div class="w-full sm:w-96 md:w-8/12 lg:w-6/12 items-center">
           <!-- <p class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 font-normal text-base leading-4 text-gray-600">Home / Furniture / Wooden Stool</p> -->
-          <h2 class="font-semibold lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 mt-4"></h2>
+          <h2 class="font-semibold lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 mt-4">{{selectedProduct.productName}}</h2>
 
           <div class="flex flex-row justify-between mt-5">
               <div class="flex flex-row space-x-3">
@@ -43,9 +43,9 @@
           </div>
 <!--
           <p class="font-normal text-base leading-6 text-gray-600 mt-7">Một phần gồm cá hồi sống với màu cam đặc trưng, ăn kèm bơ, đậu hũ non cùng với rau cũng quả tươi. Cá hồi tươi có vị béo ngọt tan trong miệng ăn cùng với rau củ tươi đã vị tạo hương vị khác lạ cuốn hút. Đối với món này thực khách có thể chọn ăn kèm nước tương Nhật hay một ít xốt mè rang.</p> -->
-          <p class="font-normal text-base leading-6 text-gray-600 mt-7"></p>
+          <p class="font-normal text-base leading-6 text-gray-600 mt-7">{{selectedProduct.description}}</p>
           <!-- <p class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 mt-6">$ 790.89</p> -->
-          <p class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 mt-6"></p>
+          <p class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 mt-6">{{selectedProduct.price}}</p>
           <div class="lg:mt-11 mt-10">
               <div class="flex flex-row justify-between">
                   <p class="font-medium text-base leading-4 text-gray-600">Select quantity</p>
@@ -162,16 +162,16 @@
         <p class="mt-3 text-base leading-normal text-gray-600 w-full md:w-9/12 xl:w-5/6">When you want to decorate your home, the idea of choosing a decorative theme can seem daunting. Some themes seem to have an endless amount of pieces, while others can feel hard to accomplish</p>
         <div class="hidden md:flex mt-6 flex-row justify-start items-start space-x-4">
           <div>
-            <img src="https://i.ibb.co/QXzVpHp/vincent-wachowiak-8g-Cm-EBVl6a-I-unsplash-1.png" alt="chair-1" />
+            <img src="{{selectedProduct.productImage}}" alt="chair-1" />
           </div>
           <div>
-            <img src="https://i.ibb.co/znYKsbc/vincent-wachowiak-z-P316-KSOX0-E-unsplash-1.png" alt="chair-2" />
+            <img src="{{selectedProduct.productImage}}" alt="chair-2" />
           </div>
           <div class="hidden md:block">
-            <img src="https://i.ibb.co/QXzVpHp/vincent-wachowiak-8g-Cm-EBVl6a-I-unsplash-1.png" alt="chair-3" />
+            <img src="{{selectedProduct.productImage}}" alt="chair-3" />
           </div>
           <div class="hidden md:block">
-            <img src="https://i.ibb.co/znYKsbc/vincent-wachowiak-z-P316-KSOX0-E-unsplash-1.png" alt="chair-4" />
+            <img src="{{selectedProduct.productImage}}" alt="chair-4" />
           </div>
         </div>
         <div class="md:hidden carousel pt-8 cursor-none" data-flickity='{ "wrapAround": true,"pageDots": false }'>
