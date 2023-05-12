@@ -5,9 +5,7 @@ import { PaymentComponent } from './payment/payment.component';
 import { PaymentAtmComponent } from './payment-atm/payment-atm.component';
 import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
-
 import { CartComponent } from './cart/cart.component';
-
 import { PremmiumComponent } from './premmium/premmium.component';
 import { ContactComponent } from './contact/contact.component';
 import { AccountDetailComponent } from './account-detail/account-detail.component';
@@ -32,10 +30,8 @@ const routes: Routes = [
   {path: 'blogs-detail/:id', component: BlogsDetailComponent},
   {path: 'cart', component: CartComponent },
   {path: 'contact', component: ContactComponent},
-
   {path: 'faqs', component: FAQSComponent},
   {path: 'homepage', component: HomepageComponent},
-
   {path: 'login', component: LoginComponent},
   {path: 'logout', component: LogoutComponent},
   {path: 'menu', component: MenuComponent},
@@ -44,17 +40,10 @@ const routes: Routes = [
   {path: 'payment-atm', component: PaymentAtmComponent },
   {path:'premmium', component: PremmiumComponent},
   {path: 'product-detail', component: ProductDetailComponent},
-<<<<<<< HEAD
   {path: 'product-detail/:id', component: ProductDetailComponent },
-<<<<<<< HEAD
   {path: 'signup', component: SignupComponent},
-=======
-  {path: 'signup', component: SignupComponent}
->>>>>>> 30145112cb43054af94e0450886a0e3e616eb1af
-=======
   { path: 'product-detail/:id', component: ProductDetailComponent },
   // {path: 'sign-up', component: SignupComponent},
->>>>>>> origin/dev_ngoc
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
@@ -81,10 +70,8 @@ export const RoutingComponent=[
   BlogsDetailComponent,
   CartComponent,
   ContactComponent,
-
   FAQSComponent,
   HomepageComponent,
-
   LoginComponent,
   LogoutComponent,
   MenuComponent,
@@ -94,9 +81,5 @@ export const RoutingComponent=[
   PremmiumComponent,
   ProductDetailComponent,
   SignupComponent
-<<<<<<< HEAD
-=======
-
->>>>>>> 30145112cb43054af94e0450886a0e3e616eb1af
 ]
 

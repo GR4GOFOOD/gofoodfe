@@ -54,6 +54,7 @@ export class MenuComponent {
   }
 
   onProductDetails(productId: string){
+    console.log(productId)
     this.router.navigate(['/product-detail', productId]);
   }
 }
