@@ -4,40 +4,15 @@
   <div class="row">
     <div class="col-md-8 d-flex align-items-center">
       <div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <h2>{{ product?._id }}</h2>
-        <p><strong>Date:</strong> {{ product?.productName }}</p>
-=======
-        <h2>{{ product?.ID}}</h2>
-        <p><strong>Date:</strong> {{ product?.NAME }}</p>
-        <p><strong>Style:</strong> {{ product?.DESCRIPTION }}</p>
->>>>>>> origin/dev_quynh
-=======
-        <h2>{{ product?._id }}</h2>
-        <p><strong>Date:</strong> {{ product?.productName }}</p>
         <h2>{{ product?.productId}}</h2>
         <p><strong>Date:</strong> {{ product?.productName}}</p>
         <p><strong>Style:</strong> {{ product?.description }}</p>
->>>>>>> 9c7967b64d81b17703545d651f0b2f3ea841e65d
 
         <button (click)="addToCart()">Add to Cart</button>
       </div>
     </div>
     <div class="col-md-4">
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <img src="{{ product?.productImage }}" alt="Fashion image" class="img-fluid">
-=======
-      <img src="{{ product?.IMAGE}}" alt="Fashion image" class="img-fluid">
->>>>>>> origin/dev_quynh
-=======
-      <img src="{{ product?.productImage }}" alt="Fashion image" class="img-fluid">
       <img src="{{ product?.productImage}}" alt="Fashion image" class="img-fluid">
->>>>>>> 9c7967b64d81b17703545d651f0b2f3ea841e65d
     </div>
-    <p>Số lượng sản phẩm trong giỏ hàng: {{ cartItemCount }}</p>
-
   </div>
 </div>
-
