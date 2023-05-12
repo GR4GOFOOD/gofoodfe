@@ -84,8 +84,8 @@
           <h3 class="menu-item-title">{{food.productName}}</h3>
           <p class="menu-item-description">{{food.description}}</p>
           <div class="rowItem">
-          <p class="menu-item-price">Giá: {{food.price*1000}}</p>
-          <p (click)="hideModal()" routerLink="/product-detail" class="menu-item-detail">Xem chi tiết</p>
+          <p class="menu-item-price">Giá: {{food.price}}</p>
+          <p (click)="hideModal()" [routerLink]="['/product-detail',food.productId]" class="menu-item-detail">Xem chi tiết</p>
           </div>
         </div>
       </li>

@@ -8,26 +8,28 @@ import { CartService } from '../service/cart.service';
   templateUrl: './product-detail.component.html',
   styleUrls: ['./product-detail.component.css']
 })
-export class ProductDetailComponent implements OnInit {
-  product: Product | undefined;
+export class ProductDetailComponent {
+
   cartItems: Product[] = [];
 
   isToggle:any;
-  selectedProduct:any;
+  product:any;
   constructor(private activateRoute:ActivatedRoute,private _service: ProductAPIService,
     private cartService: CartService,private router:Router){
-    activateRoute.paramMap.subscribe(
-      (param)=>{
-        let id=param.get('productId')
-        if(id!=null)
-        {
-        this.selectedProduct=_service.getProduct(id)
-        }
-      }
-      )
+    // activateRoute.paramMap.subscribe(
+    //   (param)=>{
+    //     let id=param.get('productId')
+    //     if(id!=null)
+    //     {
+    //     this.selectedProduct=_service.getProduct(id)
+    //     }
+    //   }
+    //   )
+    const id= this.activateRoute.snapshot.paramMap.get('id');
+    this._service.getProduct(id).subscribe(data=>{this.product=data})
   }
 
-    ngOnInit(): void {}
+    // ngOnInit(): void {}
 
     goBack(){
       this.router.navigate(['menu'])

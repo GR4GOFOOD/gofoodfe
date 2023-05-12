@@ -44,17 +44,10 @@ const routes: Routes = [
   {path: 'payment-atm', component: PaymentAtmComponent },
   {path:'premmium', component: PremmiumComponent},
   {path: 'product-detail', component: ProductDetailComponent},
-<<<<<<< HEAD
   {path: 'product-detail/:id', component: ProductDetailComponent },
-<<<<<<< HEAD
   {path: 'signup', component: SignupComponent},
-=======
-  {path: 'signup', component: SignupComponent}
->>>>>>> 30145112cb43054af94e0450886a0e3e616eb1af
-=======
   { path: 'product-detail/:id', component: ProductDetailComponent },
-  // {path: 'sign-up', component: SignupComponent},
->>>>>>> origin/dev_ngoc
+
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
@@ -94,9 +87,5 @@ export const RoutingComponent=[
   PremmiumComponent,
   ProductDetailComponent,
   SignupComponent
-<<<<<<< HEAD
-=======
-
->>>>>>> 30145112cb43054af94e0450886a0e3e616eb1af
 ]
 
