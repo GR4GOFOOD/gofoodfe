@@ -17,7 +17,7 @@ export class AccountDetailComponent {
 
   )
   {
-    const email = window.localStorage.getItem('Email')
+    const email = window.localStorage.getItem('email')
     const password = window.localStorage.getItem('password')
     const id = this.activatedRoute.snapshot.paramMap.get('id');
     this.accountService.getAccount(id).subscribe(data => {

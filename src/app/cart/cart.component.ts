@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../service/cart.service';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-cart',
@@ -13,7 +14,7 @@ export class CartComponent implements OnInit {
   thue: number = 0;
   tongCong: number = 0;
 
-  constructor(private _service: CartService) {}
+  constructor(private _service: CartService, private router:Router) {}
 
   ngOnInit(): void {
     this.loadCartItems();
@@ -58,6 +59,10 @@ export class CartComponent implements OnInit {
     this.calculateTamTinh();
     this.calculateThue();
     this.calculateTongCong();
+  }
+  payMent(){
+    this.router.navigate(['payment'])
+
   }
 
 }

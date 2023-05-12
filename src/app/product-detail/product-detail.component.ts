@@ -47,6 +47,7 @@ export class ProductDetailComponent {
           console.log('Error adding product to cart: Product is undefined.');
 
         }
+        this.router.navigate(['cart'])
       }
 
 
