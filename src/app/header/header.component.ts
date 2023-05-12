@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductAPIService } from '../service/product-api.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,25 +9,29 @@ import { ProductAPIService } from '../service/product-api.service';
 })
 export class HeaderComponent  {
   showHomepage = true
-  showSearch = false
+  show = false
   hide(){
     this.showHomepage = false,
-    this.showSearch=false
+    this.show=false
   }
 
-  constructor(public _service: ProductAPIService){}
+  constructor(public _service: ProductAPIService, public router : Router){}
   foods:any
   searchFood(name:string){
     this._service.getSearch(name).subscribe({
       next:(data)=>{this.foods=data}
   })
-  this.showSearch=true
+  this.show=true
 }
 toggleModal() {
-  this.showSearch = !this.showSearch
+  this.show =  false
 }
 hideModal(){
-  this.showSearch = !this.showSearch
+  this.show =  false
+}
+hideModalAndNavigate() {
+  this.hideModal();
+  this.router.navigateByUrl('/product-detail');
 }
 }
 
