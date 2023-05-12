@@ -1,5 +1,6 @@
 import { Component, OnInit  } from '@angular/core';
 import { ProductAPIService } from '../service/product-api.service'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-detail',
@@ -8,13 +9,13 @@ import { ProductAPIService } from '../service/product-api.service'
 })
 export class ProductDetailComponent implements OnInit {
   isToggle:any;
-  constructor(private _service: ProductAPIService){
+  constructor(private _service: ProductAPIService,private router:Router){
   }
 
     ngOnInit(): void {}
 
-    product:any;
-    errMessage:string=''
+    // product:any;
+    // errMessage:string='';
 
     // getProductId(productId:string)
     // {
@@ -23,5 +24,16 @@ export class ProductDetailComponent implements OnInit {
     // error:(err)=>{this.errMessage=err}
     // })
     // }
+
+    // this._service.postSignup(this.form.value).subscribe({
+    //   next:(data)=>{this.form=data;
+    //    },
+
+    //   error:(err)=>{this.errMessage=err}
+    // })
+
+
+
 }
+
 
