@@ -13,7 +13,7 @@ export class AccountOrderComponent {
     this.router.navigate(['account-edit'])
   }
   openMenu2(){
-    this.router.navigate(['order'])
+    this.router.navigate(['account-order'])
   }
   openMenu3(){
     this.router.navigate(['account-detail'])
@@ -22,6 +22,12 @@ export class AccountOrderComponent {
 
   }
   logOut(){
-    this.router.navigate(['logout'])
+    this.router.navigate(['homepage'])
+  }
+  gotoCart(){
+    this.router.navigate(['cart'])
+  }
+  gotoPro(){
+    this.router.navigate(['product-detail'])
   }
 }

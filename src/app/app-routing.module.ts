@@ -43,8 +43,8 @@ const routes: Routes = [
   {path: 'payment-atm', component: PaymentAtmComponent },
   {path:'premmium', component: PremmiumComponent},
   {path: 'product-detail', component: ProductDetailComponent},
-  { path: 'product-detail/:id', component: ProductDetailComponent }
-  // {path: 'sign-up', component: SignupComponent},
+  {path: 'product-detail/:id', component: ProductDetailComponent },
+  {path: 'signup', component: SignupComponent}
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
@@ -83,7 +83,7 @@ export const RoutingComponent=[
   PaymentAtmComponent,
   PremmiumComponent,
   ProductDetailComponent,
-  // SignupComponent
+  SignupComponent
 
 ]
 

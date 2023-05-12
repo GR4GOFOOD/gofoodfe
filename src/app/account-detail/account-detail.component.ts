@@ -29,9 +29,9 @@ openMenu(){
   this.router.navigate(['account-edit'])
 }
 openMenu2(){
-  this.router.navigate(['order'])
+  this.router.navigate(['account-order'])
 }
 logOut(){
-  this.router.navigate(['logout'])
+  this.router.navigate(['homepage'])
 }
 }
