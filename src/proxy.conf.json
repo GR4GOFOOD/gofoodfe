@@ -1,21 +1,5 @@
 [
   {
-<<<<<<< HEAD
-    "context":["/products"],
-    "target":"http://localhost:3000",
-    "secure":true,
-    "changeOrigin":true,
-    "logLevel": "debug"
-  },
-  {
-    "context":["/cart"],
-    "target":"http://localhost:3000",
-    "secure":true,
-    "changeOrigin":true,
-    "logLevel": "debug"
-  }
-
-=======
     "context": ["/users"],
     "target": "http://localhost:3000",
     "secure": true,
@@ -23,7 +7,6 @@
     "logLevel":"debug"
   },
   {
-<<<<<<< HEAD
     "context": ["/payment"],
     "target": "http://localhost:3000",
     "secure": true,
@@ -45,17 +28,10 @@
     "logLevel":"debug"
   },
   {
-=======
-<<<<<<< HEAD
-    "context": ["/products"],
-=======
->>>>>>> origin/dev_nhien
     "context": ["/login"],
->>>>>>> 514e959f83eddd420df49f681d1be78e9844ec7b
     "target": "http://localhost:3000",
     "secure": true,
     "changeOrigin":true,
     "logLevel":"debug"
   }
->>>>>>> 14c4b53d8cd4ae175884cbf1e77e2f622f6ac05c
 ]
