@@ -4,17 +4,24 @@
   <div class="row">
     <div class="col-md-8 d-flex align-items-center">
       <div>
+<<<<<<< HEAD
         <h2>{{ product?._id }}</h2>
         <p><strong>Date:</strong> {{ product?.productName }}</p>
+=======
+        <h2>{{ product?.productId}}</h2>
+        <p><strong>Date:</strong> {{ product?.productName}}</p>
+        <p><strong>Style:</strong> {{ product?.description }}</p>
+>>>>>>> 9989b928f8e0f596048f04ad4409db14ab788cc0
 
         <button (click)="addToCart()">Add to Cart</button>
       </div>
     </div>
     <div class="col-md-4">
+<<<<<<< HEAD
       <img src="{{ product?.productImage }}" alt="Fashion image" class="img-fluid">
+=======
+      <img src="{{ product?.productImage}}" alt="Fashion image" class="img-fluid">
+>>>>>>> 9989b928f8e0f596048f04ad4409db14ab788cc0
     </div>
-    <p>Số lượng sản phẩm trong giỏ hàng: {{ cartItemCount }}</p>
-
   </div>
 </div>
-
