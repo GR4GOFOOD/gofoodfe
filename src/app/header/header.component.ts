@@ -29,10 +29,6 @@ toggleModal() {
 hideModal(){
   this.show =  false
 }
-hideModalAndNavigate() {
-  this.hideModal();
-  this.router.navigateByUrl('/product-detail');
-}
 }
 
 

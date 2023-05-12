@@ -19,7 +19,7 @@
               </a>
             </header>
             <div class="content">
-              <a routerLink="/detail/{{item._id}}"><h1>{{ item.productName }}</h1></a>
+              <a routerLink="/product-detail/{{item._id}}"><h1>{{ item.productName }}</h1></a>
             </div>
             <footer class="content">
               <input class="cart-quantity-input" type="number" [(ngModel)]="item.productQty" (ngModelChange)="updateCartItem(item)" />

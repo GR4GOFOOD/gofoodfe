@@ -43,7 +43,6 @@ const routes: Routes = [
   {path: 'product-detail/:id', component: ProductDetailComponent },
   {path: 'signup', component: SignupComponent},
   { path: 'product-detail/:id', component: ProductDetailComponent },
-  // {path: 'sign-up', component: SignupComponent},
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
