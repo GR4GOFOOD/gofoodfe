@@ -43,7 +43,7 @@ const routes: Routes = [
   {path: 'payment-atm', component: PaymentAtmComponent },
   {path:'premmium', component: PremmiumComponent},
   {path: 'product-detail', component: ProductDetailComponent},
-  { path: 'product-detail/:id', component: ProductDetailComponent }
+  { path: 'product-detail/:id', component: ProductDetailComponent },
   // {path: 'sign-up', component: SignupComponent},
 ]
 @NgModule({
