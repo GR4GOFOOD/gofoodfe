@@ -64,8 +64,9 @@
 </header>
 <app-homepage *ngIf="showHomepage"></app-homepage>
 
-<div *ngIf="showSearch" class="modal-overlay"></div>
-<div *ngIf="showSearch" class="my-modal">
+
+<div *ngIf="show" class="modal-overlay"></div>
+<div *ngIf="show" class="my-modal">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="toggleModal()">
       <span aria-hidden="true">&times;</span>
@@ -83,8 +84,8 @@
           <h3 class="menu-item-title">{{food.productName}}</h3>
           <p class="menu-item-description">{{food.description}}</p>
           <div class="rowItem">
-          <p class="menu-item-price">Giá: {{food.price}}</p>
-          <p routerLink="product-detail" class="menu-item-detail" (click)="hideModal()">Mua</p>
+          <p class="menu-item-price">Giá: {{food.price*1000}}</p>
+          <p (click)="hideModal()" routerLink="/product-detail" class="menu-item-detail">Xem chi tiết</p>
           </div>
         </div>
       </li>
