@@ -8,19 +8,23 @@ import axios from 'axios';
 export class ApiService {
   constructor() { }
   private apiUrl = 'http://localhost:3000/api';
+<<<<<<< HEAD
+
+=======
+>>>>>>> 9989b928f8e0f596048f04ad4409db14ab788cc0
 
   get(url: String): Observable<any> {
     return from(axios.get(this.apiUrl + url));
   }
 
 
-  // get(url: String): Observable<any> {
-  //   return from(axios.get(this.apiUrl + url));
-  // }
-
   detail(url: String, id: Number): Observable<any> {
     return from(axios.get(this.apiUrl + url + '/' + id));
   }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 9989b928f8e0f596048f04ad4409db14ab788cc0
   login(email: String, password:String): Observable<any> {
     return from(axios.post('http://localhost:3000/login', {
       Email: email,
@@ -28,8 +32,11 @@ export class ApiService {
     }));
   }
 }
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 9989b928f8e0f596048f04ad4409db14ab788cc0
 
 
 

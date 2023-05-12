@@ -1,5 +1,7 @@
 [
   {
+<<<<<<< HEAD
+=======
     "context":["/products"],
     "target":"http://localhost:3000",
     "secure":true,
@@ -14,6 +16,7 @@
     "logLevel": "debug"
   },
   {
+>>>>>>> 9989b928f8e0f596048f04ad4409db14ab788cc0
     "context": ["/users"],
     "target": "http://localhost:3000",
     "secure": true,
