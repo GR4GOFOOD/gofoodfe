@@ -61,9 +61,9 @@ getProductid(id:string | null):Observable<any>{
     }
   }
   updateCartItem(item: any): void {
-        const index = this.cartItems.findIndex((cartItem: any) => cartItem.ID === item.ID);
+        const index = this.cartItems.findIndex((cartItem: any) => cartItem.productId === item.productId);
       if (index !== -1) {
-      this.cartItems[index].QUANTITY = item.QUANTITY;
+      this.cartItems[index].productQty = item.productQty;
     }
   }
 
