@@ -47,14 +47,19 @@
           <!-- <p class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 mt-6">$ 790.89</p> -->
           <p class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 mt-6">{{product.price}}</p>
           <div class="lg:mt-11 mt-10">
-              <div class="flex flex-row justify-between">
+              <!-- <div class="flex flex-row justify-between">
                   <p class="font-medium text-base leading-4 text-gray-600">Select quantity</p>
                   <div class="flex">
                       <span class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 cursor-pointer border border-gray-300 border-r-0 w-7 h-7 flex items-center justify-center pb-1">-</span>
                       <input aria-label="input" class="border border-gray-300 h-full text-center w-14 pb-1" type="text" value="1" />
                       <span class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 cursor-pointer border border-gray-300 border-l-0 w-7 h-7 flex items-center justify-center pb-1">+</span>
                   </div>
-              </div>
+              </div> -->
+              <div class="flex flex-row justify-end">
+                <button (click)="decreaseCounter()" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 cursor-pointer border border-gray-300 border-r-0 w-7 h-7 flex items-center justify-center pb-1">-</button>
+                <input aria-label="input" class="border border-gray-300 h-full text-center w-14 pb-1" type="text" [(ngModel)]="counterValue" />
+                <button (click)="increaseCounter()" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 cursor-pointer border border-gray-300 border-l-0 w-7 h-7 flex items-center justify-center pb-1">+</button>
+            </div>
               <hr class="bg-gray-200 w-full my-2" />
               <div class="flex flex-row justify-between items-center mt-4">
                   <p class="font-medium text-base leading-4 text-gray-600">Dimensions</p>
@@ -75,17 +80,17 @@
 
       <div class="w-full sm:w-96 md:w-8/12 lg:w-6/12 flex lg:flex-row flex-col lg:gap-8 sm:gap-6 gap-4">
           <div class="w-full lg:w-8/12 bg-gray-100 flex justify-center items-center">
-              <img src="../assets/product_detail_img/image 50.png" alt="Wooden Chair Previw" class="object-cover" />
+              <img src="{{product.productImage}}" alt="Wooden Chair Previw" class="object-cover" />
           </div>
           <div class="w-full lg:w-4/12 grid lg:grid-cols-1 sm:grid-cols-4 grid-cols-2 gap-6">
               <div class="bg-gray-100 flex justify-center items-center py-4">
-                  <img src="../assets/product_detail_img/image 49.png" alt="Wooden chair - preview 1" class="object-cover" />
+                  <img src="{{product.productImage}}" alt="Wooden chair - preview 1" class="object-cover" />
               </div>
               <div class="bg-gray-100 flex justify-center items-center py-4">
-                  <img src="../assets/product_detail_img/image 50.png" alt="Wooden chair - preview 2" class="object-cover" />
+                  <img src="{{product.productImage}}" alt="Wooden chair - preview 2" class="object-cover" />
               </div>
               <div class="bg-gray-100 flex justify-center items-center py-4">
-                  <img src="../assets/product_detail_img/image 50.png" alt="Wooden chair- preview 3" class="object-cover"/>
+                  <img src="{{product.productImage}}" alt="Wooden chair- preview 3" class="object-cover"/>
               </div>
           </div>
       </div>

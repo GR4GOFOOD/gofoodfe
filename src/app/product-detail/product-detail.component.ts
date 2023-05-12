@@ -11,9 +11,9 @@ import { CartService } from '../service/cart.service';
 export class ProductDetailComponent {
 
   cartItems: Product[] = [];
-
   isToggle:any;
   product:any;
+  counterValue = 1;
   constructor(private activateRoute:ActivatedRoute,private _service: ProductAPIService,
     private cartService: CartService,private router:Router){
     // activateRoute.paramMap.subscribe(
@@ -30,7 +30,15 @@ export class ProductDetailComponent {
   }
 
     // ngOnInit(): void {}
+    decreaseCounter() {
+      if (this.counterValue > 1) {
+        this.counterValue--;
+      }
+    }
 
+    increaseCounter() {
+      this.counterValue++;
+    }
     goBack(){
       this.router.navigate(['menu'])
       }
