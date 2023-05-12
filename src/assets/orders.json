@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "645928409e2bb8f8be37c2de"
+  },
+  "order": [
+    {
+      "productid": "1",
+      "productImg": "dataimg",
+      "productQty": "5",
+      "price": 25000
+    },
+    {
+      "productid": "2",
+      "productImg": "dataimg",
+      "productQty": "10",
+      "price": 30000
+    }
+  ],
+  "shippingMethod": "COD",
+  "address": "HCM",
+  "orderDate": "08/05/2023",
+  "phoneNumber": "01234567789",
+  "userId": "ac0001"
+}]
