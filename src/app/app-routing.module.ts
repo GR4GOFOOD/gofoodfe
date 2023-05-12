@@ -45,7 +45,11 @@ const routes: Routes = [
   {path:'premmium', component: PremmiumComponent},
   {path: 'product-detail', component: ProductDetailComponent},
   {path: 'product-detail/:id', component: ProductDetailComponent },
+<<<<<<< HEAD
+  {path: 'signup', component: SignupComponent},
+=======
   {path: 'signup', component: SignupComponent}
+>>>>>>> 30145112cb43054af94e0450886a0e3e616eb1af
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
@@ -85,6 +89,9 @@ export const RoutingComponent=[
   PremmiumComponent,
   ProductDetailComponent,
   SignupComponent
+<<<<<<< HEAD
+=======
 
+>>>>>>> 30145112cb43054af94e0450886a0e3e616eb1af
 ]
 
