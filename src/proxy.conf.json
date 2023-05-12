@@ -8,8 +8,32 @@
   },
   {
 <<<<<<< HEAD
+    "context": ["/payment"],
+    "target": "http://localhost:3000",
+    "secure": true,
+    "changeOrigin":true,
+    "logLevel":"debug"
+  },
+  {
+    "context": ["/paymentATM"],
+    "target": "http://localhost:3000",
+    "secure": true,
+    "changeOrigin":true,
+    "logLevel":"debug"
+  },
+  {
+    "context": ["/products"],
+    "target": "http://localhost:3000",
+    "secure": true,
+    "changeOrigin":true,
+    "logLevel":"debug"
+  },
+  {
+=======
+<<<<<<< HEAD
     "context": ["/products"],
 =======
+>>>>>>> origin/dev_nhien
     "context": ["/login"],
 >>>>>>> 514e959f83eddd420df49f681d1be78e9844ec7b
     "target": "http://localhost:3000",

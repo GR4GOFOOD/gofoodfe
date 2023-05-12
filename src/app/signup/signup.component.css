@@ -15,12 +15,12 @@ p {
   max-width: 50%;
   margin: right;
   position: right;
-  padding: 50px;
+  padding: 40px;
   background-color: white;
   float: right;
 }
 .form-group{width: 400px;}
-.signup-container{background-image: url("/assets/signup_img/bg.jpg");background-repeat: no-repeat; float: left;}
+.signup-container{background-image: url("/assets/signup_img/bg.jpg");background-repeat: no-repeat; float: left; width: 60%;}
 .form-group button{
   width: 200px;
   padding: 10px;
