@@ -15,6 +15,8 @@ export class LoginComponent{
   loginForm!: FormGroup;
   isSubmitted = true;
   errMessage: string=''
+  showModal = false
+  showVerify = false
   constructor(
     private _service: AccountAPIService,
     private router: Router ) {}
@@ -37,6 +39,8 @@ export class LoginComponent{
         console.log(response);
         localStorage.setItem('password', user.password);
         localStorage.setItem('Email', user.email);
+        this.showVerify = true;
+        this.showModal = true
         this.router.navigate(['/homepage'])
       }
     )
@@ -64,4 +68,15 @@ export class LoginComponent{
   goSignup() {
     this.router.navigate(['signup']);
   }
+  toggleModal() {
+    this.showModal = !this.showModal;
+  }
+  toggleModal1() {
+    this.showVerify = !this.showVerify
+  }
+
+  openModal(){
+    this.showModal = true
+  }
+
 }
