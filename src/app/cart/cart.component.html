@@ -1,61 +1,46 @@
- <p>{{errMessage}}</p>
-<body>
-  <div id="site-header">
-    <div class="container">
-      <h1>GIỎ HÀNG</h1>
-    </div>
-  </div>
-  <div class="container">
-    <div id="cart">
-      <div class="cart-items" >
+<p>{{ errMessage }}</p>
 
-        <div class="product" *ngFor=" let item of cartItems">
+<div id="site-header">
+  <div class="container">
+    <h1>GIỎ HÀNG</h1>
+  </div>
+</div>
+
+<div class="container">
+  <div id="cart">
+    <div class="cart-items">
+      <div *ngIf="cartItems && cartItems.length > 0">
+        <div class="product" *ngFor="let item of cartItems">
           <div class="cart-item cart-column">
             <header>
-              <a class="remove"  >
-                <img src="{{item.fashion_image}}" alt="" />
-                <h3>Remove product </h3>
+              <a class="remove" (click)="removeProduct(item)">
+                <img src="{{ item.productImage}}" alt="" />
+                <h3>Remove product</h3>
               </a>
             </header>
             <div class="content">
-              <h1>{{item.fashion_subject}}</h1>
+              <a routerLink="/detail/{{item._id}}"><h1>{{ item.productName }}</h1></a>
             </div>
             <footer class="content">
-              <input class="cart-quantity-input" type="number" value="{{item.quantity}}" />
-              <h2 class="full-price">{{item.price}}</h2>
+              <input class="cart-quantity-input" type="number" [(ngModel)]="item.productQty" (ngModelChange)="updateCartItem(item)" />
+              <h2 class="full-price">{{ item.price | currency:'VND':'symbol-narrow' }}</h2>
             </footer>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- <div id="site-footer">
-    <div class="left">
-      <h2 class="subtotal">
-        Tạm tính: <span class="tamTinh"> đ</span>
-      </h2>
-      <h3 class="tax">Thuế (5%): <span class="thue"> đ</span></h3>
-    </div>
-    <div class="right">
-      <h1>Tổng cộng: <span class="total-price"> đ</span></h1>
-      <a class="btn" href="./Payment.html">Thanh toán</a>
-    </div>
-  </div> -->
-  <!-- Hiển thị giá tiền -->
+</div>
+
 <div id="site-footer">
   <div class="left">
-
-    <!-- <h2 class="subtotal">Tạm tính: <span class="tamTinh">{{tamTinh}} đ</span></h2> -->
-
-    <!-- <h3 class="tax">Thuế (5%): <span class="thue">{{thue}} đ</span></h3> -->
-
+    <h2 class="subtotal">Tạm tính: <span class="tamTinh">{{ tamTinh | currency:'VND':'symbol-narrow' }}</span></h2>
+    <h3 class="tax">Thuế (5%): <span class="thue">{{ thue | currency:'VND':'symbol-narrow' }}</span></h3>
   </div>
   <div class="right">
-    <!-- <h1>Tổng cộng: <span class="total-price">{{calculateTongCong() | currency:'VND':'symbol-narrow'}}</span></h1> -->
-    <!-- <h1>Tổng cộng: <span class="total-price">{{tongCong}} đ</span></h1> -->
-
+    <h1>Tổng cộng: <span class="total-price">{{ tongCong | currency:'VND':'symbol-narrow' }}</span></h1>
     <a class="btn" href="./Payment.html">Thanh toán</a>
   </div>
 </div>
-</body>
+
 

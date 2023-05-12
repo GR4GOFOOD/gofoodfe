@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IContact } from 'src/app/types/contact';
 import { ContactService } from '../service/contact.service';
+import { ISupport } from '../types/supports';
+import { SupportsService } from '../service/supports.service';
 
 @Component({
   selector: 'app-contact',
@@ -8,24 +10,33 @@ import { ContactService } from '../service/contact.service';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+  showModal = false
   showVerify = false
-  phoneInvalid = false
-  contact: IContact= new IContact()
-  contacts:any
-  errMessage:string=''
-  constructor(private _service: ContactService){}
-
+  toggleModal() {
+    this.showModal = !this.showModal;
+  }
   toggleModal1() {
     this.showVerify = !this.showVerify
   }
 
+  openContact(){
+    this.showModal = true
+  }
+
+  support: ISupport= new ISupport()
+  supports: any
+  errMessage:string=''
+  constructor(private _service: SupportsService){
+  }
+
   onSubmit() {
    {
-      this._service.postContact(this.contact).subscribe({
-        next:(data)=>{this.contact=data},
-        error:(err)=>{this.errMessage=err}
-      })
+    this._service.postSupport(this.support).subscribe({
+      next:(data)=>{this.support=data},
+      error:(err)=>{this.errMessage=err}
+    })
     }
     this.showVerify = true;
+    this.showModal = false
   }
 }
