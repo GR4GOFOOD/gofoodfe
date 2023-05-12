@@ -1,5 +1,6 @@
 import { Component, OnInit  } from '@angular/core';
 import { ProductAPIService } from '../service/product-api.service'
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-product-detail',
@@ -8,19 +9,28 @@ import { ProductAPIService } from '../service/product-api.service'
 })
 export class ProductDetailComponent implements OnInit {
   isToggle:any;
-  constructor(private _service: ProductAPIService){
+  selectedProduct:any;
+  constructor(private activateRoute:ActivatedRoute,private _service: ProductAPIService,private router:Router){
+    activateRoute.paramMap.subscribe(
+      (param)=>{
+        let id=param.get('productId')
+        if(id!=null)
+        {
+        this.selectedProduct=_service.getProduct(id)
+        }
+      }
+      )
   }
 
     ngOnInit(): void {}
 
-    product:any;
-    errMessage:string=''
+    goBack(){
+      this.router.navigate(['menu'])
+      }
 
-    // getProductId(productId:string)
-    // {
-    // this._service.getProduct(productId).subscribe({
-    // next:(data)=>{this.product=data},
-    // error:(err)=>{this.errMessage=err}
-    // })
-    // }
+
+
+
 }
+
+
